@@ -71,6 +71,8 @@ export interface Plant {
   /** Florida native (separate from group). */
   native?: boolean;
   life_cycle?: "annual" | "perennial" | "biennial";
+  /** Set when generic fields came from Permapeople (data/permapeople_overlay.json), for attribution. */
+  permapeople_id?: number;
   feeding?: "low" | "normal" | "heavy";
   /** USDA hardiness zones it survives, e.g. ["9a", "9b", "10a"]. */
   zones?: string[];

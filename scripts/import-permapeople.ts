@@ -1,13 +1,13 @@
 /**
  * Offline import from Permapeople (spec 6C.2). Run once by a teammate, never by the app:
- *   PP_KEY_ID=... PP_KEY_SECRET=... npx tsx scripts/import-permapeople.ts
+ *   npm run pp:import        (PP_KEY_ID and PP_KEY_SECRET in .env)
  *
  * For each plant in our catalog it searches Permapeople by scientific name and pulls GENERIC fields only (light,
  * water, soil, pH, height, width, life cycle, layer, growth, propagation, edible parts). Florida fields (regions,
  * zones, chill hours, cold hardiness, salt and wind tolerance, fl_notes) always come from the team's sheet, never
  * from here.
  *
- * Output (for a human to review and merge; nothing is overwritten automatically):
+ * Output (for a human to review; then `npm run pp:merge` builds data/permapeople_overlay.json):
  *   data/import_permapeople.json   normalized generic fields per plant id
  *   data/import_review.csv         outliers and unit problems to fix by hand
  * Data is CC BY-SA 4.0 (non-commercial): credit "Plant data partly from Permapeople.org (CC BY-SA 4.0)" and keep
@@ -65,7 +65,7 @@ export function toFeet(raw: string | null, unitKey: string): [number, number] | 
 
 async function main() {
   if (!KEY_ID || !KEY_SECRET) {
-    console.error("Set PP_KEY_ID and PP_KEY_SECRET (Permapeople API keys) in .env.local first.");
+    console.error("Set PP_KEY_ID and PP_KEY_SECRET (Permapeople API keys) in .env first.");
     process.exit(1);
   }
   const out: Record<string, unknown> = {};

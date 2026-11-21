@@ -40,6 +40,25 @@ put it in both `DATABASE_URL` and `DIRECT_URL`, then run `npm run db:setup`.
 | `NWS_USER_AGENT` | Required by api.weather.gov |
 | `PLANTNET_API_KEY`, `PLANTNET_PROJECT` | Pl@ntNet plant ID |
 | `GEMINI_API_KEY`, `GEMINI_MODEL` | Gemini diagnosis and action plans |
+| `PP_KEY_ID`, `PP_KEY_SECRET` | Permapeople keys, only for `npm run pp:import` (offline, never used by the app) |
+
+### Permapeople plant data → Supabase
+
+Permapeople is read once, offline. The app only ever reads the `Plant` table.
+
+```bash
+npm run pp:import   # needs PP_KEY_ID + PP_KEY_SECRET in .env → data/import_permapeople.json + data/import_review.csv
+npm run pp:merge    # no keys → data/permapeople_overlay.json (generic fields per plant; review the git diff)
+npm run db:seed     # catalog + overlay → Supabase Plant table
+```
+
+- Only generic fields are applied: mature height and spread, light, water need, pH range, life cycle, growth rate
+  (`OVERLAY_FIELDS` in `lib/engine/permapeople.ts`). Florida fields (regions, zones, cold hardiness, salt and wind
+  tolerance, chill hours, Florida notes) always stay as the team wrote them.
+- `pp:merge` skips search hits from a different genus (wrong match) and any height or width flagged in
+  `data/import_review.csv`. Edit or delete overlay entries by hand before committing.
+- `lib/catalog-data.ts` applies the overlay on top of `data/plants.json`, `edibles.json` and `catalog_extra.json`;
+  the source files are never rewritten. Data is CC BY-SA 4.0 and credited on plant pages and in the footer.
 
 ## Data
 
