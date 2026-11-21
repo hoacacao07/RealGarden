@@ -14,7 +14,7 @@ export async function getAlerts(lat: number, lon: number, scenario?: string | nu
       live: async (signal) => {
         const j = await fetchJson<{ features: { id?: string; properties: Record<string, string> }[] }>(
           `https://api.weather.gov/alerts/active?point=${lat.toFixed(4)},${lon.toFixed(4)}`,
-          { signal, headers: { "User-Agent": process.env.NWS_USER_AGENT || "NativeScapeFL demo", Accept: "application/geo+json" } },
+          { signal, headers: { "User-Agent": process.env.NWS_USER_AGENT || "RealGarden demo", Accept: "application/geo+json" } },
         );
         return j.features.map((f) => {
           const p = f.properties;

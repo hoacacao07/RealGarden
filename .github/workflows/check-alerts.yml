@@ -1,5 +1,5 @@
 # The one background job (spec 7.2): call the alert checker every 5 minutes. Vercel Hobby cron only runs daily.
-# Repo secrets: APP_URL (e.g. https://nativescape.vercel.app) and CRON_SECRET (same value as on Vercel).
+# Repo secrets: APP_URL (e.g. https://realgarden.vercel.app) and CRON_SECRET (same value as on Vercel).
 # GitHub may delay scheduled runs by a few minutes under load; cron-job.org is an alternative.
 name: check-alerts
 on:

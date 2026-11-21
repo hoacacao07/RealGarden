@@ -1,4 +1,4 @@
-// NativeScape FL demo schema. Filtered plant fields are columns; the rest live in `attrs`.
+// RealGarden demo schema. Filtered plant fields are columns; the rest live in `attrs`.
 
 generator client {
   provider = "prisma-client"

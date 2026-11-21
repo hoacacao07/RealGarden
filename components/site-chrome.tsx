@@ -102,7 +102,7 @@ export function SiteHeader() {
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:p-2 focus:bg-card">Skip to content</a>
       <div className="mx-auto max-w-6xl flex items-center justify-between px-4 h-14">
         <Link href="/" className="flex items-center gap-2 font-semibold text-lg">
-          <Logo /> NativeScape <span className="text-primary">FL</span>
+          <Logo /> <span>Real<span className="text-primary">Garden</span></span>
         </Link>
         <nav aria-label="Main" className="hidden md:flex items-center gap-1">
           {nav.main.map((n) => (

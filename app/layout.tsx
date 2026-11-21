@@ -10,8 +10,8 @@ import "./globals.css";
 const figtree = Figtree({ variable: "--font-figtree", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: { default: "NativeScape FL", template: "%s · NativeScape FL" },
-  description: "Plan a low-maintenance Florida native garden, preview it through the year, and get early warnings.",
+  title: { default: "RealGarden", template: "%s · RealGarden" },
+  description: "Design a beautiful Florida garden, know what to buy, and get simple care reminders and weather alerts.",
 };
 
 export const viewport: Viewport = { themeColor: "#2f6b4f" };

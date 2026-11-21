@@ -53,7 +53,7 @@
 }
 
 :root {
-  /* NativeScape palette: deep green, sand, sky blue, coral accent (alerts). */
+  /* RealGarden palette: deep green, sand, sky blue, coral accent (alerts). */
   --background: oklch(0.982 0.012 85);
   --foreground: oklch(0.24 0.03 160);
   --card: oklch(1 0 0);

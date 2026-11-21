@@ -1,4 +1,4 @@
-# NativeScape FL (hackathon demo)
+# RealGarden (hackathon demo)
 
 Plan a low-maintenance garden of Florida native plants, preview it through the year, and get early warnings
 before problems happen. **Design → Preview → Predict → Act.**
@@ -124,6 +124,12 @@ Simplifications made to keep the demo path reliable:
   demo day.
 
 ## Known limits
+
+- **Local database = 1 connection.** `prisma dev` (PGlite) handles one connection at a time, so `lib/db.ts` uses a pool
+  of 1 when `DATABASE_URL` points at localhost (5 otherwise; `DB_POOL_MAX` overrides). More than one connection made
+  pages and Garden AI fail at random with `P1017 ConnectionClosed`.
+- **Phones on the same Wi-Fi** can open the dev server at `http://<this computer's IP>:3000`: `next.config.ts` allows the
+  machine's own network addresses (`allowedDevOrigins`). Without that, Next 16 leaves the page un-clickable.
 
 - After a migration, **restart `npm run dev`**: the Prisma client is a hot-reload-proof singleton, so a running dev
   server keeps the old schema and saves fail with "Unknown argument".

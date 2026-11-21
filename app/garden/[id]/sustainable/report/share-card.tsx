@@ -41,7 +41,7 @@ export function ShareCard({ name, grade, score, lines }: { name: string; grade: 
     lines.slice(0, 4).forEach((l, i) => ctx.fillText(`🌱 ${l}`, W / 2, 760 + i * 64));
     ctx.font = "26px system-ui, sans-serif";
     ctx.fillStyle = "#5b7563";
-    ctx.fillText("NativeScape FL · estimates", W / 2, H - 50);
+    ctx.fillText("RealGarden · estimates", W / 2, H - 50);
   }, [name, grade, score, lines]);
 
   return (

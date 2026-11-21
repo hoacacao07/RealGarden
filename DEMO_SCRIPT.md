@@ -1,4 +1,4 @@
-# NativeScape FL – demo script (v6, about 4 minutes)
+# RealGarden – demo script (v6, about 4 minutes)
 
 Personas: **Maria**, first-time homeowner in Tampa about 2 miles from the bay (butterfly garden, a small tomato bed,
 a few roses), and **Linh**, a USF student with a 4th-floor west-facing balcony (10 × 5 ft).
@@ -30,7 +30,7 @@ a few roses), and **Linh**, a USF student with a 4th-floor west-facing balcony (
 | 7 | 2:35 | In the same chat tap **Make me a salad garden for 4×8 ft**. Click **Add to my garden** on the lettuce card. | "It suggests, she confirms. Nothing is written until she taps the button." |
 | 8 | 2:55 | **More → 🌱 Sustainable**. Under **Greener swaps** click **Apply** on the rain barrel and on converting lawn to a pollinator bed. Open **Eco report card**. | "All the environmental numbers live here, for people who want them. Two swaps and the score climbs. The report card compares year 1, 5 and 10 against a typical lawn." |
 | 9 | 3:25 | Open `/garden/linh`. | "No yard? Linh's west balcony: the sun strip, container picks like cherry tomato, basil and tropical sage, water daily in summer, and the weight estimate. The same hurricane alert now starts with: bring every pot inside." |
-| 10 | 3:50 | Back to `/demo` → **End sample alerts**. | "Style, place, a beautiful garden, what to buy, simple care. That's NativeScape FL." |
+| 10 | 3:50 | Back to `/demo` → **End sample alerts**. | "Style, place, a beautiful garden, what to buy, simple care. That's RealGarden." |
 
 ## Garden AI tips
 
