@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { diagnose } from "@/lib/clients/gemini";
+import { diagnose } from "@/lib/ai/features";
 import { getWeather } from "@/lib/clients/openmeteo";
 import { identify } from "@/lib/clients/plantnet";
 import { cleanPhoto, matchPlant, readPhoto, UploadError } from "@/lib/checkin";

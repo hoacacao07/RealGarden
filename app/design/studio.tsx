@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+
+import { rememberGarden } from "@/components/site-chrome";
 import { Check, ClipboardList, Copy, LayoutDashboard, Loader2, Save, Settings2 } from "lucide-react";
 
 import { ErrorState } from "@/components/states";
@@ -37,6 +39,7 @@ export function Studio({ plants, garden, initialTab = "plan" }: { plants: Plant[
 
   useEffect(() => {
     if (garden) {
+      rememberGarden(garden.id);
       init({
         initKey, gardenId: garden.id, name: garden.name, theme: garden.theme, site: garden.site, width: garden.canvas_w_ft, height: garden.canvas_h_ft,
         zones: garden.zones, placements: garden.placements.map((p) => ({ ...p, key: p.id ?? newKey() })),
@@ -68,8 +71,8 @@ export function Studio({ plants, garden, initialTab = "plan" }: { plants: Plant[
     return (
       <div className="space-y-4 max-w-6xl mx-auto">
         <div>
-          <h1 className="text-3xl font-semibold">{site ? "Edit your site" : "Design a native garden"}</h1>
-          <p className="text-muted-foreground">Tell us about the {site?.kind === "balcony" || (!site && newMode === "balcony") ? "balcony" : "yard"}. We rank Florida natives for it, natives first.</p>
+          <h1 className="text-3xl font-semibold">{site ? "Edit your site" : "Design your garden"}</h1>
+          <p className="text-muted-foreground">Tell us about the {site?.kind === "balcony" || (!site && newMode === "balcony") ? "balcony" : "yard"}. Prefer it simpler? <a className="underline" href="/start">Start from a style</a> instead.</p>
         </div>
         {!site && (
           <div className="inline-flex rounded-xl border bg-card p-0.5" role="radiogroup" aria-label="Kind of garden">
@@ -130,6 +133,7 @@ function Workspace({ plants, active, setActive, onEditSite, router, initialTab }
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Save failed");
       useDesign.setState({ dirty: false, gardenId: data.id });
+      rememberGarden(data.id);
       if (!s.gardenId) router.replace(`/design?garden=${data.id}`);
       else router.refresh();
     } catch (e) {
@@ -155,12 +159,14 @@ function Workspace({ plants, active, setActive, onEditSite, router, initialTab }
           ? <>Balcony: faces {facingName(s.site!.facing_deg ?? 180)}, floor {s.site!.floor_level ?? 1}, {s.site!.balcony_l_ft} × {s.site!.balcony_w_ft} ft</>
           : <>Site: {s.site!.sun.replace("_", " ")}, {s.site!.soil.replace("_", " ")}, {s.site!.coastal_distance_mi} mi to coast</>}</Button>
         <div className="flex-1" />
-        <NativeMeter pct={model.native.by_count} byArea={model.native.by_area} target={s.site!.native_target_pct ?? null} />
+        {s.site!.native_target_pct != null && <NativeMeter pct={model.native.by_count} byArea={model.native.by_area} target={s.site!.native_target_pct} />}
         {s.gardenId && (
           <>
             <Button variant="outline" onClick={copyLink}>{copied ? <Check aria-hidden /> : <Copy aria-hidden />} {copied ? "Copied" : "Share link"}</Button>
             <Button variant="outline" asChild><Link href={`/garden/${s.gardenId}`}><LayoutDashboard aria-hidden /> Dashboard</Link></Button>
             <Button variant="outline" asChild><Link href={`/garden/${s.gardenId}/plan`}><ClipboardList aria-hidden /> Plan</Link></Button>
+            {/* The designer shows no eco numbers (spec 2B): one optional chip opens the Sustainable section. */}
+            <Link href={`/garden/${s.gardenId}/sustainable`} className="rounded-full border px-3 py-1.5 text-sm hover:border-primary hover:bg-secondary">🌱 See impact</Link>
           </>
         )}
         <Button onClick={save} disabled={saving || (!s.dirty && !!s.gardenId)}>

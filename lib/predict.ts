@@ -3,7 +3,7 @@
  * weather (+ scenario) → water balance per zone → frost / storm / water / disease alerts with action steps
  * → impact tiles and "Coming up" bloom/fruit predictions.
  */
-import { actionPlan } from "./clients/gemini";
+import { actionPlan } from "./ai/features";
 import { getAlerts } from "./clients/nws";
 import { getWeather, isScenario, loadScenario } from "./clients/openmeteo";
 import { readData } from "./clients/base";

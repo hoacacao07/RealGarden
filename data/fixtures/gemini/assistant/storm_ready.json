@@ -1,0 +1,9 @@
+{
+  "_note": "Scripted demo answer for the starter chip \"Is my garden ready for the storm?\" (DEMO_MODE).",
+  "tools": [
+    { "name": "get_active_alerts", "label": "Checked weather alerts" },
+    { "name": "get_tasks", "label": "Looked at your task list" },
+    { "name": "get_garden", "label": "Looked at your garden" }
+  ],
+  "text": "If there's an active storm alert for your garden, here's what to do **before the wind starts**:\n\n1. Bring pots, hanging baskets and garden decor inside.\n2. Loosely stake your youngest and tallest plants first, like the young live oak and firebush.\n3. Pick any ripe tomatoes now.\n4. Turn off the sprinklers. The storm brings more than enough rain.\n5. Clear drains and gutters so water can leave the beds.\n6. Don't fertilize or prune until it's over.\n\nOnce the storm starts, stay inside. **Follow official instructions from your county.** Your open tasks are on the Alerts page."
+}

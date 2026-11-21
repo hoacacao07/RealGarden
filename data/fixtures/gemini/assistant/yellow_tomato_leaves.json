@@ -1,0 +1,9 @@
+{
+  "_note": "Scripted demo answer for \"Why are my tomato leaves yellow?\" (DEMO_MODE).",
+  "tools": [
+    { "name": "get_garden", "label": "Looked at your garden" },
+    { "name": "get_plant", "label": "Read the tomato plant record" },
+    { "name": "get_forecast", "label": "Checked your forecast" }
+  ],
+  "text": "Yellow tomato leaves usually come from one of these:\n\n1. **Old lower leaves.** If only the bottom leaves yellow, that's normal. Pinch them off.\n2. **Too much or too little water.** Check the soil 2 inches down. Water only when it's dry there.\n3. **Hungry plant.** Tomatoes are heavy feeders. Use a vegetable fertilizer and follow the product label.\n4. **Early blight.** Yellow leaves with brown rings, starting low. Remove those leaves and water at the base in the morning.\n\nFor a closer look, take a **Photo check-in** of one leaf. If it spreads fast, ask your local UF/IFAS Extension office."
+}

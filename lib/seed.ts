@@ -1,14 +1,11 @@
 /** Seeding shared by `prisma db seed` and POST /api/demo/reset. Idempotent. */
-import ediblesJson from "../data/edibles.json";
 import linh from "../data/demo/linh.json";
 import maria from "../data/demo/maria.json";
 import reports from "../data/demo/reports.json";
-import plantsJson from "../data/plants.json";
+import { PLANTS } from "./catalog-data";
 import { Prisma, type PrismaClient } from "./generated/prisma/client";
-import type { Plant } from "./types";
 
-/** Natives and non-natives (plants.json) plus edible crops (edibles.json, origin "edible"). */
-const PLANTS = [...(plantsJson as unknown as Plant[]), ...(ediblesJson.plants as unknown as Plant[])];
+
 const COLUMNS = ["id", "common_name", "scientific_name", "category", "form", "origin", "invasive_status", "regions", "light", "salt_tolerance", "water_need", "verified"] as const;
 
 const daysAgo = (n: number) => {
@@ -33,7 +30,8 @@ export async function seedPlants(db: PrismaClient) {
 
 interface Persona {
   site: Record<string, unknown> & { id: string; rules?: unknown };
-  garden: { id: string; name: string; theme: string | null; planted_days_ago: number; canvas_w_ft: number; canvas_h_ft: number; starter: { goals: string[]; hours_week: string; space: string } };
+  garden: { id: string; name: string; theme: string | null; planted_days_ago: number; canvas_w_ft: number; canvas_h_ft: number; starter: { goals: string[]; hours_week: string; space: string; themes?: string[]; prefer_natives?: string; hardiness_zone?: string } };
+  eco?: Record<string, unknown>;
   zones: { id: string; name: string; irrigation: string; polygon: number[][]; kind?: string; bed?: string; depth_in?: number }[];
   placements: { plant_id: string; zone?: string; x_ft: number; y_ft: number; days_ago: number; group?: string; gal?: number; mount?: string }[];
 }
@@ -50,6 +48,8 @@ async function seedPersona(db: PrismaClient, d: Persona) {
       planted_on: daysAgo(d.garden.planted_days_ago), canvas_w_ft: d.garden.canvas_w_ft,
       canvas_h_ft: d.garden.canvas_h_ft, is_demo: true,
       goals: d.garden.starter.goals, hours_week: d.garden.starter.hours_week, space: d.garden.starter.space,
+      themes: d.garden.starter.themes ?? [], prefer_natives: d.garden.starter.prefer_natives ?? "off", hardiness_zone: d.garden.starter.hardiness_zone ?? null,
+      eco: d.eco ? (Object.fromEntries(Object.entries(d.eco).filter(([k]) => !k.startsWith("_"))) as Prisma.InputJsonValue) : Prisma.DbNull,
       zones: {
         create: d.zones.map((z) => ({
           id: z.id, name: z.name, irrigation: z.irrigation, polygon: z.polygon,

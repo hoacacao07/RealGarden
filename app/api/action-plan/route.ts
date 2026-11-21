@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { actionPlan, type ActionContext } from "@/lib/clients/gemini";
+import { actionPlan, type ActionContext } from "@/lib/ai/features";
 
 const TYPES = ["frost", "storm", "water", "disease"] as const;
 

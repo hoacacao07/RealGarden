@@ -85,6 +85,13 @@ model Garden {
   budget_usd     Float?
   space          String? // yard | raised_bed | containers | balcony | patio
   target_harvest DateTime? @db.Date
+  // Phase 11.6: themes (mixable), native preference and the ZIP's hardiness zone
+  themes         String[]  @default([])
+  prefer_natives String    @default("off") // off | some | mostly
+  hardiness_zone String?
+  // Phase 11.7: optional house/roof layer (EcoLayer JSON) and the tile values at the last visit to the Sustainable section
+  eco            Json?
+  eco_seen       Json?
   created_at  DateTime @default(now())
   updated_at  DateTime @updatedAt
 
@@ -157,4 +164,37 @@ model Report {
   checkin       Checkin? @relation(fields: [checkin_id], references: [id], onDelete: SetNull)
 
   @@index([created_at])
+}
+
+// Phase 9.5: Gemini layer. Cached structured results (24 h, never chat) and one log row per call.
+model AiCache {
+  key        String   @id
+  task       String
+  value      Json
+  expires_at DateTime
+  created_at DateTime @default(now())
+}
+
+model AiLog {
+  id         String   @id @default(cuid())
+  task       String
+  model      String
+  latency_ms Int
+  in_tokens  Int?
+  out_tokens Int?
+  cache_hit  Boolean  @default(false)
+  error      String?
+  created_at DateTime @default(now())
+
+  @@index([created_at])
+}
+
+// Phase 11.6: ZIP -> USDA hardiness zone (phzmapi.org), cached.
+model HardinessZone {
+  zip               String   @id
+  zone              String
+  temperature_range String?
+  lat               Float?
+  lon               Float?
+  fetched_at        DateTime @default(now())
 }

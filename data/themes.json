@@ -1,0 +1,93 @@
+{
+  "_note": "Phase 11.6 themed gardens. Pools list plant ids by role; 'tags' let other catalog plants fit the theme too (e.g. any plant that feeds butterflies). Plant lists are examples to verify (verified: false). Users can mix themes.",
+  "themes": [
+    {
+      "id": "butterfly", "name": "Butterfly & pollinator", "emoji": "🦋", "colors": ["#F08A24", "#D52A3A", "#8E5BB5"],
+      "description": "Host plants for caterpillars and nectar flowers for butterflies, bees and hummingbirds.",
+      "pools": {
+        "host": ["asclepias_tuberosa", "asclepias_incarnata", "passiflora_incarnata", "meyer_lemon"],
+        "nectar": ["hamelia_patens", "salvia_coccinea", "stachytarpheta_jamaicensis", "gaillardia_pulchella", "pentas", "zinnia", "lantana_involucrata", "liatris_spicata", "coreopsis_leavenworthii", "bidens_alba"],
+        "structure": ["callicarpa_americana", "plumbago", "muhlenbergia_capillaris"]
+      },
+      "tags": { "wildlife": ["butterflies", "hummingbirds"] },
+      "layout": "border_beds", "groups": ["flower", "shrub_tree"],
+      "calendar_hints": ["Don't spray: caterpillars chewing milkweed and passionvine are the point.", "Cut back tropical sage and porterweed in late winter."]
+    },
+    {
+      "id": "salad", "name": "Salad garden", "emoji": "🥗", "colors": ["#7DBA4E", "#C8324A", "#3F7A2B"],
+      "description": "Lettuce, greens, radishes and snack tomatoes. Florida's salad season is fall to spring.",
+      "pools": { "greens": ["lettuce", "arugula", "kale", "collards"], "crunch": ["radish", "carrot", "cucumber", "green_onion"], "fruit": ["cherry_tomato"] },
+      "layout": "raised_bed", "groups": ["vegetable"],
+      "calendar_hints": ["Plant greens every 2 to 3 weeks from October to February for a steady harvest.", "Summer is too hot for lettuce here: try sweet potatoes or okra instead."]
+    },
+    {
+      "id": "herb", "name": "Herb garden", "emoji": "🌿", "colors": ["#5FA64A", "#7D94D8", "#9BC46A"],
+      "description": "Kitchen herbs by the door. Mint always goes in a pot.",
+      "pools": { "everyday": ["basil", "parsley", "cilantro", "chives"], "woody": ["rosemary", "oregano"], "tropical": ["cuban_oregano", "lemongrass"], "pots": ["mint"] },
+      "layout": "raised_bed", "groups": ["herb"],
+      "calendar_hints": ["Cilantro and parsley grow in the cool months; basil and Cuban oregano love summer."]
+    },
+    {
+      "id": "fruit", "name": "Fruit garden", "emoji": "🍊", "colors": ["#F08A24", "#3D4F8A", "#5A2E4A"],
+      "description": "Low-chill fruit that actually fruits in Florida, picked for your zone.",
+      "pools": {
+        "trees": ["fig", "satsuma", "meyer_lemon", "peach_low_chill", "mango", "avocado_cold_hardy", "papaya", "banana"],
+        "shrubs": ["blueberry_southern_highbush", "blackberry_thornless", "pineapple"],
+        "vines": ["muscadine_grape"], "beds": ["strawberry"]
+      },
+      "layout": "orchard", "groups": ["fruit"],
+      "calendar_hints": ["Plant fruit trees in winter (December to February) so roots grow before summer heat.", "Buy citrus only from a registered nursery (citrus greening)."]
+    },
+    {
+      "id": "rose_flower", "name": "Rose & cut flower", "emoji": "🌹", "colors": ["#D42A4E", "#E8A0B4", "#F6C324"],
+      "description": "Florida-tough roses plus easy cut flowers for the vase.",
+      "pools": { "roses": ["rose_knock_out", "rose_louis_philippe", "rose_mrs_br_cant"], "cut": ["zinnia", "sunflower", "pentas", "gerbera", "rudbeckia_hirta", "gaillardia_pulchella"] },
+      "layout": "border_beds", "groups": ["flower"],
+      "calendar_hints": ["Prune roses lightly in late January and again in late August.", "Water roses at the base in the morning to limit black spot."]
+    },
+    {
+      "id": "salsa_pizza", "name": "Salsa & pizza garden", "emoji": "🍅", "colors": ["#D9412B", "#2E8B3E", "#F2C832"],
+      "description": "Tomatoes, peppers, onions and herbs for family cooking nights.",
+      "pools": { "base": ["tomato", "cherry_tomato", "bell_pepper"], "herbs": ["basil", "oregano", "cilantro", "parsley"], "allium": ["green_onion", "chives"] },
+      "layout": "raised_bed", "groups": ["vegetable", "herb"],
+      "calendar_hints": ["Plant tomatoes and peppers in late winter (Feb to Mar) or late summer (Aug to Sep) in central Florida."]
+    },
+    {
+      "id": "shade", "name": "Shade garden", "emoji": "🌳", "colors": ["#D9667A", "#3F6E3A", "#B8436A"],
+      "description": "Ferns, coontie, bromeliads and caladiums for north-facing or tree-covered yards.",
+      "pools": { "foliage": ["osmunda_regalis", "zamia_integrifolia", "caladium", "bromeliad"], "flowers": ["psychotria_nervosa", "hydrangea", "ruellia_caroliniana", "salvia_coccinea"] },
+      "layout": "border_beds", "groups": ["flower", "shrub_tree"], "light": ["partial_shade", "full_shade"],
+      "calendar_hints": ["Shade beds need less water: check the soil before you water."]
+    },
+    {
+      "id": "low_maintenance", "name": "Low-maintenance (Florida-Friendly)", "emoji": "🌾", "colors": ["#C9A7D8", "#4E6E46", "#F1E9C8"],
+      "description": "The least water and care: natives and tough non-invasives that fit your yard.",
+      "pools": { "backbone": ["zamia_integrifolia", "ilex_vomitoria", "muhlenbergia_capillaris", "serenoa_repens", "african_iris"], "color": ["hamelia_patens", "gaillardia_pulchella", "plumbago", "lantana_involucrata"] },
+      "tags": { "water_need": ["low"] },
+      "layout": "border_beds", "groups": ["flower", "shrub_tree"],
+      "calendar_hints": ["Mulch 2 to 3 inches deep once a year and you're mostly done."]
+    },
+    {
+      "id": "kids", "name": "Kids' garden", "emoji": "🌻", "colors": ["#F6C324", "#C8324A", "#7DBA4E"],
+      "description": "Fast, fun and easy: sunflowers, snack tomatoes, strawberries and beans.",
+      "pools": { "fast": ["sunflower", "radish", "bush_beans", "cherry_tomato"], "treats": ["strawberry", "pineapple"], "critters": ["asclepias_tuberosa", "zinnia"] },
+      "layout": "raised_bed", "groups": ["vegetable", "flower", "fruit"],
+      "calendar_hints": ["Radishes and beans are ready in weeks: great for short attention spans."]
+    },
+    {
+      "id": "tropical", "name": "Tropical", "emoji": "🌺", "colors": ["#D52A3A", "#F08A24", "#5C9A3A"],
+      "description": "Big leaves and bold color: hibiscus, bananas, bromeliads and firebush.",
+      "pools": { "bold": ["banana", "papaya", "hibiscus_rosa_sinensis", "bromeliad"], "color": ["hamelia_patens", "pentas", "ixora_coccinea", "stachytarpheta_jamaicensis"], "edible": ["cuban_oregano", "lemongrass", "pineapple"] },
+      "layout": "border_beds", "groups": ["flower", "shrub_tree", "fruit"],
+      "calendar_hints": ["Cover tropicals on the few cold nights below 35°F."]
+    },
+    {
+      "id": "balcony", "name": "Balcony & containers", "emoji": "🪴", "colors": ["#D23A4A", "#5FA64A", "#F2C832"],
+      "description": "Pots for a balcony or patio: herbs, cherry tomatoes and a pollinator pot.",
+      "pools": { "edible": ["cherry_tomato", "basil", "parsley", "bell_pepper", "strawberry", "mint", "chives"], "flowers": ["salvia_coccinea", "pentas", "gerbera", "marigold"] },
+      "tags": { "container_ok": [true] },
+      "layout": "containers", "groups": ["herb", "vegetable", "flower", "fruit"], "balcony": true,
+      "calendar_hints": ["Pots dry out fast: on hot west balconies check them every morning in summer."]
+    }
+  ]
+}
