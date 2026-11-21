@@ -8,13 +8,14 @@
  *      "Plant now / Plant in March" badge; "Prefer native plants" re-ranks the list.
  * Soil comes from the USDA survey automatically (safe defaults when missing). Everything else is optional.
  */
+import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { ArrowLeft, ArrowRight, Building2, Check, ChevronDown, Home, Leaf, Loader2, MapPin, Plus, Sparkles, X } from "lucide-react";
 
 import { BalconyStep, DEFAULT_BALCONY, type BalconyValue } from "@/components/balcony/balcony-step";
 import { rememberGarden } from "@/components/site-chrome";
-import { ErrorState } from "@/components/states";
+import { ErrorState, Loading } from "@/components/states";
 import { PlantIcon } from "@/components/plant-icon";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -24,6 +25,8 @@ import type { ThemeDef } from "@/lib/engine/suggest";
 import type { Goal, HoursWeek, Light, Plant, PreferNatives, SiteInput } from "@/lib/types";
 
 import { balconySite } from "../design/site-wizard";
+
+const LocationMap = dynamic(() => import("@/components/location-map"), { ssr: false, loading: () => <Loading label="Loading map…" /> });
 
 type Kind = "yard" | "balcony";
 type SunChoice = Light | "not_sure";
@@ -104,11 +107,14 @@ export function StarterFlow({ themes, plants }: { themes: ThemeDef[]; plants: Pl
     if (on && id === "balcony") setKind("balcony");
   };
 
-  async function findZip(z = zip) {
+  const findZip = (z = zip) => lookupZone(`zip=${z}`);
+  const dropPin = (lat: number, lon: number) => lookupZone(`lat=${lat.toFixed(5)}&lon=${lon.toFixed(5)}`);
+
+  async function lookupZone(query: string) {
     setBusy("zone");
     setZoneErr(null);
     try {
-      const r = await fetch(`/api/zone?zip=${z}`);
+      const r = await fetch(`/api/zone?${query}`);
       const j = await r.json();
       if (!r.ok) throw new Error(j.error);
       setZone(j);
@@ -212,7 +218,8 @@ export function StarterFlow({ themes, plants }: { themes: ThemeDef[]; plants: Pl
 
       {step === 2 && (
         <section className="space-y-6">
-          <div className="rounded-2xl border bg-card p-5 space-y-3">
+          <div className="rounded-2xl border bg-card p-5 grid gap-5 lg:grid-cols-[1fr_1.3fr]">
+          <div className="space-y-3">
             <form className="space-y-2 max-w-sm" onSubmit={(e) => { e.preventDefault(); findZip(); }}>
               <Label htmlFor="zip">ZIP code</Label>
               <div className="flex gap-2">
@@ -224,11 +231,16 @@ export function StarterFlow({ themes, plants }: { themes: ThemeDef[]; plants: Pl
             {zoneErr && <p className="text-sm text-coral" role="alert">{zoneErr}</p>}
             {zone && (
               <p className="text-sm flex flex-wrap items-center gap-2" role="status">
-                <span className="font-medium">{zone.place ?? `ZIP ${zone.zip}`}</span>
+                <span className="font-medium">{zone.place ?? (zone.zip ? `ZIP ${zone.zip}` : "Pinned location")}</span>
                 <span className="rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold">USDA {zone.label}</span>
                 <span className="text-muted-foreground">{zone.region} Florida{zone.source === "estimate" ? " · zone estimated from latitude" : ""}</span>
               </p>
             )}
+            <p className="text-sm text-muted-foreground">Or click the map to drop a pin on your yard.</p>
+          </div>
+          <div className="rounded-xl overflow-hidden border min-h-72">
+            <LocationMap value={zone ? [zone.lat, zone.lon] : null} onPick={dropPin} />
+          </div>
           </div>
 
           <fieldset className="space-y-2">
