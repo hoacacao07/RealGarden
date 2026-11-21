@@ -1,0 +1,51 @@
+{
+  "_note": "Phase 11.7: every coefficient used by lib/engine/eco/*.ts, with unit, source and whether a teammate has checked it. No magic numbers in code. All outputs are ESTIMATES and are labeled so in the UI. A home garden changes its own microclimate, water use, runoff and carbon at a small scale; it does not change regional weather.",
+  "coefficients": {
+    "gal_per_inch_sqft": { "value": 0.623, "unit": "gal per inch over 1 sq ft", "source_url": "https://www.usgs.gov/special-topics/water-science-school/science/rain-and-precipitation", "note": "1 ft² × 1/12 ft = 0.0833 ft³ × 7.48 gal/ft³", "verified": true },
+    "gal_per_ft3": { "value": 7.48, "unit": "gal per ft³", "source_url": "https://www.nist.gov/pml/owm/si-units-volume", "note": "Unit conversion", "verified": true },
+    "kc_turf": { "value": 0.8, "unit": "crop coefficient", "source_url": "https://edis.ifas.ufl.edu/publication/AE436", "note": "Warm-season turf (St. Augustine), FAO-56 style; UF/IFAS lists 0.6 to 0.9 by month", "verified": false },
+    "turf_root_in": { "value": 6, "unit": "in", "source_url": "https://edis.ifas.ufl.edu/publication/LH064", "note": "Typical St. Augustine root zone in Florida sand", "verified": false },
+    "spray_efficiency": { "value": 0.7, "unit": "fraction", "source_url": "https://edis.ifas.ufl.edu/publication/AE446", "note": "Share of sprinkler water that reaches the root zone", "verified": false },
+    "drip_efficiency": { "value": 0.9, "unit": "fraction", "source_url": "https://edis.ifas.ufl.edu/publication/AE446", "note": "Micro-irrigation application efficiency", "verified": false },
+    "roof_collection_efficiency": { "value": 0.8, "unit": "fraction (η)", "source_url": "https://edis.ifas.ufl.edu/publication/AE434", "note": "Losses to first flush, splash and gutter overflow", "verified": false },
+    "first_flush_in": { "value": 0.04, "unit": "in per rain event", "source_url": "https://edis.ifas.ufl.edu/publication/AE434", "note": "Rain below this does not reach the barrel", "verified": false },
+    "design_storm_in": { "value": 1.0, "unit": "in", "source_url": "https://www.swfwmd.state.fl.us/residents/water-conservation", "note": "Default storm for runoff and rain garden sizing; configurable", "verified": false },
+    "runoff_c": {
+      "value": { "roof": 0.95, "driveway": 0.9, "patio": 0.85, "path": 0.6, "lawn": 0.2, "bed": 0.1, "rain_garden": 0 },
+      "unit": "runoff coefficient C (fraction)", "source_url": "https://www.fdot.gov/roadway/drainage/manualsandhandbooks", "note": "Rational-method values; Florida sandy soils sit at the low end for lawn and beds", "verified": false
+    },
+    "rain_garden_pond_ft": { "value": 0.5, "unit": "ft (d_pond)", "source_url": "https://edis.ifas.ufl.edu/publication/EP464", "note": "6 in ponding depth", "verified": false },
+    "rain_garden_soil_ft": { "value": 1.5, "unit": "ft (D_soil)", "source_url": "https://edis.ifas.ufl.edu/publication/EP464", "note": "Amended soil depth", "verified": false },
+    "rain_garden_porosity": { "value": 0.3, "unit": "fraction (n)", "source_url": "https://edis.ifas.ufl.edu/publication/EP464", "note": "Void space in amended sandy soil", "verified": false },
+    "nitrogen_lb_per_1000sqft_yr": {
+      "value": { "low": 0, "normal": 2, "heavy": 4, "lawn": 4 },
+      "unit": "lb N per 1,000 sq ft per year", "source_url": "https://edis.ifas.ufl.edu/publication/EP221", "note": "Typical home rates by feeding class; St. Augustine lawn 2 to 5 lb N in central Florida", "verified": false
+    },
+    "co2_mature_kg_yr": {
+      "value": { "large_tree": 25, "small_tree": 10, "palm": 4, "shrub": 2, "vine": 1, "quercus_virginiana": 40, "taxodium_distichum": 30, "mango": 20, "avocado_cold_hardy": 18 },
+      "unit": "kg CO₂ per year at maturity", "source_url": "https://www.itreetools.org/", "note": "i-Tree style ballpark values for Florida urban trees; per species where listed, else per category. Herbaceous plants count 0", "verified": false
+    },
+    "mowing_kg_co2_per_1000sqft_yr": { "value": 7.5, "unit": "kg CO₂ per 1,000 sq ft per year", "source_url": "https://www.epa.gov/power-equipment", "note": "Gas mower about 0.25 kg per mow per 1,000 sq ft × 30 mows a year in Florida (estimate)", "verified": false },
+    "kg_co2_per_mile": { "value": 0.4, "unit": "kg CO₂ per mile", "source_url": "https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle", "note": "Typical passenger car, about 400 g per mile", "verified": false },
+    "kitchen_scraps_lb_person_wk": { "value": 2.5, "unit": "lb per person per week", "source_url": "https://www.epa.gov/recycle/composting-home", "note": "Compostable food scraps (estimate)", "verified": false },
+    "compost_yield": { "value": 0.3, "unit": "lb finished compost per lb scraps", "source_url": "https://edis.ifas.ufl.edu/publication/EP541", "note": "Mass loss during composting (estimate)", "verified": false },
+    "compost_lb_per_ft3": { "value": 37, "unit": "lb per ft³", "source_url": "https://edis.ifas.ufl.edu/publication/EP541", "note": "Finished compost bulk density about 1,000 lb per yd³", "verified": false },
+    "bed_compost_in_yr": { "value": 1, "unit": "in per year", "source_url": "https://edis.ifas.ufl.edu/publication/VH021", "note": "Yearly top-up for vegetable beds", "verified": false },
+    "rows_per_10ft_bed": { "value": 4, "unit": "rows", "source_url": "https://edis.ifas.ufl.edu/publication/VH021", "note": "A 4 ft wide bed counts as about 4 rows of 10 ft when converting the guide's 'yield per 10 ft of row'", "verified": false },
+    "shade_tiers_wall_hours_day": { "value": { "medium": 1, "high": 2.5 }, "unit": "shaded west+south wall-hours per summer afternoon", "source_url": "https://edis.ifas.ufl.edu/publication/FR272", "note": "Tiers only: energy savings are shown as low, medium or high, never in dollars, until a sourced coefficient is added", "verified": false },
+    "eco_score_weights": {
+      "value": { "water": 0.22, "rain": 0.1, "stormwater": 0.13, "baysafe": 0.15, "carbon": 0.1, "shade": 0.1, "pollinators": 0.2 },
+      "unit": "weights (sum 1)", "source_url": "", "note": "Team choice. Metrics that can't be computed (no house drawn, balconies) are left out and the rest re-weighted", "verified": false
+    },
+    "grade_cutoffs": { "value": { "A": 75, "B": 60, "C": 45, "D": 30 }, "unit": "score 0 to 100", "source_url": "", "note": "Team choice; tuned so a no-tree front yard can still earn an A with water and runoff swaps", "verified": false },
+    "carbon_target_kg10_per_100sqft": { "value": 30, "unit": "kg CO₂ over 10 years per 100 sq ft", "source_url": "", "note": "Score scale: about one small shade tree per 300 sq ft earns full marks (team choice)", "verified": false }
+  },
+  "climate": {
+    "_note": "Typical year for Tampa used by the water and rain barrel models: NOAA 1991-2020 monthly normals at TPA (rain) and Open-Meteo FAO-56 reference ET (ET0). Rain is spread over the month's usual number of rain days. Estimates, verified: false.",
+    "source_url": "https://www.ncei.noaa.gov/access/us-climate-normals/",
+    "rain_in": [2.4, 2.6, 2.9, 2.2, 2.4, 6.8, 7.6, 8.6, 6.4, 2.3, 1.6, 2.4],
+    "rain_days": [6, 6, 6, 4, 5, 13, 16, 16, 12, 5, 4, 5],
+    "et0_mm_day": [2.4, 3.0, 4.0, 5.0, 5.6, 5.4, 5.2, 4.9, 4.3, 3.5, 2.7, 2.2],
+    "verified": false
+  }
+}

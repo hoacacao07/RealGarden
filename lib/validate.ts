@@ -111,6 +111,9 @@ export function parseStarter(v: unknown): StarterAnswers | undefined {
     budget_usd: optNum(s.budget_usd, "budget_usd", 0, 1_000_000),
     space: s.space == null ? null : oneOf(s.space, "space", ["yard", "raised_bed", "containers", "balcony", "patio"] as const),
     target_harvest: typeof s.target_harvest === "string" && /^\d{4}-\d{2}-\d{2}$/.test(s.target_harvest) ? s.target_harvest : null,
+    themes: (Array.isArray(s.themes) ? s.themes : []).filter((t): t is string => typeof t === "string" && /^[a-z_]{2,30}$/.test(t)).slice(0, 6),
+    prefer_natives: s.prefer_natives == null ? "off" : oneOf(s.prefer_natives, "prefer_natives", ["off", "some", "mostly"] as const),
+    hardiness_zone: typeof s.hardiness_zone === "string" && /^\d{1,2}[ab]$/.test(s.hardiness_zone) ? s.hardiness_zone : null,
   };
 }
 
@@ -130,5 +133,26 @@ export function parseGarden(v: unknown, plantIds: Set<string>): GardenSave {
     site: parseSite(b.site),
     starter: parseStarter(b.starter),
     ...layout,
+  };
+}
+
+/** Phase 11.7 eco layer (house and roof). Canvas feet; the house may sit outside the garden canvas. */
+export function parseEco(v: unknown): import("./types").EcoLayer {
+  const e = (v ?? {}) as Record<string, unknown>;
+  const h = e.house as Record<string, unknown> | null | undefined;
+  const surfaces = (Array.isArray(e.surfaces) ? e.surfaces : []).slice(0, 8).map((s: Record<string, unknown>) => ({
+    kind: oneOf(s.kind, "surface kind", ["driveway", "patio", "path"] as const), sqft: num(s.sqft, "surface sqft", 0, 20000),
+  })).filter((s) => s.sqft > 0);
+  return {
+    house: h ? { x: num(h.x, "house x", -300, 300), y: num(h.y, "house y", -300, 300), w: num(h.w, "house w", 8, 200), h: num(h.h, "house h", 8, 200) } : null,
+    roof_sqft: optNum(e.roof_sqft, "roof_sqft", 50, 40000),
+    surfaces,
+    lawn_sqft: num(e.lawn_sqft ?? 0, "lawn_sqft", 0, 50000),
+    converted_lawn_sqft: num(e.converted_lawn_sqft ?? 0, "converted_lawn_sqft", 0, 50000),
+    barrel_gal: num(e.barrel_gal ?? 0, "barrel_gal", 0, 5000),
+    rain_garden_sqft: num(e.rain_garden_sqft ?? 0, "rain_garden_sqft", 0, 5000),
+    compost_bin: e.compost_bin === true,
+    household: Math.round(num(e.household ?? 2, "household", 1, 20)),
+    mulch: e.mulch !== false,
   };
 }

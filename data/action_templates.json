@@ -1,0 +1,87 @@
+{
+  "_note": "Rule text for dashboard alert steps (rules decide). {placeholders} are filled from the alert. Gemini (alert_rewrite) may only reword them, same count and order.",
+  "frost": {
+    "steps": [
+      {
+        "when": "{day} afternoon",
+        "text": "Water the soil around {plants}. Moist soil holds warmth overnight."
+      },
+      {
+        "when": "{day} by 9 PM",
+        "text": "Cover {plants} with frost cloth or an old sheet that reaches the ground."
+      },
+      {
+        "when": "{day} by 9 PM",
+        "text": "Move potted plants into the garage or against the house wall."
+      },
+      {
+        "when": "Next morning, 10 AM",
+        "text": "Remove covers once it is above 40°F so plants don't overheat."
+      },
+      {
+        "when": "Next 2 weeks",
+        "text": "Leave damaged leaves on {first}. They shield new growth until spring."
+      }
+    ]
+  },
+  "storm": {
+    "steps": [
+      {
+        "when": "Today",
+        "text": "Pause all watering. The storm will bring more than enough rain."
+      },
+      {
+        "when": "Today",
+        "text": "Stake {first} loosely and check the tallest plants first: {plants}."
+      },
+      {
+        "when": "Today",
+        "text": "Bring pots, hanging baskets and garden decor inside."
+      },
+      {
+        "when": "Before the rain",
+        "text": "Clear drains and gutters so water leaves the beds."
+      },
+      {
+        "when": "After the storm",
+        "text": "Walk the yard, straighten leaning young plants and remove broken stems."
+      }
+    ]
+  },
+  "water": {
+    "steps": [
+      {
+        "when": "{day}",
+        "text": "{first_text}"
+      },
+      {
+        "when": "This week",
+        "text": "Turn the irrigation timer off on rain days. Natives prefer drying out between waterings."
+      },
+      {
+        "when": "Any day",
+        "text": "If {plants} wilt in the afternoon, check the soil 2 inches down before watering."
+      }
+    ]
+  },
+  "disease": {
+    "steps": [
+      {
+        "when": "This week",
+        "text": "Check {plants} closely, including the undersides of leaves."
+      },
+      {
+        "when": "Mornings",
+        "text": "Water at the base early in the day so leaves dry fast."
+      },
+      {
+        "when": "If you see spots",
+        "text": "Remove spotted leaves, bag them, and don't compost them."
+      },
+      {
+        "when": "If it spreads",
+        "text": "Take a check-in photo and ask your UF/IFAS Extension office."
+      }
+    ]
+  }
+}

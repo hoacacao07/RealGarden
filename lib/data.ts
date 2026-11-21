@@ -46,6 +46,7 @@ export async function getGarden(id: string): Promise<GardenDoc | null> {
     starter: {
       goals: g.goals as Goal[], hours_week: g.hours_week as StarterAnswers['hours_week'], budget_usd: g.budget_usd,
       space: g.space as StarterAnswers['space'], target_harvest: g.target_harvest ? isoDate(g.target_harvest) : null,
+      themes: g.themes, prefer_natives: g.prefer_natives as StarterAnswers["prefer_natives"], hardiness_zone: g.hardiness_zone,
     },
     site: {
       id: g.site.id, name: g.site.name, lat: g.site.lat, lon: g.site.lon, zip: g.site.zip, region: g.site.region as SiteInput["region"],
@@ -95,6 +96,9 @@ const siteData = (site: SiteInput) => ({ ...site, rules: site.rules ? (site.rule
 const starterData = (a: StarterAnswers) => ({
   goals: a.goals, hours_week: a.hours_week, budget_usd: a.budget_usd, space: a.space,
   target_harvest: a.target_harvest ? day(a.target_harvest) : null,
+  ...(a.themes && { themes: a.themes }),
+  ...(a.prefer_natives && { prefer_natives: a.prefer_natives }),
+  ...(a.hardiness_zone !== undefined && { hardiness_zone: a.hardiness_zone }),
 });
 
 /** Create a garden with its site, zones and placements. Returns the new id. */

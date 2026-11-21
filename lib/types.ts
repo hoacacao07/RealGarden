@@ -65,7 +65,35 @@ export interface Plant {
   trellis?: boolean;
   /** Phase 11: edible crops only (origin "edible"). */
   edible?: EdibleInfo;
+
+  // Phase 11.6 catalog fields. Derived by lib/catalog.ts normalizePlant when the data doesn't set them.
+  group?: PlantGroup;
+  /** Florida native (separate from group). */
+  native?: boolean;
+  life_cycle?: "annual" | "perennial" | "biennial";
+  feeding?: "low" | "normal" | "heavy";
+  /** USDA hardiness zones it survives, e.g. ["9a", "9b", "10a"]. */
+  zones?: string[];
+  /** FISC category; I and II are blocked like invasive_status "invasive". */
+  invasive_category?: "I" | "II" | null;
+  /** Fruit: winter chill hours needed (low-chill varieties matter in Florida). */
+  chill_hours?: number | null;
+  years_to_first_fruit?: number | null;
+  heat_humidity_ok?: boolean;
+  /** Short Florida tip (UF/IFAS based); source in source_urls. */
+  fl_notes?: string | null;
+  /** Grow only in a pot (e.g. mint spreads in the ground). */
+  container_only?: boolean;
+  // Phase 11.7 eco fields.
+  woody?: boolean;
+  tolerates_wet_feet?: boolean;
+  co2_mature_kg_yr?: number | null;
+  yield_lb_per_10ft?: number | null;
+  yield_lb_per_plant?: number | null;
 }
+
+export type PlantGroup = "vegetable" | "herb" | "fruit" | "flower" | "shrub_tree";
+export type PreferNatives = "off" | "some" | "mostly";
 
 /** Month windows, inclusive, 1..12. [8, 3] wraps the new year (Aug to Mar). */
 export type MonthWindow = [number, number];
@@ -159,9 +187,13 @@ export interface StarterAnswers {
   budget_usd: number | null;
   space: Space | null;
   target_harvest: string | null; // YYYY-MM-DD, optional back-calculation target
+  /** Phase 11.6: chosen themes (data/themes.json ids, mixable), native preference, the ZIP's USDA zone. */
+  themes?: string[];
+  prefer_natives?: PreferNatives;
+  hardiness_zone?: string | null;
 }
 
-export const NO_STARTER: StarterAnswers = { goals: [], hours_week: null, budget_usd: null, space: null, target_harvest: null };
+export const NO_STARTER: StarterAnswers = { goals: [], hours_week: null, budget_usd: null, space: null, target_harvest: null, themes: [], prefer_natives: "off", hardiness_zone: null };
 
 export interface PlacementInput {
   id?: string;
@@ -241,3 +273,28 @@ export interface ReportPoint {
 }
 
 export type Source = "live" | "fixture";
+
+/**
+ * Phase 11.7 optional "house and roof" layer, drawn only inside the Sustainable section. Canvas feet; the house may sit
+ * outside the garden canvas (negative coordinates), e.g. a front yard with the house just north of it. North is up.
+ */
+export interface EcoLayer {
+  house: { x: number; y: number; w: number; h: number } | null;
+  /** Roof area; null = from the footprint. */
+  roof_sqft: number | null;
+  surfaces: { kind: "driveway" | "patio" | "path"; sqft: number }[];
+  /** Lawn the user keeps (irrigated turf). */
+  lawn_sqft: number;
+  /** Lawn converted to a pollinator bed or groundcover by a greener swap. */
+  converted_lawn_sqft: number;
+  barrel_gal: number; // 0 = no rain barrel
+  rain_garden_sqft: number; // 0 = none
+  compost_bin: boolean;
+  household: number;
+  mulch: boolean;
+}
+
+export const EMPTY_ECO: EcoLayer = {
+  house: null, roof_sqft: null, surfaces: [], lawn_sqft: 0, converted_lawn_sqft: 0, barrel_gal: 0, rain_garden_sqft: 0,
+  compost_bin: false, household: 2, mulch: true,
+};

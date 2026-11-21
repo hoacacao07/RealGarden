@@ -22,7 +22,11 @@
     "railing_ft": 10,
     "overhang_depth_ft": 5,
     "overhang_height_ft": 8.5,
-    "rules": { "railing_pots": null, "hanging_baskets": null, "no_drip": true }
+    "rules": {
+      "railing_pots": null,
+      "hanging_baskets": null,
+      "no_drip": true
+    }
   },
   "garden": {
     "id": "linh",
@@ -31,19 +35,113 @@
     "planted_days_ago": 60,
     "canvas_w_ft": 10,
     "canvas_h_ft": 5,
-    "starter": { "goals": ["food", "butterflies"], "hours_week": "1", "space": "balcony" }
+    "starter": {
+      "goals": [
+        "food",
+        "butterflies"
+      ],
+      "hours_week": "1",
+      "space": "balcony",
+      "themes": [
+        "balcony",
+        "herb",
+        "butterfly"
+      ],
+      "prefer_natives": "off",
+      "hardiness_zone": "9b"
+    }
   },
   "zones": [
-    { "id": "zone_linh_pots", "name": "Balcony pots", "irrigation": "none", "kind": "edible", "bed": "container", "polygon": [[0, 0], [10, 0], [10, 5], [0, 5]] }
+    {
+      "id": "zone_linh_pots",
+      "name": "Balcony pots",
+      "irrigation": "none",
+      "kind": "edible",
+      "bed": "container",
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ]
+    }
   ],
   "placements": [
-    { "plant_id": "cherry_tomato", "x_ft": 1.2, "y_ft": 1.1, "days_ago": 60, "gal": 5, "mount": "floor" },
-    { "plant_id": "cherry_tomato", "x_ft": 3.0, "y_ft": 1.1, "days_ago": 60, "gal": 5, "mount": "floor" },
-    { "plant_id": "basil", "x_ft": 4.6, "y_ft": 1.0, "days_ago": 50, "gal": 1, "mount": "floor" },
-    { "plant_id": "salvia_coccinea", "x_ft": 5.9, "y_ft": 1.1, "days_ago": 60, "gal": 3, "mount": "floor" },
-    { "plant_id": "bell_pepper", "x_ft": 7.4, "y_ft": 1.1, "days_ago": 60, "gal": 3, "mount": "floor" },
-    { "plant_id": "parsley", "x_ft": 8.9, "y_ft": 1.0, "days_ago": 40, "gal": 1, "mount": "floor" },
-    { "plant_id": "strawberry", "x_ft": 6.0, "y_ft": 0.5, "days_ago": 25, "gal": 1, "mount": "railing" },
-    { "plant_id": "salvia_coccinea", "x_ft": 8.6, "y_ft": 2.6, "days_ago": 60, "gal": 3, "mount": "floor" }
+    {
+      "plant_id": "cherry_tomato",
+      "x_ft": 1.2,
+      "y_ft": 1.1,
+      "days_ago": 60,
+      "gal": 5,
+      "mount": "floor"
+    },
+    {
+      "plant_id": "cherry_tomato",
+      "x_ft": 3.0,
+      "y_ft": 1.1,
+      "days_ago": 60,
+      "gal": 5,
+      "mount": "floor"
+    },
+    {
+      "plant_id": "basil",
+      "x_ft": 4.6,
+      "y_ft": 1.0,
+      "days_ago": 50,
+      "gal": 1,
+      "mount": "floor"
+    },
+    {
+      "plant_id": "salvia_coccinea",
+      "x_ft": 5.9,
+      "y_ft": 1.1,
+      "days_ago": 60,
+      "gal": 3,
+      "mount": "floor"
+    },
+    {
+      "plant_id": "bell_pepper",
+      "x_ft": 7.4,
+      "y_ft": 1.1,
+      "days_ago": 60,
+      "gal": 3,
+      "mount": "floor"
+    },
+    {
+      "plant_id": "parsley",
+      "x_ft": 8.9,
+      "y_ft": 1.0,
+      "days_ago": 40,
+      "gal": 1,
+      "mount": "floor"
+    },
+    {
+      "plant_id": "strawberry",
+      "x_ft": 6.0,
+      "y_ft": 0.5,
+      "days_ago": 25,
+      "gal": 1,
+      "mount": "railing"
+    },
+    {
+      "plant_id": "salvia_coccinea",
+      "x_ft": 8.6,
+      "y_ft": 2.6,
+      "days_ago": 60,
+      "gal": 3,
+      "mount": "floor"
+    }
   ]
 }

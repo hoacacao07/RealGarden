@@ -95,7 +95,7 @@ export function pollinatorPicks(site: SiteInput, plants: Plant[], n = 3): Plant[
 }
 
 /** Tiered rows inside [x0, x0+w] × [0, h]: big plants at the back (top), wildflowers up front. */
-function rows(items: { plant: Plant; count: number }[], x0: number, w: number, h: number) {
+export function rows(items: { plant: Plant; count: number }[], x0: number, w: number, h: number) {
   const TIER: Record<string, number> = { small_tree: 0, vine: 0, shrub: 1, fern: 1, grass: 2, wildflower: 2, aquatic: 2 };
   const tiers = new Map<number, Plant[]>();
   for (const { plant, count } of items) {

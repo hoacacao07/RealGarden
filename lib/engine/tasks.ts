@@ -136,6 +136,8 @@ export interface CalendarInput {
   soil: SoilPlan[];
   rule: FertRule;
   hasLandscape: boolean;
+  /** Phase 11.7 links: rain barrel and compost bin from the Sustainable section. */
+  eco?: { barrel: boolean; compost: boolean };
 }
 
 export const FERTILIZE_EVERY_DAYS = 42;
@@ -206,6 +208,20 @@ export function taskCalendar(x: CalendarInput): Task[] {
       id: `harvest:${c.plant.id}`, kind: "harvest", due_at: c.harvest.start, plant_id: c.plant.id,
       title: `Start harvesting ${lname}`, detail: `Harvest window about ${human(c.harvest.start)} to ${human(c.harvest.end)} (${e.days_to_harvest[0]} to ${e.days_to_harvest[1]} days from planting).`,
     });
+  }
+
+  // Sustainable section links (spec 6D.6): barrel cleaning before mosquito season, yearly mulch, compost turning.
+  const nextOn = (m: number, d: number) => {
+    const y = Number(x.today.slice(0, 4));
+    const iso = (yy: number) => `${yy}-${String(m).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+    return iso(y) >= x.today ? iso(y) : iso(y + 1);
+  };
+  if (x.eco?.barrel) {
+    add({ id: "eco:barrel", kind: "check", due_at: nextOn(4, 15), title: "Empty and scrub the rain barrel", detail: "Before mosquito season: check the screen and lid so mosquitoes can't breed. Use barrel water first in dry spells." });
+  }
+  if (x.hasLandscape) add({ id: "eco:mulch", kind: "prep", due_at: nextOn(2, 1), title: "Top up mulch to 2 to 3 in", detail: "Once a year. Mulch holds water and keeps fertilizer out of runoff." });
+  if (x.eco?.compost) {
+    for (let i = 0; i < 6; i++) add({ id: `eco:compost:${i}`, kind: "prep", due_at: addDays(x.today, 7 + i * 30), title: "Turn the compost", detail: "Mix it and keep it as damp as a wrung-out sponge." });
   }
 
   return tasks.filter((t) => t.due_at >= x.today && t.due_at <= end)

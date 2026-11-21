@@ -1,0 +1,18 @@
+{
+  "overall_health": "unclear",
+  "phenology_stage": "unclear",
+  "candidates": [
+    {
+      "issue_key": "leaf_spot",
+      "label": "Possible leaf spot",
+      "confidence": 0.3,
+      "evidence": "A few small dark spots, but the photo is too far away to be sure."
+    }
+  ],
+  "actions": [
+    "Take a closer, well-lit photo of one affected leaf",
+    "Remove fallen leaves from under the plant",
+    "Avoid wetting the leaves when you water"
+  ],
+  "see_expert": true
+}

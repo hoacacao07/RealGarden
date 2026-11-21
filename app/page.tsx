@@ -22,10 +22,10 @@ async function mariaStats() {
 }
 
 const LOOP = [
-  { title: "Design", text: "Describe your yard. Native plants that fit your sun, soil and salt come first. Lay them out on a 1 ft grid.", art: "design" },
-  { title: "Preview", text: "See colors month by month, growth over 10 years, and any plant up close in 3D.", art: "preview" },
-  { title: "Predict", text: "Watering needs from a soil water model, frost and storm risk per plant, nearby disease reports, bloom dates.", art: "predict" },
-  { title: "Act", text: "Short, plant-specific steps with times: skip Thursday's watering, cover the firebush before 9 PM.", art: "act" },
+  { title: "Pick a style", text: "Butterflies, a salad bed, herbs, fruit, roses, or a balcony of pots. Mix as many as you like.", art: "design" },
+  { title: "See it bloom", text: "Plants picked for your ZIP code, sun and soil. Watch the colors change month by month and grow over the years.", art: "preview" },
+  { title: "Know what to buy", text: "A shopping list with how many plants, bags of soil and mulch. No guessing at the garden center.", art: "predict" },
+  { title: "Simple care", text: "A short 'This week' list: water Tuesday, skip Thursday (rain), cover the basil tonight. Storm alerts come with a checklist.", art: "act" },
 ];
 
 function LoopArt({ kind }: { kind: string }) {
@@ -67,17 +67,18 @@ export default async function Home() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,var(--accent),transparent_60%),radial-gradient(ellipse_at_bottom_left,var(--sand),transparent_55%)]" />
         <div className="mx-auto max-w-6xl px-4 pt-14 pb-12 grid gap-10 md:grid-cols-[1.2fr_1fr] items-center">
           <div className="space-y-6">
-            <p className="inline-block rounded-full bg-secondary px-3 py-1 text-sm font-medium text-secondary-foreground">For Tampa Bay, Central &amp; South Florida</p>
+            <p className="inline-block rounded-full bg-secondary px-3 py-1 text-sm font-medium text-secondary-foreground">For Florida yards and balconies</p>
             <h1 className="text-4xl sm:text-5xl font-semibold leading-tight">
-              Plan a Florida native garden that <span className="text-primary">waters</span>, <span className="text-[oklch(0.5_0.12_230)]">warns</span>, and <span className="text-[oklch(0.52_0.16_32)]">protects</span> itself.
+              A beautiful garden of your own, <span className="text-primary">planned</span>, <span className="text-[oklch(0.5_0.12_230)]">watched</span> and <span className="text-[oklch(0.52_0.16_32)]">looked after</span>.
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl">
-              Pick plants that belong here, then let NativeScape watch the weather for you. It tells you when to skip watering,
-              when to cover tender plants, and what your neighbors are seeing.
+              Flowers, vegetables, herbs, fruit or a butterfly garden: pick a style and your ZIP code, and we do the rest.
+              You get the plants that thrive where you live, what to buy, and simple reminders when the weather turns.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button size="lg" className="h-11 px-5 text-base" asChild><Link href="/start">Start my garden <ArrowRight aria-hidden /></Link></Button>
-              <Button size="lg" variant="outline" className="h-11 px-5 text-base" asChild><Link href="/garden/maria">Open Maria&apos;s garden</Link></Button>
+              <Button size="lg" variant="outline" className="h-11 px-5 text-base" asChild><Link href="/garden/maria">See Maria&apos;s garden</Link></Button>
+              <Button size="lg" variant="ghost" className="h-11 px-5 text-base" asChild><Link href="/garden/linh">Linh&apos;s balcony</Link></Button>
             </div>
           </div>
           <svg viewBox="0 0 400 320" className="w-full max-w-md mx-auto" role="img" aria-label="Illustration of a native garden with a palm, flowers and a butterfly">
@@ -108,7 +109,7 @@ export default async function Home() {
               <span className="font-medium text-foreground">Maria&apos;s butterfly garden</span> · first-time homeowner in Tampa, about 2 miles from the bay
             </p>
             <dl className="grid gap-4 sm:grid-cols-3">
-              <Stat icon={<Leaf aria-hidden />} value={`${Math.round(stats.native_pct.by_count)}%`} label="Florida native plants" />
+              <Stat icon={<Leaf aria-hidden />} value={`${stats.bloom_months.length} of 12`} label="months with something in bloom" />
               <Stat icon={<Droplets aria-hidden />} value={`${gallons(stats.gallons_saved_week)} gal`} label="water saved in a typical spring week vs. a lawn" />
               <Stat icon={<Sprout aria-hidden />} value={`${stats.pollinator_score}/100`} label={`pollinator score, blooming in ${stats.bloom_months.length} of 12 months`} />
             </dl>

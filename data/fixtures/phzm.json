@@ -1,0 +1,27 @@
+{
+  "_note": "Saved phzmapi.org answers (community wrapper of the 2023 USDA Plant Hardiness Zone Map, not the official map) for the demo ZIPs. Used in DEMO_MODE and when the live call fails. Values to verify against planthardiness.ars.usda.gov.",
+  "zips": {
+    "32034": { "zone": "9a", "temperature_range": "20 to 25", "coordinates": { "lat": 30.669, "lon": -81.462 } },
+    "32301": { "zone": "8b", "temperature_range": "15 to 20", "coordinates": { "lat": 30.438, "lon": -84.281 } },
+    "32601": { "zone": "9a", "temperature_range": "20 to 25", "coordinates": { "lat": 29.651, "lon": -82.325 } },
+    "32801": { "zone": "10a", "temperature_range": "30 to 35", "coordinates": { "lat": 28.542, "lon": -81.379 } },
+    "33130": { "zone": "11a", "temperature_range": "40 to 45", "coordinates": { "lat": 25.767, "lon": -80.2 } },
+    "33301": { "zone": "11a", "temperature_range": "40 to 45", "coordinates": { "lat": 26.121, "lon": -80.137 } },
+    "33511": { "zone": "10a", "temperature_range": "30 to 35", "coordinates": { "lat": 27.906, "lon": -82.29 } },
+    "33602": { "zone": "10a", "temperature_range": "30 to 35", "coordinates": { "lat": 27.951, "lon": -82.459 } },
+    "33606": { "zone": "10a", "temperature_range": "30 to 35", "coordinates": { "lat": 27.935, "lon": -82.469 } },
+    "33609": { "zone": "10a", "temperature_range": "30 to 35", "coordinates": { "lat": 27.942, "lon": -82.505 } },
+    "33611": { "zone": "10a", "temperature_range": "30 to 35", "coordinates": { "lat": 27.889, "lon": -82.505 } },
+    "33612": { "zone": "9b", "temperature_range": "25 to 30", "coordinates": { "lat": 28.05, "lon": -82.45 } },
+    "33617": { "zone": "9b", "temperature_range": "25 to 30", "coordinates": { "lat": 28.035, "lon": -82.39 } },
+    "33620": { "zone": "9b", "temperature_range": "25 to 30", "coordinates": { "lat": 28.059, "lon": -82.413 } },
+    "33629": { "zone": "10a", "temperature_range": "30 to 35", "coordinates": { "lat": 27.92, "lon": -82.51 } },
+    "33701": { "zone": "10b", "temperature_range": "35 to 40", "coordinates": { "lat": 27.772, "lon": -82.638 } },
+    "33704": { "zone": "10b", "temperature_range": "35 to 40", "coordinates": { "lat": 27.795, "lon": -82.636 } },
+    "33706": { "zone": "10b", "temperature_range": "35 to 40", "coordinates": { "lat": 27.739, "lon": -82.75 } },
+    "33755": { "zone": "10a", "temperature_range": "30 to 35", "coordinates": { "lat": 27.978, "lon": -82.79 } },
+    "33801": { "zone": "9b", "temperature_range": "25 to 30", "coordinates": { "lat": 28.039, "lon": -81.95 } },
+    "33901": { "zone": "10b", "temperature_range": "35 to 40", "coordinates": { "lat": 26.621, "lon": -81.873 } },
+    "34236": { "zone": "10a", "temperature_range": "30 to 35", "coordinates": { "lat": 27.333, "lon": -82.543 } }
+  }
+}

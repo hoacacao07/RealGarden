@@ -1,0 +1,2818 @@
+{
+ "_note": "Phase 11.6 catalog additions: fruit, ornamentals (incl. Florida-suited roses), more vegetables and herbs. Missing fields get defaults in lib/catalog.ts. EVERY value is a placeholder (verified: false) until checked against UF/IFAS: Florida Vegetable Gardening Guide (VH021), Dooryard Fruit Varieties (MG248), Growing Roses in Florida (EP339), Florida-Friendly Landscaping plant guide. Generic fields may later be refreshed by scripts/import-permapeople.ts (CC BY-SA 4.0); Florida fields (regions, zones, chill_hours, cold_hardy_f, salt/wind tolerance, fl_notes) come only from the team's sheet.",
+ "plants": [
+  {
+   "id": "arugula",
+   "common_name": "Arugula",
+   "scientific_name": "Eruca vesicaria subsp. sativa",
+   "origin": "edible",
+   "category": "vegetable",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "water_need": "medium",
+   "kc": 1,
+   "root_depth_in": 8,
+   "cold_hardy_f": 26,
+   "mature_height_ft": [
+    0.5,
+    1
+   ],
+   "mature_spread_ft": [
+    0.5,
+    0.8
+   ],
+   "planting_height_ft": 0.3,
+   "growth_rate": "fast",
+   "spacing_ft": 0.5,
+   "foliage_color": "#5E9A3C",
+   "common_issues": [
+    "flea_beetles",
+    "bolting_in_heat"
+   ],
+   "container_ok": true,
+   "min_container_gal": 1,
+   "life_cycle": "annual",
+   "feeding": "normal",
+   "yield_lb_per_10ft": 3,
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       2,
+       4
+      ],
+      [
+       9,
+       11
+      ]
+     ],
+     "central": [
+      [
+       9,
+       3
+      ]
+     ],
+     "south": [
+      [
+       10,
+       2
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     30,
+     45
+    ],
+    "harvest_weeks": 4,
+    "spacing_in": 6,
+    "kc_stages": {
+     "ini": 0.7,
+     "mid": 1,
+     "end": 0.95,
+     "stage_days": [
+      10,
+      15,
+      15,
+      5
+     ]
+    },
+    "heavy_rain_sensitive": true,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+   }
+  },
+  {
+   "id": "radish",
+   "common_name": "Radish",
+   "scientific_name": "Raphanus sativus",
+   "origin": "edible",
+   "category": "vegetable",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "water_need": "medium",
+   "kc": 0.9,
+   "root_depth_in": 6,
+   "cold_hardy_f": 26,
+   "mature_height_ft": [
+    0.5,
+    0.8
+   ],
+   "mature_spread_ft": [
+    0.3,
+    0.5
+   ],
+   "planting_height_ft": 0.2,
+   "growth_rate": "fast",
+   "spacing_ft": 0.3,
+   "foliage_color": "#6FA845",
+   "fruit_colors": [
+    {
+     "name": "red",
+     "hex": "#C8324A"
+    }
+   ],
+   "common_issues": [
+    "root_maggots"
+   ],
+   "container_ok": true,
+   "min_container_gal": 1,
+   "life_cycle": "annual",
+   "feeding": "low",
+   "yield_lb_per_10ft": 5,
+   "fl_notes": "Ready in about a month: a good first crop for kids.",
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       1,
+       3
+      ],
+      [
+       9,
+       11
+      ]
+     ],
+     "central": [
+      [
+       9,
+       3
+      ]
+     ],
+     "south": [
+      [
+       10,
+       3
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     25,
+     35
+    ],
+    "harvest_weeks": 2,
+    "spacing_in": 2,
+    "kc_stages": {
+     "ini": 0.7,
+     "mid": 0.9,
+     "end": 0.85,
+     "stage_days": [
+      5,
+      10,
+      10,
+      5
+     ]
+    },
+    "heavy_rain_sensitive": false,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+   }
+  },
+  {
+   "id": "cucumber",
+   "common_name": "Cucumber",
+   "scientific_name": "Cucumis sativus",
+   "origin": "edible",
+   "category": "vegetable",
+   "form": "vine",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "high",
+   "kc": 1,
+   "root_depth_in": 18,
+   "cold_hardy_f": 34,
+   "wind_tolerance": "low",
+   "mature_height_ft": [
+    4,
+    6
+   ],
+   "mature_spread_ft": [
+    1.5,
+    3
+   ],
+   "planting_height_ft": 0.3,
+   "growth_rate": "fast",
+   "spacing_ft": 1.5,
+   "foliage_color": "#4F8A33",
+   "flower_colors": [
+    {
+     "name": "yellow",
+     "hex": "#F2C832"
+    }
+   ],
+   "fruit_colors": [
+    {
+     "name": "green",
+     "hex": "#3F7A2B"
+    }
+   ],
+   "bloom_months": [
+    4,
+    5,
+    10
+   ],
+   "wildlife_value": [
+    "bees"
+   ],
+   "common_issues": [
+    "downy_mildew",
+    "pickleworm"
+   ],
+   "container_ok": true,
+   "min_container_gal": 5,
+   "trellis": true,
+   "life_cycle": "annual",
+   "feeding": "heavy",
+   "yield_lb_per_10ft": 12,
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       3,
+       4
+      ],
+      [
+       8,
+       8
+      ]
+     ],
+     "central": [
+      [
+       2,
+       3
+      ],
+      [
+       9,
+       9
+      ]
+     ],
+     "south": [
+      [
+       9,
+       3
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     50,
+     70
+    ],
+    "harvest_weeks": 5,
+    "spacing_in": 18,
+    "kc_stages": {
+     "ini": 0.6,
+     "mid": 1,
+     "end": 0.75,
+     "stage_days": [
+      20,
+      30,
+      40,
+      15
+     ]
+    },
+    "heavy_rain_sensitive": true,
+    "needs_staking": true,
+    "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+   }
+  },
+  {
+   "id": "green_onion",
+   "common_name": "Green Onion",
+   "scientific_name": "Allium fistulosum",
+   "origin": "edible",
+   "category": "vegetable",
+   "form": "grass",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "water_need": "medium",
+   "kc": 0.9,
+   "root_depth_in": 8,
+   "cold_hardy_f": 20,
+   "mature_height_ft": [
+    1,
+    1.5
+   ],
+   "mature_spread_ft": [
+    0.2,
+    0.4
+   ],
+   "planting_height_ft": 0.3,
+   "growth_rate": "medium",
+   "spacing_ft": 0.3,
+   "foliage_color": "#5C9E48",
+   "common_issues": [
+    "thrips"
+   ],
+   "container_ok": true,
+   "min_container_gal": 1,
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "yield_lb_per_10ft": 4,
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       8,
+       3
+      ]
+     ],
+     "central": [
+      [
+       8,
+       3
+      ]
+     ],
+     "south": [
+      [
+       9,
+       3
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     50,
+     70
+    ],
+    "harvest_weeks": 12,
+    "spacing_in": 3,
+    "kc_stages": {
+     "ini": 0.7,
+     "mid": 1,
+     "end": 1,
+     "stage_days": [
+      20,
+      25,
+      30,
+      10
+     ]
+    },
+    "heavy_rain_sensitive": false,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+   }
+  },
+  {
+   "id": "collards",
+   "common_name": "Collard Greens",
+   "scientific_name": "Brassica oleracea var. viridis",
+   "origin": "edible",
+   "category": "vegetable",
+   "form": "upright",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "water_need": "medium",
+   "kc": 1,
+   "root_depth_in": 12,
+   "cold_hardy_f": 15,
+   "mature_height_ft": [
+    2,
+    3
+   ],
+   "mature_spread_ft": [
+    1.5,
+    2
+   ],
+   "planting_height_ft": 0.4,
+   "growth_rate": "medium",
+   "spacing_ft": 1.5,
+   "foliage_color": "#3F6E55",
+   "common_issues": [
+    "caterpillars",
+    "aphids"
+   ],
+   "container_ok": true,
+   "min_container_gal": 3,
+   "life_cycle": "annual",
+   "feeding": "normal",
+   "yield_lb_per_10ft": 10,
+   "fl_notes": "Very cold tolerant and keeps producing all winter.",
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       2,
+       4
+      ],
+      [
+       8,
+       11
+      ]
+     ],
+     "central": [
+      [
+       1,
+       3
+      ],
+      [
+       8,
+       11
+      ]
+     ],
+     "south": [
+      [
+       9,
+       1
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     60,
+     80
+    ],
+    "harvest_weeks": 10,
+    "spacing_in": 18,
+    "kc_stages": {
+     "ini": 0.7,
+     "mid": 1,
+     "end": 0.95,
+     "stage_days": [
+      20,
+      30,
+      30,
+      10
+     ]
+    },
+    "heavy_rain_sensitive": false,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+   }
+  },
+  {
+   "id": "carrot",
+   "common_name": "Carrot",
+   "scientific_name": "Daucus carota subsp. sativus",
+   "origin": "edible",
+   "category": "vegetable",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "medium",
+   "kc": 1,
+   "root_depth_in": 12,
+   "cold_hardy_f": 24,
+   "mature_height_ft": [
+    0.8,
+    1.2
+   ],
+   "mature_spread_ft": [
+    0.3,
+    0.5
+   ],
+   "planting_height_ft": 0.2,
+   "growth_rate": "medium",
+   "spacing_ft": 0.3,
+   "foliage_color": "#5A9A3E",
+   "fruit_colors": [
+    {
+     "name": "orange",
+     "hex": "#E8792A"
+    }
+   ],
+   "common_issues": [
+    "nematodes"
+   ],
+   "container_ok": true,
+   "min_container_gal": 3,
+   "life_cycle": "annual",
+   "feeding": "normal",
+   "yield_lb_per_10ft": 7,
+   "fl_notes": "Grow in loose, deep soil or a raised bed so roots come out straight.",
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       1,
+       3
+      ],
+      [
+       9,
+       11
+      ]
+     ],
+     "central": [
+      [
+       10,
+       3
+      ]
+     ],
+     "south": [
+      [
+       10,
+       2
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     70,
+     90
+    ],
+    "harvest_weeks": 3,
+    "spacing_in": 2,
+    "kc_stages": {
+     "ini": 0.7,
+     "mid": 1.05,
+     "end": 0.95,
+     "stage_days": [
+      20,
+      30,
+      30,
+      15
+     ]
+    },
+    "heavy_rain_sensitive": false,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+   }
+  },
+  {
+   "id": "cilantro",
+   "common_name": "Cilantro",
+   "scientific_name": "Coriandrum sativum",
+   "origin": "edible",
+   "category": "herb",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "water_need": "medium",
+   "kc": 0.9,
+   "root_depth_in": 8,
+   "cold_hardy_f": 25,
+   "mature_height_ft": [
+    1,
+    2
+   ],
+   "mature_spread_ft": [
+    0.5,
+    1
+   ],
+   "planting_height_ft": 0.3,
+   "growth_rate": "fast",
+   "spacing_ft": 0.5,
+   "foliage_color": "#5FA64A",
+   "flower_colors": [
+    {
+     "name": "white",
+     "hex": "#F4F1E8"
+    }
+   ],
+   "wildlife_value": [
+    "bees"
+   ],
+   "common_issues": [
+    "bolting_in_heat"
+   ],
+   "container_ok": true,
+   "min_container_gal": 1,
+   "life_cycle": "annual",
+   "feeding": "low",
+   "yield_lb_per_10ft": 2,
+   "fl_notes": "A cool-season herb here: it bolts fast once nights warm up in spring.",
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       2,
+       3
+      ],
+      [
+       9,
+       11
+      ]
+     ],
+     "central": [
+      [
+       10,
+       2
+      ]
+     ],
+     "south": [
+      [
+       10,
+       1
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     45,
+     70
+    ],
+    "harvest_weeks": 6,
+    "spacing_in": 6,
+    "kc_stages": {
+     "ini": 0.7,
+     "mid": 0.95,
+     "end": 0.9,
+     "stage_days": [
+      15,
+      20,
+      25,
+      10
+     ]
+    },
+    "heavy_rain_sensitive": true,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+   }
+  },
+  {
+   "id": "rosemary",
+   "common_name": "Rosemary",
+   "scientific_name": "Salvia rosmarinus",
+   "origin": "edible",
+   "category": "herb",
+   "form": "upright",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "salt_tolerance": "high",
+   "water_need": "low",
+   "kc": 0.5,
+   "root_depth_in": 18,
+   "cold_hardy_f": 15,
+   "wind_tolerance": "high",
+   "mature_height_ft": [
+    2,
+    4
+   ],
+   "mature_spread_ft": [
+    2,
+    3
+   ],
+   "planting_height_ft": 0.5,
+   "growth_rate": "slow",
+   "spacing_ft": 2.5,
+   "foliage_color": "#5E7A63",
+   "flower_colors": [
+    {
+     "name": "blue",
+     "hex": "#7D94D8"
+    }
+   ],
+   "bloom_months": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "wildlife_value": [
+    "bees"
+   ],
+   "common_issues": [
+    "root_rot"
+   ],
+   "container_ok": true,
+   "min_container_gal": 3,
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "yield_lb_per_10ft": 2,
+   "fl_notes": "Hates wet feet: plant high in sandy soil or in a pot, and water sparingly.",
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       3,
+       5
+      ],
+      [
+       9,
+       10
+      ]
+     ],
+     "central": [
+      [
+       10,
+       4
+      ]
+     ],
+     "south": [
+      [
+       10,
+       3
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     80,
+     100
+    ],
+    "harvest_weeks": 52,
+    "spacing_in": 30,
+    "kc_stages": {
+     "ini": 0.4,
+     "mid": 0.5,
+     "end": 0.5,
+     "stage_days": [
+      30,
+      60,
+      200,
+      75
+     ]
+    },
+    "heavy_rain_sensitive": true,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/HS1240"
+   }
+  },
+  {
+   "id": "chives",
+   "common_name": "Chives",
+   "scientific_name": "Allium schoenoprasum",
+   "origin": "edible",
+   "category": "herb",
+   "form": "grass",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "water_need": "medium",
+   "kc": 0.8,
+   "root_depth_in": 8,
+   "cold_hardy_f": 10,
+   "mature_height_ft": [
+    0.8,
+    1.2
+   ],
+   "mature_spread_ft": [
+    0.5,
+    1
+   ],
+   "planting_height_ft": 0.3,
+   "growth_rate": "medium",
+   "spacing_ft": 0.8,
+   "foliage_color": "#4F9442",
+   "flower_colors": [
+    {
+     "name": "lavender",
+     "hex": "#B48AD8"
+    }
+   ],
+   "bloom_months": [
+    3,
+    4
+   ],
+   "wildlife_value": [
+    "bees"
+   ],
+   "container_ok": true,
+   "min_container_gal": 1,
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "yield_lb_per_10ft": 2,
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       9,
+       3
+      ]
+     ],
+     "central": [
+      [
+       9,
+       3
+      ]
+     ],
+     "south": [
+      [
+       10,
+       2
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     60,
+     80
+    ],
+    "harvest_weeks": 26,
+    "spacing_in": 8,
+    "kc_stages": {
+     "ini": 0.6,
+     "mid": 0.85,
+     "end": 0.85,
+     "stage_days": [
+      20,
+      30,
+      120,
+      30
+     ]
+    },
+    "heavy_rain_sensitive": false,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/HS1240"
+   }
+  },
+  {
+   "id": "mint",
+   "common_name": "Mint",
+   "scientific_name": "Mentha spicata",
+   "origin": "edible",
+   "category": "herb",
+   "form": "spreading",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "water_need": "high",
+   "kc": 1,
+   "root_depth_in": 8,
+   "cold_hardy_f": 10,
+   "mature_height_ft": [
+    1,
+    2
+   ],
+   "mature_spread_ft": [
+    1.5,
+    3
+   ],
+   "planting_height_ft": 0.3,
+   "growth_rate": "fast",
+   "spacing_ft": 1.5,
+   "foliage_color": "#4C9A4F",
+   "wildlife_value": [
+    "bees"
+   ],
+   "common_issues": [
+    "rust"
+   ],
+   "container_ok": true,
+   "min_container_gal": 2,
+   "container_only": true,
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "yield_lb_per_10ft": 3,
+   "fl_notes": "Always grow mint in a pot: in the ground it spreads everywhere.",
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       9,
+       5
+      ]
+     ],
+     "central": [
+      [
+       9,
+       5
+      ]
+     ],
+     "south": [
+      [
+       10,
+       4
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     40,
+     60
+    ],
+    "harvest_weeks": 30,
+    "spacing_in": 18,
+    "kc_stages": {
+     "ini": 0.8,
+     "mid": 1,
+     "end": 1,
+     "stage_days": [
+      15,
+      20,
+      150,
+      30
+     ]
+    },
+    "heavy_rain_sensitive": false,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/HS1240"
+   }
+  },
+  {
+   "id": "cuban_oregano",
+   "common_name": "Cuban Oregano",
+   "scientific_name": "Coleus amboinicus",
+   "origin": "edible",
+   "category": "herb",
+   "form": "spreading",
+   "regions": [
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "low",
+   "kc": 0.6,
+   "root_depth_in": 10,
+   "cold_hardy_f": 33,
+   "mature_height_ft": [
+    1,
+    2
+   ],
+   "mature_spread_ft": [
+    1.5,
+    3
+   ],
+   "planting_height_ft": 0.4,
+   "growth_rate": "fast",
+   "spacing_ft": 2,
+   "foliage_color": "#7FB069",
+   "container_ok": true,
+   "min_container_gal": 2,
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "yield_lb_per_10ft": 3,
+   "fl_notes": "Loves Florida heat and takes some neglect. Bring pots in on cold nights.",
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       4,
+       8
+      ]
+     ],
+     "central": [
+      [
+       3,
+       9
+      ]
+     ],
+     "south": [
+      [
+       2,
+       10
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     40,
+     60
+    ],
+    "harvest_weeks": 30,
+    "spacing_in": 24,
+    "kc_stages": {
+     "ini": 0.5,
+     "mid": 0.6,
+     "end": 0.6,
+     "stage_days": [
+      15,
+      20,
+      150,
+      30
+     ]
+    },
+    "heavy_rain_sensitive": false,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/HS1240"
+   }
+  },
+  {
+   "id": "lemongrass",
+   "common_name": "Lemongrass",
+   "scientific_name": "Cymbopogon citratus",
+   "origin": "edible",
+   "category": "herb",
+   "form": "grass",
+   "regions": [
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "medium",
+   "kc": 0.8,
+   "root_depth_in": 18,
+   "cold_hardy_f": 28,
+   "mature_height_ft": [
+    3,
+    5
+   ],
+   "mature_spread_ft": [
+    2,
+    3
+   ],
+   "planting_height_ft": 1,
+   "growth_rate": "fast",
+   "spacing_ft": 3,
+   "foliage_color": "#9BC46A",
+   "container_ok": true,
+   "min_container_gal": 5,
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "yield_lb_per_10ft": 4,
+   "fl_notes": "A heat lover that grows into a big clump. Cut stalks at the base as needed.",
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       4,
+       7
+      ]
+     ],
+     "central": [
+      [
+       3,
+       8
+      ]
+     ],
+     "south": [
+      [
+       2,
+       9
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     90,
+     120
+    ],
+    "harvest_weeks": 30,
+    "spacing_in": 36,
+    "kc_stages": {
+     "ini": 0.6,
+     "mid": 0.85,
+     "end": 0.8,
+     "stage_days": [
+      20,
+      40,
+      150,
+      30
+     ]
+    },
+    "heavy_rain_sensitive": false,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/HS1240"
+   }
+  },
+  {
+   "id": "oregano",
+   "common_name": "Oregano",
+   "scientific_name": "Origanum vulgare",
+   "origin": "edible",
+   "category": "herb",
+   "form": "spreading",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "low",
+   "kc": 0.6,
+   "root_depth_in": 8,
+   "cold_hardy_f": 10,
+   "mature_height_ft": [
+    0.8,
+    1.5
+   ],
+   "mature_spread_ft": [
+    1,
+    1.5
+   ],
+   "planting_height_ft": 0.3,
+   "growth_rate": "medium",
+   "spacing_ft": 1.2,
+   "foliage_color": "#5B8C4E",
+   "flower_colors": [
+    {
+     "name": "pink",
+     "hex": "#D9A2C4"
+    }
+   ],
+   "bloom_months": [
+    5,
+    6
+   ],
+   "wildlife_value": [
+    "bees",
+    "butterflies"
+   ],
+   "common_issues": [
+    "root_rot"
+   ],
+   "container_ok": true,
+   "min_container_gal": 1,
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "yield_lb_per_10ft": 2,
+   "edible": {
+    "planting_windows": {
+     "north": [
+      [
+       9,
+       4
+      ]
+     ],
+     "central": [
+      [
+       9,
+       4
+      ]
+     ],
+     "south": [
+      [
+       10,
+       3
+      ]
+     ]
+    },
+    "days_to_harvest": [
+     60,
+     90
+    ],
+    "harvest_weeks": 26,
+    "spacing_in": 12,
+    "kc_stages": {
+     "ini": 0.5,
+     "mid": 0.6,
+     "end": 0.6,
+     "stage_days": [
+      20,
+      30,
+      120,
+      30
+     ]
+    },
+    "heavy_rain_sensitive": true,
+    "needs_staking": false,
+    "source_url": "https://edis.ifas.ufl.edu/publication/HS1240"
+   }
+  },
+  {
+   "id": "blueberry_southern_highbush",
+   "common_name": "Blueberry (southern highbush)",
+   "scientific_name": "Vaccinium corymbosum hybrids",
+   "origin": "non_native",
+   "category": "shrub",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "medium",
+   "kc": 0.75,
+   "root_depth_in": 14,
+   "cold_hardy_f": 10,
+   "mature_height_ft": [
+    4,
+    6
+   ],
+   "mature_spread_ft": [
+    3,
+    5
+   ],
+   "planting_height_ft": 2,
+   "growth_rate": "medium",
+   "spacing_ft": 4,
+   "foliage_color": "#3E6B4A",
+   "flower_colors": [
+    {
+     "name": "white",
+     "hex": "#F4F1E8"
+    }
+   ],
+   "fruit_colors": [
+    {
+     "name": "blue",
+     "hex": "#3D4F8A"
+    }
+   ],
+   "bloom_months": [
+    1,
+    2,
+    3
+   ],
+   "fruit_months": [
+    4,
+    5,
+    6
+   ],
+   "wildlife_value": [
+    "bees",
+    "birds"
+   ],
+   "common_issues": [
+    "root_rot",
+    "stem_blight"
+   ],
+   "ph_range": [
+    4.5,
+    5.5
+   ],
+   "container_ok": true,
+   "min_container_gal": 15,
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "chill_hours": 200,
+   "years_to_first_fruit": 2,
+   "yield_lb_per_plant": 5,
+   "fl_notes": "Pick low-chill southern highbush varieties and plant two or more for better crops. Needs acidic soil (pH 4.5 to 5.5): plant in pine bark.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/HS1245"
+   ]
+  },
+  {
+   "id": "fig",
+   "common_name": "Fig",
+   "scientific_name": "Ficus carica",
+   "origin": "non_native",
+   "category": "small_tree",
+   "form": "tree",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "medium",
+   "kc": 0.7,
+   "root_depth_in": 24,
+   "cold_hardy_f": 15,
+   "mature_height_ft": [
+    8,
+    15
+   ],
+   "mature_spread_ft": [
+    8,
+    15
+   ],
+   "planting_height_ft": 3,
+   "growth_rate": "fast",
+   "spacing_ft": 12,
+   "foliage_color": "#4D7A3A",
+   "fruit_colors": [
+    {
+     "name": "purple-brown",
+     "hex": "#6B3E4F"
+    }
+   ],
+   "fruit_months": [
+    6,
+    7,
+    8
+   ],
+   "wildlife_value": [
+    "birds"
+   ],
+   "common_issues": [
+    "nematodes",
+    "fig_rust"
+   ],
+   "container_ok": true,
+   "min_container_gal": 15,
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "chill_hours": 100,
+   "years_to_first_fruit": 2,
+   "yield_lb_per_plant": 15,
+   "fl_notes": "'Celeste' and 'Brown Turkey' do well here. Mulch thickly: figs have shallow roots and nematodes are common in sand.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/MG214"
+   ]
+  },
+  {
+   "id": "muscadine_grape",
+   "common_name": "Muscadine Grape",
+   "scientific_name": "Vitis rotundifolia",
+   "origin": "native",
+   "category": "vine",
+   "form": "vine",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "low",
+   "kc": 0.6,
+   "root_depth_in": 30,
+   "cold_hardy_f": 5,
+   "wind_tolerance": "medium",
+   "mature_height_ft": [
+    6,
+    8
+   ],
+   "mature_spread_ft": [
+    10,
+    20
+   ],
+   "planting_height_ft": 2,
+   "growth_rate": "fast",
+   "spacing_ft": 15,
+   "foliage_color": "#4B7A38",
+   "fruit_colors": [
+    {
+     "name": "bronze-purple",
+     "hex": "#5A2E4A"
+    }
+   ],
+   "bloom_months": [
+    4,
+    5
+   ],
+   "fruit_months": [
+    8,
+    9
+   ],
+   "wildlife_value": [
+    "birds",
+    "bees"
+   ],
+   "common_issues": [
+    "fruit_rot"
+   ],
+   "trellis": true,
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "years_to_first_fruit": 3,
+   "yield_lb_per_plant": 20,
+   "fl_notes": "A Florida native grape that shrugs off the diseases that kill bunch grapes here. Needs a sturdy trellis.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/HS100"
+   ]
+  },
+  {
+   "id": "meyer_lemon",
+   "common_name": "Meyer Lemon",
+   "scientific_name": "Citrus × meyeri",
+   "origin": "non_native",
+   "category": "shrub",
+   "form": "mounding",
+   "regions": [
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "medium",
+   "kc": 0.7,
+   "root_depth_in": 24,
+   "cold_hardy_f": 26,
+   "mature_height_ft": [
+    6,
+    10
+   ],
+   "mature_spread_ft": [
+    6,
+    8
+   ],
+   "planting_height_ft": 3,
+   "growth_rate": "medium",
+   "spacing_ft": 8,
+   "foliage_color": "#2E5A2E",
+   "flower_colors": [
+    {
+     "name": "white",
+     "hex": "#F7F4EA"
+    }
+   ],
+   "fruit_colors": [
+    {
+     "name": "yellow",
+     "hex": "#F2CF3B"
+    }
+   ],
+   "bloom_months": [
+    2,
+    3
+   ],
+   "fruit_months": [
+    11,
+    12,
+    1
+   ],
+   "wildlife_value": [
+    "bees"
+   ],
+   "host_plant_for": [
+    "giant swallowtail"
+   ],
+   "common_issues": [
+    "citrus_greening",
+    "citrus_canker",
+    "scale"
+   ],
+   "container_ok": true,
+   "min_container_gal": 15,
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "heavy",
+   "years_to_first_fruit": 2,
+   "yield_lb_per_plant": 20,
+   "fl_notes": "Citrus greening (HLB) is widespread in Florida: buy only from a registered nursery with a certified tree, and don't move citrus plants between counties.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/HS132"
+   ]
+  },
+  {
+   "id": "satsuma",
+   "common_name": "Satsuma Mandarin",
+   "scientific_name": "Citrus unshiu",
+   "origin": "non_native",
+   "category": "small_tree",
+   "form": "tree",
+   "regions": [
+    "north",
+    "central"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "medium",
+   "kc": 0.7,
+   "root_depth_in": 24,
+   "cold_hardy_f": 22,
+   "mature_height_ft": [
+    8,
+    12
+   ],
+   "mature_spread_ft": [
+    8,
+    12
+   ],
+   "planting_height_ft": 3,
+   "growth_rate": "medium",
+   "spacing_ft": 12,
+   "foliage_color": "#2E5A2E",
+   "flower_colors": [
+    {
+     "name": "white",
+     "hex": "#F7F4EA"
+    }
+   ],
+   "fruit_colors": [
+    {
+     "name": "orange",
+     "hex": "#F08A24"
+    }
+   ],
+   "bloom_months": [
+    2,
+    3
+   ],
+   "fruit_months": [
+    10,
+    11,
+    12
+   ],
+   "wildlife_value": [
+    "bees"
+   ],
+   "host_plant_for": [
+    "giant swallowtail"
+   ],
+   "common_issues": [
+    "citrus_greening",
+    "scale"
+   ],
+   "container_ok": true,
+   "min_container_gal": 15,
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "heavy",
+   "years_to_first_fruit": 3,
+   "yield_lb_per_plant": 40,
+   "fl_notes": "The most cold-hardy citrus, the best pick for north and central Florida. Buy a certified tree from a registered nursery (citrus greening).",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/HS132"
+   ]
+  },
+  {
+   "id": "mango",
+   "common_name": "Mango",
+   "scientific_name": "Mangifera indica",
+   "origin": "non_native",
+   "category": "large_tree",
+   "form": "tree",
+   "regions": [
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "low",
+   "kc": 0.7,
+   "root_depth_in": 36,
+   "cold_hardy_f": 32,
+   "wind_tolerance": "medium",
+   "mature_height_ft": [
+    15,
+    30
+   ],
+   "mature_spread_ft": [
+    15,
+    25
+   ],
+   "planting_height_ft": 4,
+   "growth_rate": "medium",
+   "spacing_ft": 20,
+   "foliage_color": "#2D5530",
+   "flower_colors": [
+    {
+     "name": "cream",
+     "hex": "#EFE4BE"
+    }
+   ],
+   "fruit_colors": [
+    {
+     "name": "orange-red",
+     "hex": "#E2652F"
+    }
+   ],
+   "bloom_months": [
+    1,
+    2,
+    3
+   ],
+   "fruit_months": [
+    6,
+    7,
+    8
+   ],
+   "common_issues": [
+    "anthracnose"
+   ],
+   "container_ok": true,
+   "min_container_gal": 25,
+   "dwarf_variety": "'Pickering' or 'Cogshall' stay small",
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "years_to_first_fruit": 3,
+   "yield_lb_per_plant": 60,
+   "fl_notes": "South Florida only in the ground. Pick a compact variety; young trees need cover below 32°F.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/MG216"
+   ]
+  },
+  {
+   "id": "banana",
+   "common_name": "Banana (dwarf)",
+   "scientific_name": "Musa acuminata 'Dwarf Cavendish'",
+   "origin": "non_native",
+   "category": "small_tree",
+   "form": "palm",
+   "regions": [
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "high",
+   "kc": 1.1,
+   "root_depth_in": 18,
+   "cold_hardy_f": 32,
+   "wind_tolerance": "low",
+   "mature_height_ft": [
+    6,
+    10
+   ],
+   "mature_spread_ft": [
+    6,
+    8
+   ],
+   "planting_height_ft": 3,
+   "growth_rate": "fast",
+   "spacing_ft": 8,
+   "foliage_color": "#5C9A3A",
+   "fruit_colors": [
+    {
+     "name": "yellow",
+     "hex": "#F2D23B"
+    }
+   ],
+   "fruit_months": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "common_issues": [
+    "panama_disease"
+   ],
+   "container_ok": true,
+   "min_container_gal": 20,
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "heavy",
+   "years_to_first_fruit": 1,
+   "yield_lb_per_plant": 25,
+   "fl_notes": "Thirsty and hungry, and leaves shred in wind. Freezes back below 28°F but usually regrows.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/MG040"
+   ]
+  },
+  {
+   "id": "papaya",
+   "common_name": "Papaya",
+   "scientific_name": "Carica papaya",
+   "origin": "non_native",
+   "category": "small_tree",
+   "form": "palm",
+   "regions": [
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "medium",
+   "kc": 0.9,
+   "root_depth_in": 18,
+   "cold_hardy_f": 32,
+   "wind_tolerance": "low",
+   "mature_height_ft": [
+    8,
+    12
+   ],
+   "mature_spread_ft": [
+    4,
+    6
+   ],
+   "planting_height_ft": 1,
+   "growth_rate": "fast",
+   "spacing_ft": 8,
+   "foliage_color": "#4E8A3A",
+   "fruit_colors": [
+    {
+     "name": "orange",
+     "hex": "#F08A3C"
+    }
+   ],
+   "fruit_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "common_issues": [
+    "papaya_ringspot",
+    "root_rot"
+   ],
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "heavy",
+   "years_to_first_fruit": 1,
+   "yield_lb_per_plant": 40,
+   "fl_notes": "Fruits in under a year. Needs fast-draining soil: standing water after storms kills it.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/MG054"
+   ]
+  },
+  {
+   "id": "peach_low_chill",
+   "common_name": "Peach (low-chill, 'UFSun')",
+   "scientific_name": "Prunus persica",
+   "origin": "non_native",
+   "category": "small_tree",
+   "form": "tree",
+   "regions": [
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "medium",
+   "kc": 0.75,
+   "root_depth_in": 24,
+   "cold_hardy_f": 0,
+   "mature_height_ft": [
+    10,
+    15
+   ],
+   "mature_spread_ft": [
+    10,
+    15
+   ],
+   "planting_height_ft": 4,
+   "growth_rate": "fast",
+   "spacing_ft": 15,
+   "foliage_color": "#4A7A3A",
+   "flower_colors": [
+    {
+     "name": "pink",
+     "hex": "#F0A3B8"
+    }
+   ],
+   "fruit_colors": [
+    {
+     "name": "peach",
+     "hex": "#F5A06A"
+    }
+   ],
+   "bloom_months": [
+    1,
+    2
+   ],
+   "fruit_months": [
+    4,
+    5
+   ],
+   "wildlife_value": [
+    "bees"
+   ],
+   "common_issues": [
+    "brown_rot",
+    "peach_scab"
+   ],
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "chill_hours": 100,
+   "years_to_first_fruit": 3,
+   "yield_lb_per_plant": 50,
+   "fl_notes": "Only low-chill varieties from UF/IFAS ('UFSun', 'Gulfking') fruit this far south.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/HS1381"
+   ]
+  },
+  {
+   "id": "blackberry_thornless",
+   "common_name": "Blackberry (thornless)",
+   "scientific_name": "Rubus hybrids",
+   "origin": "non_native",
+   "category": "shrub",
+   "form": "upright",
+   "regions": [
+    "north",
+    "central"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "medium",
+   "kc": 0.8,
+   "root_depth_in": 18,
+   "cold_hardy_f": 0,
+   "mature_height_ft": [
+    4,
+    6
+   ],
+   "mature_spread_ft": [
+    3,
+    4
+   ],
+   "planting_height_ft": 1.5,
+   "growth_rate": "fast",
+   "spacing_ft": 4,
+   "foliage_color": "#3F6B3A",
+   "flower_colors": [
+    {
+     "name": "white",
+     "hex": "#F4F1E8"
+    }
+   ],
+   "fruit_colors": [
+    {
+     "name": "black",
+     "hex": "#26231F"
+    }
+   ],
+   "bloom_months": [
+    3,
+    4
+   ],
+   "fruit_months": [
+    5,
+    6
+   ],
+   "wildlife_value": [
+    "bees",
+    "birds"
+   ],
+   "common_issues": [
+    "rosette"
+   ],
+   "trellis": true,
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "chill_hours": 300,
+   "years_to_first_fruit": 2,
+   "yield_lb_per_plant": 8,
+   "fl_notes": "Pick thornless varieties bred for the South and give them a simple wire trellis.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/HS104"
+   ]
+  },
+  {
+   "id": "pineapple",
+   "common_name": "Pineapple",
+   "scientific_name": "Ananas comosus",
+   "origin": "non_native",
+   "category": "shrub",
+   "form": "mounding",
+   "regions": [
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "low",
+   "kc": 0.4,
+   "root_depth_in": 10,
+   "cold_hardy_f": 32,
+   "mature_height_ft": [
+    2,
+    3
+   ],
+   "mature_spread_ft": [
+    3,
+    4
+   ],
+   "planting_height_ft": 0.8,
+   "growth_rate": "slow",
+   "spacing_ft": 2.5,
+   "foliage_color": "#6E8F5A",
+   "fruit_colors": [
+    {
+     "name": "golden",
+     "hex": "#E3B03A"
+    }
+   ],
+   "fruit_months": [
+    6,
+    7,
+    8
+   ],
+   "container_ok": true,
+   "min_container_gal": 5,
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "years_to_first_fruit": 2,
+   "yield_lb_per_plant": 3,
+   "fl_notes": "Plant the leafy top of a store-bought pineapple. Fun, tough, and fine in a pot.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/MG055"
+   ]
+  },
+  {
+   "id": "avocado_cold_hardy",
+   "common_name": "Avocado (cold-hardy)",
+   "scientific_name": "Persea americana",
+   "origin": "non_native",
+   "category": "large_tree",
+   "form": "tree",
+   "regions": [
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "medium",
+   "kc": 0.75,
+   "root_depth_in": 24,
+   "cold_hardy_f": 24,
+   "wind_tolerance": "low",
+   "mature_height_ft": [
+    20,
+    35
+   ],
+   "mature_spread_ft": [
+    20,
+    30
+   ],
+   "planting_height_ft": 4,
+   "growth_rate": "fast",
+   "spacing_ft": 25,
+   "foliage_color": "#2E5530",
+   "fruit_colors": [
+    {
+     "name": "green",
+     "hex": "#3E6A2E"
+    }
+   ],
+   "fruit_months": [
+    8,
+    9,
+    10
+   ],
+   "common_issues": [
+    "laurel_wilt",
+    "root_rot"
+   ],
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "years_to_first_fruit": 4,
+   "yield_lb_per_plant": 80,
+   "fl_notes": "Pick a cold-hardy variety (e.g. 'Brogdon', 'Lila'). Laurel wilt is spreading in Florida; ask your Extension office before planting.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/MG213"
+   ]
+  },
+  {
+   "id": "surinam_cherry",
+   "common_name": "Surinam Cherry",
+   "scientific_name": "Eugenia uniflora",
+   "origin": "non_native",
+   "invasive_status": "invasive",
+   "category": "shrub",
+   "form": "mounding",
+   "regions": [
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "water_need": "low",
+   "kc": 0.6,
+   "cold_hardy_f": 28,
+   "mature_height_ft": [
+    10,
+    20
+   ],
+   "mature_spread_ft": [
+    8,
+    15
+   ],
+   "planting_height_ft": 3,
+   "foliage_color": "#2E5A2E",
+   "fruit_colors": [
+    {
+     "name": "red",
+     "hex": "#C8242F"
+    }
+   ],
+   "fruit_months": [
+    4,
+    5
+   ],
+   "native_alternatives": [
+    "myrcianthes_fragrans",
+    "callicarpa_americana"
+   ],
+   "group": "fruit",
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "invasive_category": "I",
+   "fl_notes": "FISC Category I invasive: birds spread the seeds into natural areas. Never suggested.",
+   "source_urls": [
+    "https://bugwoodcloud.org/CDN/fleppc/plantlists/2019/2019_Plant_List_ABSOLUTE_FINAL.pdf"
+   ]
+  },
+  {
+   "id": "rose_knock_out",
+   "common_name": "Knock Out Rose",
+   "scientific_name": "Rosa 'Radrazz'",
+   "origin": "non_native",
+   "category": "shrub",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "medium",
+   "kc": 0.8,
+   "root_depth_in": 18,
+   "cold_hardy_f": 0,
+   "mature_height_ft": [
+    3,
+    4
+   ],
+   "mature_spread_ft": [
+    3,
+    4
+   ],
+   "planting_height_ft": 1.5,
+   "growth_rate": "fast",
+   "spacing_ft": 3.5,
+   "foliage_color": "#3B5E33",
+   "flower_colors": [
+    {
+     "name": "cherry red",
+     "hex": "#D42A4E"
+    }
+   ],
+   "bloom_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "wildlife_value": [
+    "bees"
+   ],
+   "common_issues": [
+    "black_spot",
+    "chilli_thrips"
+   ],
+   "container_ok": true,
+   "min_container_gal": 7,
+   "group": "flower",
+   "life_cycle": "perennial",
+   "feeding": "heavy",
+   "garden_themes": [],
+   "fl_notes": "Own-root shrub roses like Knock Out are the easiest in Florida. Water at the base in the morning to limit black spot.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/EP339"
+   ]
+  },
+  {
+   "id": "rose_mrs_br_cant",
+   "common_name": "Mrs. B.R. Cant Tea Rose",
+   "scientific_name": "Rosa 'Mrs. B.R. Cant'",
+   "origin": "non_native",
+   "category": "shrub",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "medium",
+   "kc": 0.8,
+   "root_depth_in": 18,
+   "cold_hardy_f": 10,
+   "mature_height_ft": [
+    5,
+    8
+   ],
+   "mature_spread_ft": [
+    4,
+    6
+   ],
+   "planting_height_ft": 2,
+   "growth_rate": "medium",
+   "spacing_ft": 5,
+   "foliage_color": "#3B5E33",
+   "flower_colors": [
+    {
+     "name": "silvery pink",
+     "hex": "#E8A0B4"
+    }
+   ],
+   "bloom_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "wildlife_value": [
+    "bees"
+   ],
+   "common_issues": [
+    "black_spot"
+   ],
+   "group": "flower",
+   "life_cycle": "perennial",
+   "feeding": "heavy",
+   "fl_notes": "An old garden tea rose that thrives in Florida heat. For hybrid teas, buy plants grafted on 'Fortuniana' rootstock, which handles sandy soil and nematodes.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/EP339"
+   ]
+  },
+  {
+   "id": "rose_louis_philippe",
+   "common_name": "Louis Philippe China Rose",
+   "scientific_name": "Rosa 'Louis Philippe'",
+   "origin": "non_native",
+   "category": "shrub",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "medium",
+   "kc": 0.75,
+   "root_depth_in": 18,
+   "cold_hardy_f": 10,
+   "mature_height_ft": [
+    4,
+    6
+   ],
+   "mature_spread_ft": [
+    3,
+    5
+   ],
+   "planting_height_ft": 1.5,
+   "growth_rate": "medium",
+   "spacing_ft": 4,
+   "foliage_color": "#3B5E33",
+   "flower_colors": [
+    {
+     "name": "crimson",
+     "hex": "#A8203E"
+    }
+   ],
+   "bloom_months": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "wildlife_value": [
+    "bees"
+   ],
+   "common_issues": [
+    "black_spot"
+   ],
+   "container_ok": true,
+   "min_container_gal": 7,
+   "group": "flower",
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "fl_notes": "The 'Florida cracker rose': an heirloom found in old Florida gardens, tough and almost always in bloom.",
+   "source_urls": [
+    "https://edis.ifas.ufl.edu/publication/EP339"
+   ]
+  },
+  {
+   "id": "zinnia",
+   "common_name": "Zinnia",
+   "scientific_name": "Zinnia elegans",
+   "origin": "non_native",
+   "category": "wildflower",
+   "form": "upright",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "medium",
+   "kc": 0.8,
+   "root_depth_in": 10,
+   "cold_hardy_f": 34,
+   "mature_height_ft": [
+    1,
+    3
+   ],
+   "mature_spread_ft": [
+    1,
+    1.5
+   ],
+   "planting_height_ft": 0.3,
+   "growth_rate": "fast",
+   "spacing_ft": 1,
+   "foliage_color": "#4E8A3A",
+   "flower_colors": [
+    {
+     "name": "hot pink",
+     "hex": "#E0407A"
+    },
+    {
+     "name": "orange",
+     "hex": "#F08A24"
+    }
+   ],
+   "bloom_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "wildlife_value": [
+    "butterflies",
+    "bees"
+   ],
+   "common_issues": [
+    "powdery_mildew"
+   ],
+   "container_ok": true,
+   "min_container_gal": 2,
+   "group": "flower",
+   "life_cycle": "annual",
+   "feeding": "normal",
+   "fl_notes": "Sow seeds in spring: easy cut flowers that butterflies love. Profusion types resist mildew."
+  },
+  {
+   "id": "sunflower",
+   "common_name": "Sunflower",
+   "scientific_name": "Helianthus annuus",
+   "origin": "non_native",
+   "category": "wildflower",
+   "form": "upright",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "medium",
+   "kc": 0.85,
+   "root_depth_in": 24,
+   "cold_hardy_f": 32,
+   "wind_tolerance": "low",
+   "mature_height_ft": [
+    4,
+    8
+   ],
+   "mature_spread_ft": [
+    1,
+    2
+   ],
+   "planting_height_ft": 0.3,
+   "growth_rate": "fast",
+   "spacing_ft": 1.5,
+   "foliage_color": "#4E8A3A",
+   "flower_colors": [
+    {
+     "name": "yellow",
+     "hex": "#F6C324"
+    }
+   ],
+   "bloom_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "wildlife_value": [
+    "bees",
+    "birds"
+   ],
+   "container_ok": true,
+   "min_container_gal": 3,
+   "dwarf_variety": "'Teddy Bear' or 'Sunspot' stay under 3 ft",
+   "group": "flower",
+   "life_cycle": "annual",
+   "feeding": "normal",
+   "fl_notes": "Kids love them: seeds sprout in days and plants pass their heads in a month."
+  },
+  {
+   "id": "pentas",
+   "common_name": "Pentas",
+   "scientific_name": "Pentas lanceolata",
+   "origin": "non_native",
+   "category": "wildflower",
+   "form": "mounding",
+   "regions": [
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "medium",
+   "kc": 0.7,
+   "root_depth_in": 12,
+   "cold_hardy_f": 32,
+   "mature_height_ft": [
+    1.5,
+    3
+   ],
+   "mature_spread_ft": [
+    1.5,
+    2
+   ],
+   "planting_height_ft": 0.8,
+   "growth_rate": "fast",
+   "spacing_ft": 1.5,
+   "foliage_color": "#3F6E3A",
+   "flower_colors": [
+    {
+     "name": "red",
+     "hex": "#D23A4A"
+    },
+    {
+     "name": "pink",
+     "hex": "#E88AB0"
+    }
+   ],
+   "bloom_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "wildlife_value": [
+    "butterflies",
+    "hummingbirds",
+    "bees"
+   ],
+   "common_issues": [
+    "nematodes"
+   ],
+   "container_ok": true,
+   "min_container_gal": 2,
+   "group": "flower",
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "fl_notes": "Blooms almost all year in central and south Florida, a butterfly magnet. Red ones draw the most butterflies."
+  },
+  {
+   "id": "gerbera",
+   "common_name": "Gerbera Daisy",
+   "scientific_name": "Gerbera jamesonii",
+   "origin": "non_native",
+   "category": "wildflower",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "water_need": "medium",
+   "kc": 0.7,
+   "root_depth_in": 10,
+   "cold_hardy_f": 28,
+   "mature_height_ft": [
+    1,
+    1.5
+   ],
+   "mature_spread_ft": [
+    1,
+    1.5
+   ],
+   "planting_height_ft": 0.6,
+   "growth_rate": "medium",
+   "spacing_ft": 1.2,
+   "foliage_color": "#4E7A3A",
+   "flower_colors": [
+    {
+     "name": "orange",
+     "hex": "#F27A2C"
+    },
+    {
+     "name": "pink",
+     "hex": "#EC6A9A"
+    }
+   ],
+   "bloom_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ],
+   "wildlife_value": [
+    "bees"
+   ],
+   "common_issues": [
+    "crown_rot",
+    "powdery_mildew"
+   ],
+   "container_ok": true,
+   "min_container_gal": 1,
+   "group": "flower",
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "fl_notes": "Plant the crown slightly above the soil so it doesn't rot in summer rains. Great cut flowers."
+  },
+  {
+   "id": "marigold",
+   "common_name": "Marigold",
+   "scientific_name": "Tagetes patula",
+   "origin": "non_native",
+   "category": "wildflower",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun"
+   ],
+   "water_need": "medium",
+   "kc": 0.7,
+   "root_depth_in": 8,
+   "cold_hardy_f": 32,
+   "mature_height_ft": [
+    0.5,
+    1
+   ],
+   "mature_spread_ft": [
+    0.5,
+    1
+   ],
+   "planting_height_ft": 0.3,
+   "growth_rate": "fast",
+   "spacing_ft": 0.8,
+   "foliage_color": "#3F6E3A",
+   "flower_colors": [
+    {
+     "name": "golden orange",
+     "hex": "#F0A020"
+    }
+   ],
+   "bloom_months": [
+    3,
+    4,
+    5,
+    6,
+    10,
+    11
+   ],
+   "wildlife_value": [
+    "bees",
+    "butterflies"
+   ],
+   "common_issues": [
+    "spider_mites"
+   ],
+   "container_ok": true,
+   "min_container_gal": 1,
+   "group": "flower",
+   "life_cycle": "annual",
+   "feeding": "low",
+   "fl_notes": "Cheap, cheerful edging for vegetable beds. Plant in spring and fall; summer heat wears them out."
+  },
+  {
+   "id": "caladium",
+   "common_name": "Caladium",
+   "scientific_name": "Caladium bicolor",
+   "origin": "non_native",
+   "category": "fern",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "partial_shade",
+    "full_shade"
+   ],
+   "water_need": "medium",
+   "kc": 0.8,
+   "root_depth_in": 10,
+   "cold_hardy_f": 28,
+   "mature_height_ft": [
+    1,
+    2
+   ],
+   "mature_spread_ft": [
+    1,
+    2
+   ],
+   "planting_height_ft": 0.3,
+   "growth_rate": "fast",
+   "spacing_ft": 1,
+   "foliage_color": "#D9667A",
+   "container_ok": true,
+   "min_container_gal": 2,
+   "group": "flower",
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "fl_notes": "Colorful leaves for shade, grown from tubers (most come from Lake Placid, FL). Leaves die back in winter and return in spring. Tubers survive winter in the ground in central and south Florida."
+  },
+  {
+   "id": "bromeliad",
+   "common_name": "Bromeliad (Neoregelia)",
+   "scientific_name": "Neoregelia spp.",
+   "origin": "non_native",
+   "category": "fern",
+   "form": "mounding",
+   "regions": [
+    "central",
+    "south"
+   ],
+   "light": [
+    "partial_shade",
+    "full_shade"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "low",
+   "kc": 0.4,
+   "root_depth_in": 6,
+   "cold_hardy_f": 35,
+   "mature_height_ft": [
+    0.5,
+    1
+   ],
+   "mature_spread_ft": [
+    1,
+    1.5
+   ],
+   "planting_height_ft": 0.5,
+   "growth_rate": "slow",
+   "spacing_ft": 1.2,
+   "foliage_color": "#B8436A",
+   "container_ok": true,
+   "min_container_gal": 1,
+   "group": "flower",
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "fl_notes": "Tough tropical color for shade. Flush the water cups weekly in summer so mosquitoes can't breed."
+  },
+  {
+   "id": "plumbago",
+   "common_name": "Plumbago",
+   "scientific_name": "Plumbago auriculata",
+   "origin": "non_native",
+   "category": "shrub",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "low",
+   "kc": 0.55,
+   "root_depth_in": 18,
+   "cold_hardy_f": 25,
+   "mature_height_ft": [
+    3,
+    6
+   ],
+   "mature_spread_ft": [
+    4,
+    6
+   ],
+   "planting_height_ft": 1.5,
+   "growth_rate": "fast",
+   "spacing_ft": 4,
+   "foliage_color": "#5A8A4A",
+   "flower_colors": [
+    {
+     "name": "sky blue",
+     "hex": "#8FB4E8"
+    }
+   ],
+   "bloom_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "wildlife_value": [
+    "butterflies"
+   ],
+   "host_plant_for": [
+    "cassius blue"
+   ],
+   "container_ok": true,
+   "min_container_gal": 5,
+   "group": "flower",
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "fl_notes": "Rare true-blue flowers most of the year. Drought tolerant once established."
+  },
+  {
+   "id": "hydrangea",
+   "common_name": "Bigleaf Hydrangea",
+   "scientific_name": "Hydrangea macrophylla",
+   "origin": "non_native",
+   "category": "shrub",
+   "form": "mounding",
+   "regions": [
+    "north",
+    "central"
+   ],
+   "light": [
+    "partial_shade"
+   ],
+   "water_need": "high",
+   "kc": 1,
+   "root_depth_in": 18,
+   "cold_hardy_f": 0,
+   "mature_height_ft": [
+    3,
+    6
+   ],
+   "mature_spread_ft": [
+    3,
+    6
+   ],
+   "planting_height_ft": 1.5,
+   "growth_rate": "medium",
+   "spacing_ft": 4,
+   "foliage_color": "#3F6E3A",
+   "flower_colors": [
+    {
+     "name": "blue",
+     "hex": "#7A9AD8"
+    },
+    {
+     "name": "pink",
+     "hex": "#E89AB8"
+    }
+   ],
+   "bloom_months": [
+    4,
+    5,
+    6
+   ],
+   "common_issues": [
+    "leaf_spot",
+    "wilting_in_heat"
+   ],
+   "container_ok": true,
+   "min_container_gal": 7,
+   "group": "flower",
+   "life_cycle": "perennial",
+   "feeding": "normal",
+   "fl_notes": "Thirsty: wilts every hot afternoon in full sun. Needs morning sun and afternoon shade; acidic soil turns flowers blue."
+  },
+  {
+   "id": "african_iris",
+   "common_name": "African Iris",
+   "scientific_name": "Dietes iridioides",
+   "origin": "non_native",
+   "category": "grass",
+   "form": "grass",
+   "regions": [
+    "north",
+    "central",
+    "south"
+   ],
+   "light": [
+    "full_sun",
+    "partial_shade"
+   ],
+   "salt_tolerance": "medium",
+   "water_need": "low",
+   "kc": 0.45,
+   "root_depth_in": 12,
+   "cold_hardy_f": 15,
+   "mature_height_ft": [
+    2,
+    3
+   ],
+   "mature_spread_ft": [
+    2,
+    3
+   ],
+   "planting_height_ft": 1,
+   "growth_rate": "medium",
+   "spacing_ft": 2.5,
+   "foliage_color": "#4E6E46",
+   "flower_colors": [
+    {
+     "name": "white",
+     "hex": "#F4F1E8"
+    }
+   ],
+   "bloom_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "container_ok": true,
+   "min_container_gal": 3,
+   "group": "flower",
+   "life_cycle": "perennial",
+   "feeding": "low",
+   "fl_notes": "Nearly indestructible clumps for low-care beds. Not native, but not invasive."
+  }
+ ]
+}
