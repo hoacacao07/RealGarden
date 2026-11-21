@@ -1,0 +1,24 @@
+{
+  "_note": "Saved 7-day forecast shape for the Daily Care Plan (Tampa, late autumn). Day 0 is re-dated to today. Each day is expanded into 24 hourly values by lib/clients/openmeteo.ts: temperatures follow a daily curve between tmin and tmax, rain falls in the listed blocks with the given probability. Variants replace days for the presenter's 'Change tomorrow's forecast' button.",
+  "past": [
+    { "rain_mm": 0, "et0_mm": 3.9 },
+    { "rain_mm": 7.5, "et0_mm": 2.2 },
+    { "rain_mm": 0, "et0_mm": 3.6 }
+  ],
+  "days": [
+    { "label": "dry hot day", "tmax_f": 89, "tmin_f": 70, "et0_mm": 4.4, "uv_max": 7, "rh_pct": 60, "gust_mph": 12, "rain": [] },
+    { "label": "light rain day", "tmax_f": 84, "tmin_f": 71, "et0_mm": 3.4, "uv_max": 6, "rh_pct": 72, "gust_mph": 14, "rain": [{ "start": 15, "hours": 2, "mm_per_h": 1.2, "prob": 40 }] },
+    { "label": "heavy rain day", "tmax_f": 79, "tmin_f": 69, "et0_mm": 2.1, "uv_max": 3, "rh_pct": 88, "gust_mph": 24, "rain": [{ "start": 13, "hours": 5, "mm_per_h": 3.4, "prob": 80 }] },
+    { "label": "cool day", "tmax_f": 71, "tmin_f": 55, "et0_mm": 2.4, "uv_max": 5, "rh_pct": 58, "gust_mph": 16, "rain": [] },
+    { "label": "dry warm day", "tmax_f": 80, "tmin_f": 58, "et0_mm": 3.3, "uv_max": 6, "rh_pct": 55, "gust_mph": 10, "rain": [] },
+    { "label": "dry hot day", "tmax_f": 86, "tmin_f": 64, "et0_mm": 4.0, "uv_max": 7, "rh_pct": 58, "gust_mph": 11, "rain": [] },
+    { "label": "showers possible", "tmax_f": 83, "tmin_f": 68, "et0_mm": 3.2, "uv_max": 5, "rh_pct": 74, "gust_mph": 15, "rain": [{ "start": 16, "hours": 3, "mm_per_h": 1.5, "prob": 25 }] }
+  ],
+  "variants": {
+    "tomorrow_rain": {
+      "_note": "Tomorrow turns into a soaking morning rain; the heavy rain day after it dries out.",
+      "1": { "label": "soaking morning rain", "tmax_f": 78, "tmin_f": 70, "et0_mm": 2.0, "uv_max": 3, "rh_pct": 90, "gust_mph": 20, "rain": [{ "start": 6, "hours": 4, "mm_per_h": 4.0, "prob": 85 }] },
+      "2": { "label": "drying out", "tmax_f": 84, "tmin_f": 68, "et0_mm": 3.6, "uv_max": 6, "rh_pct": 62, "gust_mph": 12, "rain": [] }
+    }
+  }
+}

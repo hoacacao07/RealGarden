@@ -1,4 +1,4 @@
-// NativeScape FL demo schema. Filtered plant fields are columns; the rest live in `attrs`.
+// RealGarden demo schema. Filtered plant fields are columns; the rest live in `attrs`.
 
 generator client {
   provider = "prisma-client"
@@ -92,6 +92,9 @@ model Garden {
   // Phase 11.7: optional house/roof layer (EcoLayer JSON) and the tile values at the last visit to the Sustainable section
   eco            Json?
   eco_seen       Json?
+  // Phase 12.5: Daily Care Plan. demo_forecast = presenter's fixture variant ("tomorrow_rain"); morning push sent on this date
+  demo_forecast   String?
+  morning_push_on DateTime? @db.Date
   created_at  DateTime @default(now())
   updated_at  DateTime @updatedAt
 
@@ -102,6 +105,8 @@ model Garden {
   tasks      Task[]
   push_subscriptions PushSubscription[]
   chat_messages      ChatMessage[]
+  daily_plans        DailyPlan[]
+  care_logs          CareLog[]
 }
 
 model Zone {
@@ -272,4 +277,41 @@ model ChatMessage {
   created_at DateTime @default(now())
 
   @@index([garden_id, created_at])
+}
+
+// Phase 12.5: Daily Care Plan, the single source of watering and daily care advice. One row per plant group per day
+// (next 7 days) per version; each rebuild writes a new version and keeps only the previous one.
+model DailyPlan {
+  id              String   @id @default(cuid())
+  garden_id       String
+  garden          Garden   @relation(fields: [garden_id], references: [id], onDelete: Cascade)
+  date            DateTime @db.Date
+  version         Int
+  plant_group_id  String // "<plant_id>--<zone_id | pots>"
+  actions         Json // [{ type, when?, amount?: { value, unit }, how?, what? }]
+  reason          String
+  confidence      String   @default("medium")
+  limits          Json // engine limits for the day: status, gallon bounds, deficit
+  weather_summary Json // counted rain, rain hours, highs and lows, alerts
+  source          String // gemini | rules
+  changed_because String?
+  created_at      DateTime @default(now())
+
+  @@unique([garden_id, version, plant_group_id, date])
+  @@index([garden_id, version])
+}
+
+// Phase 12.5: what the user told us (Done, Skip, It rained here, Looks thirsty, Looks soggy, growth stage taps).
+model CareLog {
+  id             String   @id @default(cuid())
+  garden_id      String
+  garden         Garden   @relation(fields: [garden_id], references: [id], onDelete: Cascade)
+  plant_group_id String? // null = whole garden (It rained here)
+  kind           String // watered | skipped | rained | thirsty | soggy | stage
+  date           DateTime @db.Date
+  value          String? // stage name, action type
+  amount_gal     Float?
+  created_at     DateTime @default(now())
+
+  @@index([garden_id, date])
 }

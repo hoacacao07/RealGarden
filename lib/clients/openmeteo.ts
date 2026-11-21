@@ -89,3 +89,81 @@ export async function getHourly(lat: number, lon: number): Promise<{ hours: Hour
     return { hours: r.data, source: r.source };
   });
 }
+
+// ---------------------------------------------------------------- Phase 12.5: Daily Care Plan weather
+
+export interface PlanWeather {
+  today: string;
+  days: import("../engine/dailyPlan").DayWx[];
+  hours: import("../engine/dailyPlan").HourWx[];
+  /** Observed rain and ET0 for the last 3 days (Open-Meteo past_days=3). */
+  past: import("../engine/dailyPlan").PastWx[];
+  source: "live" | "fixture";
+  variant: string | null;
+}
+
+interface FxDay { tmax_f: number; tmin_f: number; et0_mm: number; uv_max: number; rh_pct: number; gust_mph: number; rain: { start: number; hours: number; mm_per_h: number; prob: number }[] }
+
+/** Expand the saved day shapes into hourly values (temperature curve: low at 6 AM, high at 3 PM). */
+export function expandPlanFixture(today: string, variant: string | null = null): Pick<PlanWeather, "days" | "hours" | "past"> {
+  const fx = fixture<{ past?: { rain_mm: number; et0_mm: number }[]; days: FxDay[]; variants: Record<string, Record<string, FxDay>> }>("openmeteo_plan.json");
+  const v = variant ? fx.variants[variant] ?? {} : {};
+  const days: PlanWeather["days"] = [];
+  const hours: PlanWeather["hours"] = [];
+  const pastFx = fx.past ?? [];
+  const past = pastFx.map((p, i) => ({ date: addDays(today, i - pastFx.length), rain_mm: p.rain_mm, et0_mm: p.et0_mm }));
+  fx.days.forEach((d0, i) => {
+    const d = v[String(i)] ?? d0;
+    const date = addDays(today, i);
+    days.push({ date, et0_mm: d.et0_mm, tmax_f: d.tmax_f, tmin_f: d.tmin_f, uv_max: d.uv_max });
+    for (let h = 0; h < 24; h++) {
+      const t = h >= 6 && h <= 15 ? (h - 6) / 9 : h > 15 ? 1 - (h - 15) / 15 : 1 - (h + 9) / 15;
+      const block = d.rain.find((r) => h >= r.start && h < r.start + r.hours);
+      hours.push({
+        time: `${date}T${String(h).padStart(2, "0")}:00`, precip_mm: block ? block.mm_per_h : 0, prob_pct: block ? block.prob : 5,
+        temp_f: Math.round(d.tmin_f + (d.tmax_f - d.tmin_f) * Math.max(0, Math.min(1, t))), rh_pct: d.rh_pct, gust_mph: d.gust_mph,
+      });
+    }
+  });
+  return { days, hours, past };
+}
+
+/**
+ * 7 days of hourly rain (with probability), temperature, humidity and gusts plus daily ET0, highs, lows and UV, and the
+ * last 3 days of observed rain and ET0 (past_days=3) for the soil replay.
+ */
+export async function getPlanWeather(lat: number, lon: number, variant: string | null = null): Promise<PlanWeather> {
+  const today = todayEastern();
+  if (variant) return { today, ...expandPlanFixture(today, variant), source: "fixture", variant };
+  return cached(`wxp:${lat.toFixed(2)}:${lon.toFixed(2)}:${today}`, 30 * 60_000, async () => {
+    const r = await liveOrFixture("open-meteo-plan", {
+      live: async (signal) => {
+        const url = new URL("https://api.open-meteo.com/v1/forecast");
+        Object.entries({
+          latitude: lat, longitude: lon, timezone: "America/New_York", past_days: 3, forecast_days: 7,
+          hourly: "precipitation,precipitation_probability,temperature_2m,relative_humidity_2m,wind_gusts_10m",
+          daily: "precipitation_sum,et0_fao_evapotranspiration,temperature_2m_max,temperature_2m_min,uv_index_max",
+          temperature_unit: "fahrenheit", wind_speed_unit: "mph",
+        }).forEach(([k, v]) => url.searchParams.set(k, String(v)));
+        type J = { hourly: Record<string, (number | null)[]> & { time: string[] }; daily: Record<string, (number | null)[]> & { time: string[] } };
+        const j = await fetchJson<J>(url.toString(), { signal });
+        const h = j.hourly;
+        const d = j.daily;
+        // Past days are observed (rain is a sum, no probability); forecast days start today.
+        const past = d.time.flatMap((t, i) => (t < today ? [{ date: t, rain_mm: d.precipitation_sum[i] ?? 0, et0_mm: d.et0_fao_evapotranspiration[i] ?? 3 }] : []));
+        const days = d.time.flatMap((t, i) => (t >= today
+          ? [{ date: t, et0_mm: d.et0_fao_evapotranspiration[i] ?? 3, tmax_f: d.temperature_2m_max[i] ?? 80, tmin_f: d.temperature_2m_min[i] ?? 60, uv_max: d.uv_index_max[i] ?? 5 }]
+          : [])).slice(0, 7);
+        const hours = h.time.flatMap((t, i) => (t.slice(0, 10) >= today
+          ? [{
+            time: t, precip_mm: h.precipitation[i] ?? 0, prob_pct: h.precipitation_probability[i] ?? 0, temp_f: h.temperature_2m[i] ?? 75,
+            rh_pct: h.relative_humidity_2m[i] ?? 70, gust_mph: h.wind_gusts_10m[i] ?? 0,
+          }]
+          : []));
+        return { days, hours, past };
+      },
+      fallback: () => expandPlanFixture(today),
+    });
+    return { today, ...r.data, source: r.source, variant: null };
+  });
+}

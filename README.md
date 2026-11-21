@@ -1,4 +1,4 @@
-# NativeScape FL (hackathon demo)
+# RealGarden (hackathon demo)
 
 Plan a low-maintenance garden of Florida native plants, preview it through the year, and get early warnings
 before problems happen. **Design → Preview → Predict → Act.**
@@ -39,8 +39,17 @@ put it in both `DATABASE_URL` and `DIRECT_URL`, then run `npm run db:setup`.
 | `DEMO_RESET_TOKEN` | Protects `POST /api/demo/reset` |
 | `NWS_USER_AGENT` | Required by api.weather.gov |
 | `PLANTNET_API_KEY`, `PLANTNET_PROJECT` | Pl@ntNet plant ID |
-| `GEMINI_API_KEY`, `GEMINI_MODEL` | Gemini diagnosis and action plans |
+| `GEMINI_API_KEY`, `GEMINI_MODEL`, `GEMINI_MODEL_LITE` | Gemini (diagnosis, suggestions, rewrites, Garden AI chat). Model ids come from env only. Pick a model that answers fast: chat makes 2–3 calls per question under `GEMINI_TIMEOUT_MS` (20 s) each |
 | `PP_KEY_ID`, `PP_KEY_SECRET` | Permapeople keys, only for `npm run pp:import` (offline, never used by the app) |
+
+### Garden AI (Phase 13)
+
+- Floating **Ask Garden AI** button on every page, and the full page `/garden/<id>/assistant`.
+- `POST /api/chat` (multipart `garden_id`, `message`, optional `image`) streams NDJSON events: `text`, `tool` (chips),
+  `proposal` (cards), `done`, `error`. `GET`/`DELETE /api/chat?garden_id=` load or clear the history.
+- Tools live in `lib/ai/assistantTools.ts`, bound to the open garden. Writes (`propose_task`, `propose_add_plant`) are
+  never run by the model: `POST /api/chat/confirm` reads the proposal from the stored answer and performs it once.
+- Thumbs up/down: `POST /api/chat/feedback`. Rate limit 30 messages per hour per IP.
 
 ### Permapeople plant data → Supabase
 
@@ -96,7 +105,7 @@ plants that only tolerate the sun; invasives never appear.
 
 ## Presenting
 
-`DEMO_SCRIPT.md` has the 3-minute script with exact clicks. `/demo` (not in the nav) has one button per step and
+`DEMO_SCRIPT.md` has the 4-minute v6 script with exact clicks (style → place → garden → shopping → alert → Garden AI → Sustainable → balcony). `/demo` (not in the nav) has one button per step and
 **Reset demo gardens**, which calls `POST /api/demo/reset` with `DEMO_RESET_TOKEN` to restore Maria's and Linh's gardens and
 the sample reports.
 Real shared check-in reports are kept.
@@ -133,8 +142,24 @@ Simplifications made to keep the demo path reliable:
   pot volume is usable water, west/south walls use 20% more, water below half. The typical summer and winter line uses a
   rounded monthly Tampa ET0 table; the 7-day plan uses the forecast.
 - **Weight** is wet mix at 1 kg/L plus pot and saucer water. It is an estimate and never says a balcony is safe.
+- **Garden AI starter chips are scripted in `DEMO_MODE`** (matched by text, so typing the same question works too) and
+  tagged "sample answer". Everything else is live Gemini.
+- **Plants added from the chat** go into the first bed of the matching kind (edible or landscape) in an even grid, and
+  may overlap existing plants. On a balcony each one gets a 5 gal floor pot. Move them in Design.
+- **Chat tasks** are stored as `Task` rows with `source: "chat"` and shown to the assistant by `get_tasks`.
+- **Chat photos** go through the check-in diagnose pipeline and only the result is sent to the chat model. The photo
+  itself is not stored.
+- **Main Gemini model.** On 2026-11-21, `gemini-3.8-flash` hung for over 40 s and `gemini-3.5-flash` took about 15 s per
+  call on the team key, so the local `.env` uses `gemini-3.5-flash-lite` (under 1 s, tool calling works). Re-test before
+  demo day.
 
 ## Known limits
+
+- **Local database = 1 connection.** `prisma dev` (PGlite) handles one connection at a time, so `lib/db.ts` uses a pool
+  of 1 when `DATABASE_URL` points at localhost (5 otherwise; `DB_POOL_MAX` overrides). More than one connection made
+  pages and Garden AI fail at random with `P1017 ConnectionClosed`.
+- **Phones on the same Wi-Fi** can open the dev server at `http://<this computer's IP>:3000`: `next.config.ts` allows the
+  machine's own network addresses (`allowedDevOrigins`). Without that, Next 16 leaves the page un-clickable.
 
 - After a migration, **restart `npm run dev`**: the Prisma client is a hot-reload-proof singleton, so a running dev
   server keeps the old schema and saves fail with "Unknown argument".

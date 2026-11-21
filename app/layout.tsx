@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Figtree } from "next/font/google";
 
 import { AlertBanner } from "@/components/alerts/alert-banner";
+import { ChatLauncher } from "@/components/assistant/chat-launcher";
 import { InspectorPanel } from "@/components/inspector/inspector-panel";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import "./globals.css";
@@ -9,8 +10,8 @@ import "./globals.css";
 const figtree = Figtree({ variable: "--font-figtree", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: { default: "NativeScape FL", template: "%s · NativeScape FL" },
-  description: "Plan a low-maintenance Florida native garden, preview it through the year, and get early warnings.",
+  title: { default: "RealGarden", template: "%s · RealGarden" },
+  description: "Design a beautiful Florida garden, know what to buy, and get simple care reminders and weather alerts.",
 };
 
 export const viewport: Viewport = { themeColor: "#2f6b4f" };
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main id="main" className="flex-1">{children}</main>
         <SiteFooter />
         <InspectorPanel />
+        <ChatLauncher />
       </body>
     </html>
   );

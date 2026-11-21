@@ -1,4 +1,4 @@
-/* NativeScape FL service worker: weather alert push notifications only (no offline caching). */
+/* RealGarden service worker: weather alert push notifications only (no offline caching). */
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (e) => e.waitUntil(self.clients.claim()));
 
