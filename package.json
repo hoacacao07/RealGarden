@@ -14,7 +14,9 @@
     "db:migrate": "prisma migrate dev",
     "db:local": "prisma dev --name nativescape",
     "fetch-scenarios": "tsx scripts/fetch-scenarios.ts",
-    "demo-photos": "tsx scripts/make-demo-photos.ts"
+    "demo-photos": "tsx scripts/make-demo-photos.ts",
+    "pp:import": "tsx scripts/import-permapeople.ts",
+    "pp:merge": "tsx scripts/merge-permapeople.ts"
   },
   "dependencies": {
     "@google/genai": "^1.52.0",
