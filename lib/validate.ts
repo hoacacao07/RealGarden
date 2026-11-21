@@ -135,3 +135,24 @@ export function parseGarden(v: unknown, plantIds: Set<string>): GardenSave {
     ...layout,
   };
 }
+
+/** Phase 11.7 eco layer (house and roof). Canvas feet; the house may sit outside the garden canvas. */
+export function parseEco(v: unknown): import("./types").EcoLayer {
+  const e = (v ?? {}) as Record<string, unknown>;
+  const h = e.house as Record<string, unknown> | null | undefined;
+  const surfaces = (Array.isArray(e.surfaces) ? e.surfaces : []).slice(0, 8).map((s: Record<string, unknown>) => ({
+    kind: oneOf(s.kind, "surface kind", ["driveway", "patio", "path"] as const), sqft: num(s.sqft, "surface sqft", 0, 20000),
+  })).filter((s) => s.sqft > 0);
+  return {
+    house: h ? { x: num(h.x, "house x", -300, 300), y: num(h.y, "house y", -300, 300), w: num(h.w, "house w", 8, 200), h: num(h.h, "house h", 8, 200) } : null,
+    roof_sqft: optNum(e.roof_sqft, "roof_sqft", 50, 40000),
+    surfaces,
+    lawn_sqft: num(e.lawn_sqft ?? 0, "lawn_sqft", 0, 50000),
+    converted_lawn_sqft: num(e.converted_lawn_sqft ?? 0, "converted_lawn_sqft", 0, 50000),
+    barrel_gal: num(e.barrel_gal ?? 0, "barrel_gal", 0, 5000),
+    rain_garden_sqft: num(e.rain_garden_sqft ?? 0, "rain_garden_sqft", 0, 5000),
+    compost_bin: e.compost_bin === true,
+    household: Math.round(num(e.household ?? 2, "household", 1, 20)),
+    mulch: e.mulch !== false,
+  };
+}

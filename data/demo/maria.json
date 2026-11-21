@@ -31,40 +31,334 @@
     "planted_days_ago": 420,
     "canvas_w_ft": 32,
     "canvas_h_ft": 20,
-    "starter": { "goals": ["butterflies", "food"], "hours_week": "2-4", "space": "yard" }
+    "starter": {
+      "goals": [
+        "butterflies",
+        "food"
+      ],
+      "hours_week": "2-4",
+      "space": "yard",
+      "themes": [
+        "butterfly",
+        "salad",
+        "rose_flower"
+      ],
+      "prefer_natives": "some",
+      "hardiness_zone": "10a"
+    }
   },
   "zones": [
-    { "id": "zone_maria_bed", "name": "Butterfly bed", "irrigation": "drip", "kind": "landscape", "polygon": [[1, 1], [21, 1], [21, 13], [1, 13]] },
-    { "id": "zone_maria_border", "name": "Bay-side border", "irrigation": "spray", "kind": "landscape", "polygon": [[23, 1], [31, 1], [31, 19], [23, 19]] },
-    { "id": "zone_maria_tomatoes", "name": "Tomato bed", "irrigation": "drip", "kind": "edible", "bed": "raised", "depth_in": 10, "polygon": [[12, 14.5], [20, 14.5], [20, 18.5], [12, 18.5]] }
+    {
+      "id": "zone_maria_bed",
+      "name": "Butterfly bed",
+      "irrigation": "drip",
+      "kind": "landscape",
+      "polygon": [
+        [
+          1,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          21,
+          13
+        ],
+        [
+          1,
+          13
+        ]
+      ]
+    },
+    {
+      "id": "zone_maria_border",
+      "name": "Bay-side border",
+      "irrigation": "spray",
+      "kind": "landscape",
+      "polygon": [
+        [
+          23,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          31,
+          19
+        ],
+        [
+          23,
+          19
+        ]
+      ]
+    },
+    {
+      "id": "zone_maria_tomatoes",
+      "name": "Tomato bed",
+      "irrigation": "drip",
+      "kind": "edible",
+      "bed": "raised",
+      "depth_in": 10,
+      "polygon": [
+        [
+          12,
+          14.5
+        ],
+        [
+          20,
+          14.5
+        ],
+        [
+          20,
+          18.5
+        ],
+        [
+          12,
+          18.5
+        ]
+      ]
+    }
   ],
   "placements": [
-    { "plant_id": "hamelia_patens", "zone": "zone_maria_bed", "x_ft": 3, "y_ft": 3.5, "days_ago": 100, "group": "firebush" },
-    { "plant_id": "hamelia_patens", "zone": "zone_maria_bed", "x_ft": 3, "y_ft": 9.5, "days_ago": 100, "group": "firebush" },
-    { "plant_id": "stachytarpheta_jamaicensis", "zone": "zone_maria_bed", "x_ft": 7, "y_ft": 3, "days_ago": 100 },
-    { "plant_id": "stachytarpheta_jamaicensis", "zone": "zone_maria_bed", "x_ft": 7, "y_ft": 9.5, "days_ago": 100 },
-    { "plant_id": "zamia_integrifolia", "zone": "zone_maria_bed", "x_ft": 6.5, "y_ft": 6.3, "days_ago": 100 },
-    { "plant_id": "asclepias_tuberosa", "zone": "zone_maria_bed", "x_ft": 10, "y_ft": 2.5, "days_ago": 100, "group": "milkweed" },
-    { "plant_id": "asclepias_tuberosa", "zone": "zone_maria_bed", "x_ft": 11.5, "y_ft": 4, "days_ago": 100, "group": "milkweed" },
-    { "plant_id": "asclepias_tuberosa", "zone": "zone_maria_bed", "x_ft": 10, "y_ft": 5.5, "days_ago": 100, "group": "milkweed" },
-    { "plant_id": "salvia_coccinea", "zone": "zone_maria_bed", "x_ft": 10, "y_ft": 8, "days_ago": 100, "group": "sage" },
-    { "plant_id": "salvia_coccinea", "zone": "zone_maria_bed", "x_ft": 11.5, "y_ft": 9.5, "days_ago": 100, "group": "sage" },
-    { "plant_id": "salvia_coccinea", "zone": "zone_maria_bed", "x_ft": 10, "y_ft": 11, "days_ago": 100, "group": "sage" },
-    { "plant_id": "passiflora_incarnata", "zone": "zone_maria_bed", "x_ft": 14, "y_ft": 1.8, "days_ago": 100 },
-    { "plant_id": "muhlenbergia_capillaris", "zone": "zone_maria_border", "x_ft": 25, "y_ft": 3, "days_ago": 420, "group": "muhly" },
-    { "plant_id": "muhlenbergia_capillaris", "zone": "zone_maria_border", "x_ft": 28.5, "y_ft": 3, "days_ago": 420, "group": "muhly" },
-    { "plant_id": "muhlenbergia_capillaris", "zone": "zone_maria_border", "x_ft": 25, "y_ft": 6.5, "days_ago": 420, "group": "muhly" },
-    { "plant_id": "muhlenbergia_capillaris", "zone": "zone_maria_border", "x_ft": 28.5, "y_ft": 6.5, "days_ago": 420, "group": "muhly" },
-    { "plant_id": "gaillardia_pulchella", "zone": "zone_maria_border", "x_ft": 25, "y_ft": 10, "days_ago": 100, "group": "gaillardia" },
-    { "plant_id": "gaillardia_pulchella", "zone": "zone_maria_border", "x_ft": 27, "y_ft": 11, "days_ago": 100, "group": "gaillardia" },
-    { "plant_id": "gaillardia_pulchella", "zone": "zone_maria_border", "x_ft": 29, "y_ft": 10, "days_ago": 100, "group": "gaillardia" },
-    { "plant_id": "callicarpa_americana", "zone": "zone_maria_border", "x_ft": 27, "y_ft": 14.5, "days_ago": 420 },
-    { "plant_id": "helianthus_debilis", "zone": "zone_maria_border", "x_ft": 25.5, "y_ft": 17.5, "days_ago": 100 },
-    { "plant_id": "helianthus_debilis", "zone": "zone_maria_border", "x_ft": 29, "y_ft": 17.5, "days_ago": 100 },
-    { "plant_id": "tomato", "zone": "zone_maria_tomatoes", "x_ft": 13.2, "y_ft": 16.5, "days_ago": 75, "group": "tomatoes" },
-    { "plant_id": "tomato", "zone": "zone_maria_tomatoes", "x_ft": 15.4, "y_ft": 16.5, "days_ago": 75, "group": "tomatoes" },
-    { "plant_id": "tomato", "zone": "zone_maria_tomatoes", "x_ft": 17.6, "y_ft": 16.5, "days_ago": 75, "group": "tomatoes" },
-    { "plant_id": "basil", "zone": "zone_maria_tomatoes", "x_ft": 19.3, "y_ft": 15.4, "days_ago": 75, "group": "basil" },
-    { "plant_id": "basil", "zone": "zone_maria_tomatoes", "x_ft": 19.3, "y_ft": 17.6, "days_ago": 75, "group": "basil" }
-  ]
+    {
+      "plant_id": "hamelia_patens",
+      "zone": "zone_maria_bed",
+      "x_ft": 3,
+      "y_ft": 3.5,
+      "days_ago": 100,
+      "group": "firebush"
+    },
+    {
+      "plant_id": "hamelia_patens",
+      "zone": "zone_maria_bed",
+      "x_ft": 3,
+      "y_ft": 9.5,
+      "days_ago": 100,
+      "group": "firebush"
+    },
+    {
+      "plant_id": "stachytarpheta_jamaicensis",
+      "zone": "zone_maria_bed",
+      "x_ft": 7,
+      "y_ft": 3,
+      "days_ago": 100
+    },
+    {
+      "plant_id": "stachytarpheta_jamaicensis",
+      "zone": "zone_maria_bed",
+      "x_ft": 7,
+      "y_ft": 9.5,
+      "days_ago": 100
+    },
+    {
+      "plant_id": "zamia_integrifolia",
+      "zone": "zone_maria_bed",
+      "x_ft": 6.5,
+      "y_ft": 6.3,
+      "days_ago": 100
+    },
+    {
+      "plant_id": "asclepias_tuberosa",
+      "zone": "zone_maria_bed",
+      "x_ft": 10,
+      "y_ft": 2.5,
+      "days_ago": 100,
+      "group": "milkweed"
+    },
+    {
+      "plant_id": "asclepias_tuberosa",
+      "zone": "zone_maria_bed",
+      "x_ft": 11.5,
+      "y_ft": 4,
+      "days_ago": 100,
+      "group": "milkweed"
+    },
+    {
+      "plant_id": "asclepias_tuberosa",
+      "zone": "zone_maria_bed",
+      "x_ft": 10,
+      "y_ft": 5.5,
+      "days_ago": 100,
+      "group": "milkweed"
+    },
+    {
+      "plant_id": "salvia_coccinea",
+      "zone": "zone_maria_bed",
+      "x_ft": 10,
+      "y_ft": 8,
+      "days_ago": 100,
+      "group": "sage"
+    },
+    {
+      "plant_id": "salvia_coccinea",
+      "zone": "zone_maria_bed",
+      "x_ft": 11.5,
+      "y_ft": 9.5,
+      "days_ago": 100,
+      "group": "sage"
+    },
+    {
+      "plant_id": "salvia_coccinea",
+      "zone": "zone_maria_bed",
+      "x_ft": 10,
+      "y_ft": 11,
+      "days_ago": 100,
+      "group": "sage"
+    },
+    {
+      "plant_id": "passiflora_incarnata",
+      "zone": "zone_maria_bed",
+      "x_ft": 14,
+      "y_ft": 1.8,
+      "days_ago": 100
+    },
+    {
+      "plant_id": "muhlenbergia_capillaris",
+      "zone": "zone_maria_border",
+      "x_ft": 25,
+      "y_ft": 3,
+      "days_ago": 420,
+      "group": "muhly"
+    },
+    {
+      "plant_id": "muhlenbergia_capillaris",
+      "zone": "zone_maria_border",
+      "x_ft": 28.5,
+      "y_ft": 3,
+      "days_ago": 420,
+      "group": "muhly"
+    },
+    {
+      "plant_id": "muhlenbergia_capillaris",
+      "zone": "zone_maria_border",
+      "x_ft": 25,
+      "y_ft": 6.5,
+      "days_ago": 420,
+      "group": "muhly"
+    },
+    {
+      "plant_id": "muhlenbergia_capillaris",
+      "zone": "zone_maria_border",
+      "x_ft": 28.5,
+      "y_ft": 6.5,
+      "days_ago": 420,
+      "group": "muhly"
+    },
+    {
+      "plant_id": "gaillardia_pulchella",
+      "zone": "zone_maria_border",
+      "x_ft": 25,
+      "y_ft": 10,
+      "days_ago": 100,
+      "group": "gaillardia"
+    },
+    {
+      "plant_id": "gaillardia_pulchella",
+      "zone": "zone_maria_border",
+      "x_ft": 27,
+      "y_ft": 11,
+      "days_ago": 100,
+      "group": "gaillardia"
+    },
+    {
+      "plant_id": "gaillardia_pulchella",
+      "zone": "zone_maria_border",
+      "x_ft": 29,
+      "y_ft": 10,
+      "days_ago": 100,
+      "group": "gaillardia"
+    },
+    {
+      "plant_id": "callicarpa_americana",
+      "zone": "zone_maria_border",
+      "x_ft": 27,
+      "y_ft": 14.5,
+      "days_ago": 420
+    },
+    {
+      "plant_id": "helianthus_debilis",
+      "zone": "zone_maria_border",
+      "x_ft": 25.5,
+      "y_ft": 17.5,
+      "days_ago": 100
+    },
+    {
+      "plant_id": "helianthus_debilis",
+      "zone": "zone_maria_border",
+      "x_ft": 29,
+      "y_ft": 17.5,
+      "days_ago": 100
+    },
+    {
+      "plant_id": "tomato",
+      "zone": "zone_maria_tomatoes",
+      "x_ft": 13.2,
+      "y_ft": 16.5,
+      "days_ago": 75,
+      "group": "tomatoes"
+    },
+    {
+      "plant_id": "tomato",
+      "zone": "zone_maria_tomatoes",
+      "x_ft": 15.4,
+      "y_ft": 16.5,
+      "days_ago": 75,
+      "group": "tomatoes"
+    },
+    {
+      "plant_id": "tomato",
+      "zone": "zone_maria_tomatoes",
+      "x_ft": 17.6,
+      "y_ft": 16.5,
+      "days_ago": 75,
+      "group": "tomatoes"
+    },
+    {
+      "plant_id": "basil",
+      "zone": "zone_maria_tomatoes",
+      "x_ft": 19.3,
+      "y_ft": 15.4,
+      "days_ago": 75,
+      "group": "basil"
+    },
+    {
+      "plant_id": "basil",
+      "zone": "zone_maria_tomatoes",
+      "x_ft": 19.3,
+      "y_ft": 17.6,
+      "days_ago": 75,
+      "group": "basil"
+    }
+  ],
+  "eco": {
+    "_note": "Sample house layer for the Sustainable section demo: house just north of the front yard, driveway, path and the lawn she keeps (side and back yard). Estimates.",
+    "house": {
+      "x": 2,
+      "y": -32,
+      "w": 28,
+      "h": 28
+    },
+    "roof_sqft": null,
+    "surfaces": [
+      {
+        "kind": "driveway",
+        "sqft": 400
+      },
+      {
+        "kind": "path",
+        "sqft": 60
+      }
+    ],
+    "lawn_sqft": 900,
+    "converted_lawn_sqft": 0,
+    "barrel_gal": 0,
+    "rain_garden_sqft": 0,
+    "compost_bin": false,
+    "household": 3,
+    "mulch": true
+  }
 }

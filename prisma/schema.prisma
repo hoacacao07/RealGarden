@@ -89,6 +89,9 @@ model Garden {
   themes         String[]  @default([])
   prefer_natives String    @default("off") // off | some | mostly
   hardiness_zone String?
+  // Phase 11.7: optional house/roof layer (EcoLayer JSON) and the tile values at the last visit to the Sustainable section
+  eco            Json?
+  eco_seen       Json?
   created_at  DateTime @default(now())
   updated_at  DateTime @updatedAt
 

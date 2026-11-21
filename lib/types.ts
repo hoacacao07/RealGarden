@@ -273,3 +273,28 @@ export interface ReportPoint {
 }
 
 export type Source = "live" | "fixture";
+
+/**
+ * Phase 11.7 optional "house and roof" layer, drawn only inside the Sustainable section. Canvas feet; the house may sit
+ * outside the garden canvas (negative coordinates), e.g. a front yard with the house just north of it. North is up.
+ */
+export interface EcoLayer {
+  house: { x: number; y: number; w: number; h: number } | null;
+  /** Roof area; null = from the footprint. */
+  roof_sqft: number | null;
+  surfaces: { kind: "driveway" | "patio" | "path"; sqft: number }[];
+  /** Lawn the user keeps (irrigated turf). */
+  lawn_sqft: number;
+  /** Lawn converted to a pollinator bed or groundcover by a greener swap. */
+  converted_lawn_sqft: number;
+  barrel_gal: number; // 0 = no rain barrel
+  rain_garden_sqft: number; // 0 = none
+  compost_bin: boolean;
+  household: number;
+  mulch: boolean;
+}
+
+export const EMPTY_ECO: EcoLayer = {
+  house: null, roof_sqft: null, surfaces: [], lawn_sqft: 0, converted_lawn_sqft: 0, barrel_gal: 0, rain_garden_sqft: 0,
+  compost_bin: false, household: 2, mulch: true,
+};
