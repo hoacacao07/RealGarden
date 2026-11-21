@@ -1,0 +1,8 @@
+{
+  "_note": "Scripted demo answer for \"What can I plant this month?\" (DEMO_MODE). Central Florida, fall and winter.",
+  "tools": [
+    { "name": "get_garden", "label": "Looked at your garden" },
+    { "name": "search_plants", "label": "Looked up plants you can plant now" }
+  ],
+  "text": "Fall and winter are the best vegetable seasons in central Florida. Good picks for your garden right now:\n\n1. **Lettuce, kale and arugula** in the raised bed. Cool weather keeps them sweet.\n2. **Radishes**, ready in about a month. Fun if you have kids.\n3. **Strawberries** in a pot or bed edge, for berries in early spring.\n4. **Cilantro and parsley**, which grow best in cool months here.\n\nFor color, the firebush and tropical sage you already have keep blooming until the first cold night. Want me to add one of these to your plan?"
+}

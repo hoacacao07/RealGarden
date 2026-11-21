@@ -228,6 +228,8 @@ export interface JsonOpts<T> {
   /** Extra check after zod (e.g. "only ids from the input"). Throw to reject. */
   check?: (v: T) => void;
   cache?: boolean;
+  /** Filled with where the answer came from. */
+  meta?: { source?: "live" | "fixture" | "cache" };
 }
 
 export async function generateJSON<T>(opts: JsonOpts<T>): Promise<T> {
@@ -245,6 +247,7 @@ export async function generateJSON<T>(opts: JsonOpts<T>): Promise<T> {
     const fx = readFixture(opts.task, [opts.demoId, key]);
     if (fx != null) {
       await log({ task: opts.task, model: "fixture", latency_ms: 0, cache_hit: true, error: null });
+      if (opts.meta) opts.meta.source = "fixture";
       return validate(fx);
     }
   }
@@ -256,6 +259,7 @@ export async function generateJSON<T>(opts: JsonOpts<T>): Promise<T> {
       try {
         const v = validate(hit);
         await log({ task: opts.task, model: modelName, latency_ms: 0, cache_hit: true, error: null });
+        if (opts.meta) opts.meta.source = "cache";
         return v;
       } catch { /* stale cache entry, call again */ }
     }
@@ -275,6 +279,7 @@ export async function generateJSON<T>(opts: JsonOpts<T>): Promise<T> {
       const v = validate(JSON.parse(chunk.text));
       await log({ task: opts.task, model: modelName, latency_ms: Date.now() - t0, in_tokens: chunk.usage?.in, out_tokens: chunk.usage?.out, cache_hit: false, error: null });
       if (opts.cache !== false) await store.set(key, opts.task, v, CACHE_MS).catch(() => undefined);
+      if (opts.meta) opts.meta.source = "live";
       return v;
     } catch (e) {
       const msg = (e as Error).message.slice(0, 500);

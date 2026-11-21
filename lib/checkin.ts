@@ -4,7 +4,7 @@ import path from "node:path";
 
 import sharp from "sharp";
 
-import { DEMO_PHOTOS, type DemoPhoto } from "./clients/gemini";
+import { DEMO_PHOTOS, type DemoPhoto } from "./ai/features";
 import type { IdentifyResult } from "./clients/plantnet";
 import type { Plant } from "./types";
 

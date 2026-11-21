@@ -158,3 +158,26 @@ model Report {
 
   @@index([created_at])
 }
+
+// Phase 9.5: Gemini layer. Cached structured results (24 h, never chat) and one log row per call.
+model AiCache {
+  key        String   @id
+  task       String
+  value      Json
+  expires_at DateTime
+  created_at DateTime @default(now())
+}
+
+model AiLog {
+  id         String   @id @default(cuid())
+  task       String
+  model      String
+  latency_ms Int
+  in_tokens  Int?
+  out_tokens Int?
+  cache_hit  Boolean  @default(false)
+  error      String?
+  created_at DateTime @default(now())
+
+  @@index([created_at])
+}

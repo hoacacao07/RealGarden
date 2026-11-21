@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Box, Building2, ShoppingBasket, Sun, Camera, CloudLightning, CloudRain, Flower2, Home, Map as MapIcon, Palette, Search, Snowflake, Sprout, Timer } from "lucide-react";
 
+import { aiStats } from "@/lib/ai/store";
+import { demoMode } from "@/lib/clients/base";
+
 import { ResetButton } from "./reset-button";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = { title: "Presenter", robots: { index: false } };
 
@@ -34,6 +39,29 @@ const EXTRA = [
   { title: "Native-swap photo", href: "/garden/maria/checkin?demo=mexican_petunia", icon: <Camera /> },
   { title: "Healthy photo", href: "/garden/maria/checkin?demo=healthy_firebush", icon: <Camera /> },
 ];
+
+async function AiUsage() {
+  const rows = await aiStats().catch(() => []);
+  return (
+    <section className="space-y-2" aria-labelledby="ai-h">
+      <h2 id="ai-h" className="font-semibold">Gemini usage, last 7 days</h2>
+      <p className="text-xs text-muted-foreground">
+        {demoMode() ? "DEMO_MODE on: saved answers first, live only where no fixture exists and a key is set." : "Live mode."}{" "}
+        Model: {process.env.GEMINI_MODEL || "not set"}{process.env.GEMINI_MODEL_LITE ? ` · lite: ${process.env.GEMINI_MODEL_LITE}` : ""}
+      </p>
+      {rows.length === 0 ? <p className="text-sm text-muted-foreground">No calls yet.</p> : (
+        <div className="overflow-x-auto rounded-2xl border bg-card">
+          <table className="w-full text-sm tabular-nums">
+            <thead className="text-left text-muted-foreground"><tr>{["Task", "Calls", "Cache/fixture", "Errors", "Avg ms", "Tokens"].map((h) => <th key={h} className="px-3 py-2 font-medium">{h}</th>)}</tr></thead>
+            <tbody>{rows.map((r) => (
+              <tr key={r.task} className="border-t"><td className="px-3 py-1.5 font-medium">{r.task}</td><td className="px-3">{r.calls}</td><td className="px-3">{r.cache_hits}</td><td className="px-3">{r.errors}</td><td className="px-3">{r.avg_ms}</td><td className="px-3">{r.tokens}</td></tr>
+            ))}</tbody>
+          </table>
+        </div>
+      )}
+    </section>
+  );
+}
 
 export default function PresenterPage() {
   return (
@@ -88,6 +116,8 @@ export default function PresenterPage() {
         </div>
         <p className="text-xs text-muted-foreground">Full talk track with exact clicks: <code>DEMO_SCRIPT.md</code> in the repo.</p>
       </section>
+
+      <AiUsage />
     </div>
   );
 }

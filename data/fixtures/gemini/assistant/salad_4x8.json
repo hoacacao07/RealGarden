@@ -1,0 +1,12 @@
+{
+  "_note": "Scripted demo answer for \"Make me a salad garden for 4x8 ft\" (DEMO_MODE). The proposal is a real confirm card.",
+  "tools": [
+    { "name": "get_garden", "label": "Looked at your garden" },
+    { "name": "search_plants", "label": "Looked up salad plants for your area" }
+  ],
+  "proposals": [
+    { "name": "propose_add_plant", "args": { "plant_id": "lettuce", "qty": 8 } },
+    { "name": "propose_add_plant", "args": { "plant_id": "kale", "qty": 4 } }
+  ],
+  "text": "Here's a 4 × 8 ft salad bed that grows well here in fall and winter:\n\n- **Back row (north side):** 2 cherry tomatoes on a cage, so they don't shade the rest.\n- **Middle:** 4 kale and 8 lettuce, about 12 in apart.\n- **Front row:** a row of radishes and green onions.\n\nUse raised-bed mix if your soil is sandy, and water in the morning. I've put the lettuce and kale on cards below. Tap **Confirm** to add them to your garden."
+}

@@ -10,5 +10,7 @@ export default defineConfig({
   },
   datasource: {
     url: process.env.DIRECT_URL || process.env.DATABASE_URL || "postgresql://localhost:5432/placeholder",
+    // Only needed with `prisma dev` (single-database local server): point it at the server's shadow port.
+    ...(process.env.SHADOW_DATABASE_URL && { shadowDatabaseUrl: process.env.SHADOW_DATABASE_URL }),
   },
 });
