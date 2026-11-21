@@ -219,9 +219,9 @@ export function taskCalendar(x: CalendarInput): Task[] {
   if (x.eco?.barrel) {
     add({ id: "eco:barrel", kind: "check", due_at: nextOn(4, 15), title: "Empty and scrub the rain barrel", detail: "Before mosquito season: check the screen and lid so mosquitoes can't breed. Use barrel water first in dry spells." });
   }
-  if (x.hasLandscape) add({ id: "eco:mulch", kind: "prep", due_at: nextOn(2, 1), title: "Top up mulch to 2 to 3 in", detail: "Once a year. Mulch holds water and keeps fertilizer out of runoff." });
+  if (x.hasLandscape) add({ id: "eco:mulch", kind: "check", due_at: nextOn(2, 1), title: "Top up mulch to 2 to 3 in", detail: "Once a year. Mulch holds water and keeps fertilizer out of runoff." });
   if (x.eco?.compost) {
-    for (let i = 0; i < 6; i++) add({ id: `eco:compost:${i}`, kind: "prep", due_at: addDays(x.today, 7 + i * 30), title: "Turn the compost", detail: "Mix it and keep it as damp as a wrung-out sponge." });
+    for (let i = 0; i < 6; i++) add({ id: `eco:compost:${i}`, kind: "check", due_at: addDays(x.today, 7 + i * 30), title: "Turn the compost", detail: "Mix it and keep it as damp as a wrung-out sponge." });
   }
 
   return tasks.filter((t) => t.due_at >= x.today && t.due_at <= end)
