@@ -1,14 +1,11 @@
 /** Seeding shared by `prisma db seed` and POST /api/demo/reset. Idempotent. */
-import ediblesJson from "../data/edibles.json";
 import linh from "../data/demo/linh.json";
 import maria from "../data/demo/maria.json";
 import reports from "../data/demo/reports.json";
-import plantsJson from "../data/plants.json";
+import { PLANTS } from "./catalog-data";
 import { Prisma, type PrismaClient } from "./generated/prisma/client";
-import type { Plant } from "./types";
 
-/** Natives and non-natives (plants.json) plus edible crops (edibles.json, origin "edible"). */
-const PLANTS = [...(plantsJson as unknown as Plant[]), ...(ediblesJson.plants as unknown as Plant[])];
+
 const COLUMNS = ["id", "common_name", "scientific_name", "category", "form", "origin", "invasive_status", "regions", "light", "salt_tolerance", "water_need", "verified"] as const;
 
 const daysAgo = (n: number) => {

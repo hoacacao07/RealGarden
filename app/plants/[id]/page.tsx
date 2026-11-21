@@ -10,6 +10,7 @@ import { UnverifiedBadge } from "@/components/states";
 import { getPlant, getPlants } from "@/lib/data";
 import { windowText } from "@/lib/engine/edibles";
 import { nativeSwap } from "@/lib/engine/recommend";
+import { friendlyLine, groupOf, isBlocked } from "@/lib/catalog";
 import { label, MONTH_NAMES, range } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -72,7 +73,23 @@ export default async function PlantPage({ params }: PageProps<"/plants/[id]">) {
         </section>
       )}
 
-      {p.origin === "native" && p.landscape_use && <p className="text-lg">{label(p.landscape_use)}. Found in {p.habitat}.</p>}
+      <p className="text-lg">{friendlyLine(p)}</p>
+      {p.origin === "native" && p.landscape_use && <p>{label(p.landscape_use)}. Found in {p.habitat}.</p>}
+      {isBlocked(p) && <p className="rounded-xl bg-coral/10 p-3 text-sm font-medium">Invasive in Florida{p.invasive_category ? ` (FISC Category ${p.invasive_category})` : ""}. The app never suggests it.</p>}
+
+      {(p.fl_notes || p.chill_hours != null || p.years_to_first_fruit != null || (p.zones?.length ?? 0) > 0) && (
+        <section className="rounded-2xl border bg-card p-4 space-y-2">
+          <h2 className="font-semibold">Florida tips</h2>
+          {p.fl_notes && <p className="text-sm">{p.fl_notes}</p>}
+          <ul className="text-sm space-y-1">
+            {p.zones?.length ? <li><strong>Hardiness zones:</strong> {p.zones.join(", ")}{p.life_cycle === "annual" ? " (grown as a seasonal crop)" : ""}</li> : null}
+            {p.chill_hours != null && <li><strong>Winter chill needed:</strong> about {p.chill_hours} hours (pick low-chill varieties)</li>}
+            {p.years_to_first_fruit != null && <li><strong>First fruit:</strong> about {p.years_to_first_fruit} year{p.years_to_first_fruit > 1 ? "s" : ""} after planting</li>}
+            <li><strong>Group:</strong> {label(groupOf(p))} · {label(p.life_cycle ?? "perennial")} · {p.feeding ?? "normal"} feeder</li>
+          </ul>
+          {p.source_urls.length > 0 && <p className="text-xs"><a className="underline" href={p.source_urls[0]} target="_blank" rel="noreferrer">Source: UF/IFAS Extension</a></p>}
+        </section>
+      )}
 
       {p.edible && (
         <section className="rounded-2xl border bg-card p-4 space-y-2">
@@ -142,6 +159,7 @@ export default async function PlantPage({ params }: PageProps<"/plants/[id]">) {
           Society before relying on them.
         </p>
       )}
+      <p className="text-xs text-muted-foreground">Plant data partly from Permapeople.org (CC BY-SA 4.0).</p>
     </article>
   );
 }

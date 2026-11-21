@@ -50,7 +50,7 @@ export interface WizardResult { site: SiteInput; theme: Theme | null; name: stri
  * Site for a balcony: light comes from the sun hours engine (a typical pot halfway back), not a sun question.
  * Pots hold potting mix, so soil is "sandy loam, fast drainage" with no survey; area = floor size.
  */
-function balconySite(b: BalconyValue, lat: number, lon: number, rest: Pick<SiteInput, "coastal_distance_mi" | "native_target_pct" | "name" | "zip">): SiteInput {
+export function balconySite(b: BalconyValue, lat: number, lon: number, rest: Pick<SiteInput, "coastal_distance_mi" | "native_target_pct" | "name" | "zip">): SiteInput {
   return {
     ...rest, ...b, kind: "balcony", lat, lon, region: regionForLat(lat),
     sun: balconyLight(sunStrip(lat, lon, b, typicalPotD(b))),

@@ -111,6 +111,9 @@ export function parseStarter(v: unknown): StarterAnswers | undefined {
     budget_usd: optNum(s.budget_usd, "budget_usd", 0, 1_000_000),
     space: s.space == null ? null : oneOf(s.space, "space", ["yard", "raised_bed", "containers", "balcony", "patio"] as const),
     target_harvest: typeof s.target_harvest === "string" && /^\d{4}-\d{2}-\d{2}$/.test(s.target_harvest) ? s.target_harvest : null,
+    themes: (Array.isArray(s.themes) ? s.themes : []).filter((t): t is string => typeof t === "string" && /^[a-z_]{2,30}$/.test(t)).slice(0, 6),
+    prefer_natives: s.prefer_natives == null ? "off" : oneOf(s.prefer_natives, "prefer_natives", ["off", "some", "mostly"] as const),
+    hardiness_zone: typeof s.hardiness_zone === "string" && /^\d{1,2}[ab]$/.test(s.hardiness_zone) ? s.hardiness_zone : null,
   };
 }
 
