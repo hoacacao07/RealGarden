@@ -1,0 +1,7 @@
+plant_id,field,value,problem
+nephrolepis_cordifolia,search,,no match
+ixora_coccinea,search,,no match
+bell_pepper,height_ft,60-90,outside 0.2-10 ft for vegetable
+strawberry,height_ft,0.3-0.3,outside 0.5-60 ft for fruit
+strawberry,width_ft,0.3-0.3,outside 0.5-50 ft for fruit
+bromeliad,search,,no match

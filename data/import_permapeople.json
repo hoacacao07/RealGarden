@@ -1,0 +1,1719 @@
+{
+  "sabal_palmetto": {
+    "permapeople_id": 6619,
+    "matched": "Sabal palmetto",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      6,
+      6
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Trees",
+    "growth": "Slow",
+    "propagation": null,
+    "edible_parts": "Fruit, Leaves, Sap",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "serenoa_repens": {
+    "permapeople_id": 1653,
+    "matched": "Serenoa repens",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      3,
+      3
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": "Slow",
+    "propagation": null,
+    "edible_parts": "Fruit, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "zamia_integrifolia": {
+    "permapeople_id": 7969,
+    "matched": "Zamia spp",
+    "light": "Full sun, Partial sun/shade, Full shade",
+    "water": "Dry, Moist, Wet",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1,
+      1
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": "Slow",
+    "propagation": null,
+    "edible_parts": "Root, Stem",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "quercus_virginiana": {
+    "permapeople_id": 2803,
+    "matched": "Quercus virginiana",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist",
+    "soil": "Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      20,
+      20
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Tall trees",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "taxodium_distichum": {
+    "permapeople_id": 5451,
+    "matched": "Taxodium distichum",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist, Wet, water",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      30,
+      30
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Tall trees",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "myrcianthes_fragrans": {
+    "permapeople_id": 9012,
+    "matched": "Myrcianthes fragrans",
+    "light": null,
+    "water": null,
+    "soil": null,
+    "ph": null,
+    "height_ft": null,
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "psychotria_nervosa": {
+    "permapeople_id": 9026,
+    "matched": "Psychotria nervosa",
+    "light": null,
+    "water": null,
+    "soil": null,
+    "ph": null,
+    "height_ft": null,
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "hamelia_patens": {
+    "permapeople_id": 1234,
+    "matched": "Halesia tetraptera",
+    "light": "Full sun, Partial sun/shade, Full shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      10,
+      10
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Trees",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Fruit",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "callicarpa_americana": {
+    "permapeople_id": 2403,
+    "matched": "Callicarpa americana",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Medium",
+    "ph": null,
+    "height_ft": [
+      1.8,
+      1.8
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": "Slow",
+    "propagation": null,
+    "edible_parts": "Fruit",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "lonicera_sempervirens": {
+    "permapeople_id": 3789,
+    "matched": "Lonicera sempervirens",
+    "light": "Full sun",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      5,
+      5
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "muhlenbergia_capillaris": {
+    "permapeople_id": 8916,
+    "matched": "Muhlenbergia capillaris",
+    "light": "Full sun",
+    "water": "dry, moist",
+    "soil": null,
+    "ph": null,
+    "height_ft": [
+      3,
+      3
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "gaillardia_pulchella": {
+    "permapeople_id": 5830,
+    "matched": "Gaillardia x grandiflora",
+    "light": "Full sun",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      0.3,
+      0.3
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "coreopsis_leavenworthii": {
+    "permapeople_id": 1259,
+    "matched": "Coreopsis tinctoria",
+    "light": "Full sun",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      0.8,
+      0.8
+    ],
+    "width_ft": null,
+    "life_cycle": "Annual",
+    "layer": null,
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "helianthus_debilis": {
+    "permapeople_id": 9,
+    "matched": "Helianthus tuberosus",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": "4.5-8.2",
+    "height_ft": [
+      1.5,
+      3
+    ],
+    "width_ft": [
+      1.7,
+      1.7
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Roots",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Root",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "solidago_sempervirens": {
+    "permapeople_id": 413,
+    "matched": "Solidago canadensis scabra",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1.8,
+      1.8
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Leaves, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "liatris_spicata": {
+    "permapeople_id": 5580,
+    "matched": "Liatris spicata",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist, Wet",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      0.6,
+      0.6
+    ],
+    "width_ft": [
+      0.5,
+      0.5
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Herbs",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "stachytarpheta_jamaicensis": {
+    "permapeople_id": 9004,
+    "matched": "Stachytarpheta jamaicensis",
+    "light": null,
+    "water": null,
+    "soil": null,
+    "ph": null,
+    "height_ft": null,
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "salvia_coccinea": {
+    "permapeople_id": 8524,
+    "matched": "Salvia verticillata",
+    "light": "Full sun, Partial sun/shade",
+    "water": null,
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      0.6,
+      0.6
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": "Herbs",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "asclepias_tuberosa": {
+    "permapeople_id": 4476,
+    "matched": "Asclepias tuberosa",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      0.8,
+      0.8
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "asclepias_incarnata": {
+    "permapeople_id": 3271,
+    "matched": "Asclepias incarnata",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist, Wet",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      1.2,
+      1.2
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Flowers, Leaves, Seedpod, Shoots",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "passiflora_incarnata": {
+    "permapeople_id": 6583,
+    "matched": "Passiflora incarnata",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      6,
+      6
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Vines",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Flowers, Fruit, Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "ipomoea_pes_caprae": {
+    "permapeople_id": 1921,
+    "matched": "Ipomoea nil",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      5,
+      5
+    ],
+    "width_ft": null,
+    "life_cycle": "Annual",
+    "layer": null,
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "coccoloba_uvifera": {
+    "permapeople_id": 8982,
+    "matched": "Coccoloba uvifera",
+    "light": "Full sun,partial sun/shade, Partial sun/shade",
+    "water": null,
+    "soil": null,
+    "ph": null,
+    "height_ft": null,
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": "Shrubs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Fruit",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "pontederia_cordata": {
+    "permapeople_id": 2796,
+    "matched": "Pontederia cordata",
+    "light": "Full sun",
+    "water": "Wet, Water",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      0.8,
+      0.8
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Leaves, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "iris_virginica": {
+    "permapeople_id": 5158,
+    "matched": "Iris ensata",
+    "light": "Full sun",
+    "water": "Moist, Wet",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      0.6,
+      0.6
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Root",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "osmunda_regalis": {
+    "permapeople_id": 3896,
+    "matched": "Osmunda regalis",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist, Wet",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      2,
+      2
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "ilex_vomitoria": {
+    "permapeople_id": 7142,
+    "matched": "Ilex vomitoria",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      6,
+      6
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": "Slow",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "rudbeckia_hirta": {
+    "permapeople_id": 7791,
+    "matched": "Rudbeckia hirta",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": "6.8-7.7",
+    "height_ft": [
+      4,
+      0.9
+    ],
+    "width_ft": null,
+    "life_cycle": "Biennial, Perennial",
+    "layer": null,
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "salvia_lyrata": {
+    "permapeople_id": 431,
+    "matched": "Salvia lyrata",
+    "light": "Partial sun/shade, Full sun",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      0.6,
+      0.6
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "stokesia_laevis": {
+    "permapeople_id": 9188,
+    "matched": "Stokesia l. 'Colorwheel",
+    "light": "Full sun",
+    "water": null,
+    "soil": null,
+    "ph": null,
+    "height_ft": null,
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "ruellia_caroliniana": {
+    "permapeople_id": 8919,
+    "matched": "Ruellia simplex",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Wet, Dry",
+    "soil": null,
+    "ph": null,
+    "height_ft": [
+      3,
+      3
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "ruellia_simplex": {
+    "permapeople_id": 8919,
+    "matched": "Ruellia simplex",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Wet, Dry",
+    "soil": null,
+    "ph": null,
+    "height_ft": [
+      3,
+      3
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "lantana_camara": {
+    "permapeople_id": 2325,
+    "matched": "Lantana camara",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist, Wet",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1.8,
+      1.8
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Fruit, Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "schinus_terebinthifolia": {
+    "permapeople_id": 7163,
+    "matched": "Schinus molle",
+    "light": "Full sun",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      8,
+      8
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Trees",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Fruit, Inner bark, Stem",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "hibiscus_rosa_sinensis": {
+    "permapeople_id": 5787,
+    "matched": "Hibiscus rosa-sinensis",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      2.5,
+      2.5
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Flowers, Leaves, Root",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "bougainvillea_glabra": {
+    "permapeople_id": 9227,
+    "matched": "Bougainvillea",
+    "light": null,
+    "water": null,
+    "soil": null,
+    "ph": null,
+    "height_ft": null,
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "bidens_alba": {
+    "permapeople_id": 2090,
+    "matched": "Bidens frondosa",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1.5,
+      1.5
+    ],
+    "width_ft": null,
+    "life_cycle": "Annual",
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "lantana_involucrata": {
+    "permapeople_id": 2325,
+    "matched": "Lantana camara",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist, Wet",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1.8,
+      1.8
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Fruit, Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "tomato": {
+    "permapeople_id": 182,
+    "matched": "Solanum lycopersicum",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": "6.2-6.8",
+    "height_ft": [
+      2,
+      2
+    ],
+    "width_ft": [
+      1,
+      1
+    ],
+    "life_cycle": "Annual, Perennial",
+    "layer": null,
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Fruit, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "cherry_tomato": {
+    "permapeople_id": 182,
+    "matched": "Solanum lycopersicum",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": "6.2-6.8",
+    "height_ft": [
+      2,
+      2
+    ],
+    "width_ft": [
+      1,
+      1
+    ],
+    "life_cycle": "Annual, Perennial",
+    "layer": null,
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Fruit, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "bell_pepper": {
+    "permapeople_id": 8509,
+    "matched": "Capsicum annuum",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium",
+    "ph": "6.0-6.5",
+    "height_ft": [
+      60,
+      90
+    ],
+    "width_ft": null,
+    "life_cycle": "Annual, Perennial",
+    "layer": "Herbs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Fruit",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "eggplant": {
+    "permapeople_id": 198,
+    "matched": "Solanum melongena",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1,
+      1
+    ],
+    "width_ft": [
+      1,
+      1
+    ],
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Fruit, Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "okra": {
+    "permapeople_id": 233,
+    "matched": "Abelmoschus esculentus",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1,
+      1
+    ],
+    "width_ft": [
+      1.7,
+      1.7
+    ],
+    "life_cycle": "Annual, Perennial",
+    "layer": "Herbs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Fruit, Leaves, Root, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "lettuce": {
+    "permapeople_id": 199,
+    "matched": "Lactuca sativa",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      0.9,
+      0.9
+    ],
+    "width_ft": null,
+    "life_cycle": "Annual, Biennial",
+    "layer": "Herbs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Leaves, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "kale": {
+    "permapeople_id": 3375,
+    "matched": "Brassica oleracea",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1.2,
+      1.2
+    ],
+    "width_ft": null,
+    "life_cycle": "Biennial, Perennial",
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "basil": {
+    "permapeople_id": 173,
+    "matched": "Ocimum basilicum",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      0.5,
+      0.5
+    ],
+    "width_ft": null,
+    "life_cycle": "Annual, Perennial",
+    "layer": "Herbs",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Leaves, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "parsley": {
+    "permapeople_id": 184,
+    "matched": "Petroselinum crispum",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      0.6,
+      0.6
+    ],
+    "width_ft": null,
+    "life_cycle": "Biennial",
+    "layer": "Herbs",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "sweet_potato": {
+    "permapeople_id": 239,
+    "matched": "Ipomoea batatas",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      3,
+      3
+    ],
+    "width_ft": [
+      3,
+      3
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Vines",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Leaves, Root, Shoots",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "strawberry": {
+    "permapeople_id": 203,
+    "matched": "Fragaria × ananassa",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      0.3,
+      0.3
+    ],
+    "width_ft": [
+      0.3,
+      0.3
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Herbs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Fruit, Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "bush_beans": {
+    "permapeople_id": 5,
+    "matched": "Phaseolus vulgaris",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": "6.0-6.8",
+    "height_ft": [
+      2,
+      2
+    ],
+    "width_ft": [
+      0.4,
+      0.4
+    ],
+    "life_cycle": "Annual",
+    "layer": "Vines",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Leaves, Seed, Seedpod",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "arugula": {
+    "permapeople_id": 6944,
+    "matched": "Eruca vesicaria sativa",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      0.6,
+      0.6
+    ],
+    "width_ft": [
+      0.3,
+      0.3
+    ],
+    "life_cycle": "Annual",
+    "layer": null,
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Flowers, Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "radish": {
+    "permapeople_id": 210,
+    "matched": "Raphanus sativus",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      0.5,
+      0.5
+    ],
+    "width_ft": [
+      0.3,
+      0.3
+    ],
+    "life_cycle": "Annual",
+    "layer": "Roots",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Flowers, Leaves, Root, Seed, Seedpod",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "cucumber": {
+    "permapeople_id": 197,
+    "matched": "Cucumis sativus",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": "6.0-6.8",
+    "height_ft": [
+      2,
+      2
+    ],
+    "width_ft": [
+      0.9,
+      0.9
+    ],
+    "life_cycle": "Annual",
+    "layer": "Vines",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Fruit, Leaves, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "green_onion": {
+    "permapeople_id": 807,
+    "matched": "Allium fistulosum",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": "5.5-6.5",
+    "height_ft": [
+      0.6,
+      0.6
+    ],
+    "width_ft": [
+      0.3,
+      0.3
+    ],
+    "life_cycle": "Annual",
+    "layer": "Herbs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Flowers, Leaves, Root",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "collards": {
+    "permapeople_id": 3375,
+    "matched": "Brassica oleracea",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1.2,
+      1.2
+    ],
+    "width_ft": null,
+    "life_cycle": "Biennial, Perennial",
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "carrot": {
+    "permapeople_id": 836,
+    "matched": "Daucus carota",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      0.6,
+      0.6
+    ],
+    "width_ft": null,
+    "life_cycle": "Biennial",
+    "layer": null,
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Flowers, Root",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "cilantro": {
+    "permapeople_id": 206,
+    "matched": "Coriandrum sativum",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      0.5,
+      0.5
+    ],
+    "width_ft": [
+      0.7,
+      0.7
+    ],
+    "life_cycle": "Annual",
+    "layer": "Herbs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Leaves, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "rosemary": {
+    "permapeople_id": 138,
+    "matched": "Salvia rosmarinus",
+    "light": "Full sun",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium",
+    "ph": null,
+    "height_ft": [
+      1.5,
+      1.5
+    ],
+    "width_ft": [
+      1.2,
+      1.2
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Herbs",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "chives": {
+    "permapeople_id": 163,
+    "matched": "Allium schoenoprasum",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": "6.0-7.0",
+    "height_ft": [
+      0.3,
+      0.3
+    ],
+    "width_ft": [
+      0.5,
+      0.5
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Herbs",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Flowers, Leaves, Root",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "mint": {
+    "permapeople_id": 1844,
+    "matched": "Mentha spicata",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      0.6,
+      0.6
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "cuban_oregano": {
+    "permapeople_id": 8581,
+    "matched": "Coleus ambonicus",
+    "light": null,
+    "water": null,
+    "soil": null,
+    "ph": null,
+    "height_ft": null,
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "lemongrass": {
+    "permapeople_id": 2577,
+    "matched": "Cymbopogon citratus",
+    "light": "Full sun",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1.5,
+      1.5
+    ],
+    "width_ft": [
+      1,
+      1
+    ],
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Leaves, Shoots, Stem",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "oregano": {
+    "permapeople_id": 245,
+    "matched": "Origanum vulgare",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": "4.5–8.7",
+    "height_ft": [
+      0.6,
+      0.6
+    ],
+    "width_ft": [
+      0.6,
+      0.6
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Herbs",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Flowers, Leaves, Stem",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "blueberry_southern_highbush": {
+    "permapeople_id": 152,
+    "matched": "Vaccinium corymbosum",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Acidic",
+    "ph": null,
+    "height_ft": [
+      2,
+      2
+    ],
+    "width_ft": [
+      1,
+      1
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Shrubs",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Fruit, Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "fig": {
+    "permapeople_id": 76,
+    "matched": "Ficus carica",
+    "light": "Full sun",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      6,
+      6
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": "Trees",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Fruit, Sap",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "muscadine_grape": {
+    "permapeople_id": 8300,
+    "matched": "Vitis rotundifolia",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      25,
+      25
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Vines",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Fruit, Leaves, Shoots",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "meyer_lemon": {
+    "permapeople_id": 4621,
+    "matched": "Citroncirus",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      3,
+      3
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Fruit",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "satsuma": {
+    "permapeople_id": 880,
+    "matched": "Citrus reticulata",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      4.5,
+      4.5
+    ],
+    "width_ft": [
+      1,
+      1
+    ],
+    "life_cycle": null,
+    "layer": "Trees",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Fruit",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "mango": {
+    "permapeople_id": 1705,
+    "matched": "Mangifera indica",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      25,
+      25
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Tall trees",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Flowers, Fruit, Leaves, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "banana": {
+    "permapeople_id": 8033,
+    "matched": "Musa acuminata",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      3,
+      3
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Fruit, Shoots",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "papaya": {
+    "permapeople_id": 1418,
+    "matched": "Carica papaya",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      8,
+      8
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Trees",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Flowers, Fruit, Leaves, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "peach_low_chill": {
+    "permapeople_id": 7,
+    "matched": "Prunus persica",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      6,
+      6
+    ],
+    "width_ft": [
+      3,
+      3
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Trees",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Flowers, Fruit, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "blackberry_thornless": {
+    "permapeople_id": 2545,
+    "matched": "Rubus species",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      3,
+      3
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "pineapple": {
+    "permapeople_id": 2585,
+    "matched": "Ananas comosus",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1,
+      1
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Fruit, Shoots, Stem",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "avocado_cold_hardy": {
+    "permapeople_id": 1796,
+    "matched": "Persea americana",
+    "light": "Full sun",
+    "water": "Moist",
+    "soil": "Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      15,
+      15
+    ],
+    "width_ft": [
+      10,
+      10
+    ],
+    "life_cycle": null,
+    "layer": "Tall trees",
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Fruit, Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "surinam_cherry": {
+    "permapeople_id": 2848,
+    "matched": "Eugenia uniflora",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      6,
+      6
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": "Slow",
+    "propagation": null,
+    "edible_parts": "Fruit, Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "rose_knock_out": {
+    "permapeople_id": 137,
+    "matched": "Rosa",
+    "light": "Full sun, Partial sun/shade",
+    "water": null,
+    "soil": null,
+    "ph": null,
+    "height_ft": null,
+    "width_ft": [
+      1,
+      1
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Shrubs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Fruit",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "rose_mrs_br_cant": {
+    "permapeople_id": 137,
+    "matched": "Rosa",
+    "light": "Full sun, Partial sun/shade",
+    "water": null,
+    "soil": null,
+    "ph": null,
+    "height_ft": null,
+    "width_ft": [
+      1,
+      1
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Shrubs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Fruit",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "rose_louis_philippe": {
+    "permapeople_id": 7294,
+    "matched": "Rosa carolina",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      1.5,
+      1.5
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": "Flowers, Fruit, Seed",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "zinnia": {
+    "permapeople_id": 8588,
+    "matched": "Zinnia grandiflora",
+    "light": "Full sun",
+    "water": "Dry",
+    "soil": null,
+    "ph": null,
+    "height_ft": [
+      0.2,
+      0.2
+    ],
+    "width_ft": [
+      0.2,
+      0.2
+    ],
+    "life_cycle": "Perennial",
+    "layer": "Herbs",
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "sunflower": {
+    "permapeople_id": 181,
+    "matched": "Helianthus annuus",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      3,
+      3
+    ],
+    "width_ft": null,
+    "life_cycle": "Annual",
+    "layer": null,
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Flowers, Seed, Stem",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "pentas": {
+    "permapeople_id": 9069,
+    "matched": "Rhus lanceolata",
+    "light": null,
+    "water": null,
+    "soil": null,
+    "ph": null,
+    "height_ft": null,
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "gerbera": {
+    "permapeople_id": 2932,
+    "matched": "Gerbera lanuginosa",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      0.3,
+      0.3
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "marigold": {
+    "permapeople_id": 8234,
+    "matched": "Tagetes patula",
+    "light": "Full sun",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      0.5,
+      0.5
+    ],
+    "width_ft": [
+      0.5,
+      0.5
+    ],
+    "life_cycle": "Annual",
+    "layer": null,
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "caladium": {
+    "permapeople_id": 901,
+    "matched": "Cladium mariscus",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist, Wet",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      3,
+      3
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": "Fast",
+    "propagation": null,
+    "edible_parts": "Leaves",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "plumbago": {
+    "permapeople_id": 6888,
+    "matched": "Plumbago europaea",
+    "light": "Full sun",
+    "water": "Dry, Moist",
+    "soil": "Light (sandy)",
+    "ph": null,
+    "height_ft": [
+      1,
+      1
+    ],
+    "width_ft": null,
+    "life_cycle": "Perennial",
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "hydrangea": {
+    "permapeople_id": 6713,
+    "matched": "Hydrangea macrophylla",
+    "light": "Full sun, Partial sun/shade",
+    "water": "Moist",
+    "soil": "Light (sandy), Medium, Heavy (clay)",
+    "ph": null,
+    "height_ft": [
+      3,
+      3
+    ],
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": "Shrubs",
+    "growth": "Medium",
+    "propagation": null,
+    "edible_parts": "Leaves, Shoots",
+    "license": "CC BY-SA 4.0, permapeople.org"
+  },
+  "african_iris": {
+    "permapeople_id": 9009,
+    "matched": "Dietes iridioides",
+    "light": null,
+    "water": null,
+    "soil": null,
+    "ph": null,
+    "height_ft": null,
+    "width_ft": null,
+    "life_cycle": null,
+    "layer": null,
+    "growth": null,
+    "propagation": null,
+    "edible_parts": null,
+    "license": "CC BY-SA 4.0, permapeople.org"
+  }
+}
