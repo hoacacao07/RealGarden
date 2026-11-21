@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { ArrowRight, Droplets, Leaf, Sprout } from "lucide-react";
 
+import { MiniCanvas } from "@/components/dashboard/mini-canvas";
 import { Button } from "@/components/ui/button";
 import { getGarden, getPlants } from "@/lib/data";
 import { gallons } from "@/lib/format";
+import { SAMPLE_H, SAMPLE_W, SAMPLE_ZONES, samplePlaced } from "@/lib/sample-garden";
 import { buildDashboard } from "@/lib/predict";
 
 export const dynamic = "force-dynamic";
@@ -61,6 +63,7 @@ function LoopArt({ kind }: { kind: string }) {
 
 export default async function Home() {
   const stats = await mariaStats();
+  const today = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
   return (
     <div>
       <section className="relative overflow-hidden">
@@ -81,24 +84,12 @@ export default async function Home() {
               <Button size="lg" variant="ghost" className="h-11 px-5 text-base" asChild><Link href="/garden/linh">Linh&apos;s balcony</Link></Button>
             </div>
           </div>
-          <svg viewBox="0 0 400 320" className="w-full max-w-md mx-auto" role="img" aria-label="Illustration of a native garden with a palm, flowers and a butterfly">
-            <ellipse cx="200" cy="290" rx="190" ry="26" fill="var(--sand)" />
-            <path d="M120 290V140" stroke="#7a5f3a" strokeWidth="9" strokeLinecap="round" />
-            <g fill="var(--leaf)">
-              <path d="M120 140c-30-30-70-36-100-24 36-2 70 10 100 24z" /><path d="M120 140c30-30 70-36 100-24-36-2-70 10-100 24z" />
-              <path d="M120 140c-8-40 0-70 22-92-6 32-14 60-22 92z" /><path d="M120 140c-36-6-66 10-80 36 22-18 50-30 80-36z" />
-              <path d="M120 140c36-6 66 10 80 36-22-18-50-30-80-36z" />
-            </g>
-            <ellipse cx="270" cy="262" rx="70" ry="38" fill="oklch(0.55 0.1 158)" />
-            {[[235, 240], [262, 228], [292, 236], [315, 252], [250, 258]].map(([x, y]) => <circle key={x} cx={x} cy={y} r="9" fill="var(--coral)" />)}
-            <g transform="translate(300 120) rotate(-15)">
-              <path d="M0 0c-26-24-44-6-30 14 8 10 22 6 30-14zM0 0c26-24 44-6 30 14-8 10-22 6-30-14z" fill="#eda100" />
-              <path d="M0 0c-16 10-22 30-8 32 8 0 10-16 8-32zM0 0c16 10 22 30 8 32-8 0-10-16-8-32z" fill="#eb6834" />
-              <path d="M0-8v26" stroke="#2c2c2c" strokeWidth="3" strokeLinecap="round" />
-            </g>
-            <path d="M40 210c10-8 20-8 30 0s20 8 30 0" stroke="var(--sky)" strokeWidth="4" fill="none" strokeLinecap="round" />
-            <path d="M330 60l-6 14M350 54l-6 14M370 62l-6 14" stroke="var(--sky)" strokeWidth="4" strokeLinecap="round" />
-          </svg>
+          <figure className="w-full space-y-2">
+            <MiniCanvas width={SAMPLE_W} height={SAMPLE_H} zones={SAMPLE_ZONES} placed={samplePlaced(today)} today={today} />
+            <figcaption className="text-sm text-muted-foreground text-center">
+              An example garden: butterfly bed, rose border and a kitchen bed, colored by what blooms this month.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
