@@ -134,6 +134,8 @@ describe("starter chips, prompt rules, rate limit", () => {
       expect(chipId(c.text)).toBe(c.id);
     }
     expect(chipId("make me a salad garden for 4x8 ft")).toBe("salad_4x8");
+    expect(chipId("Make me a salad garden for 4 by 8 ft")).toBe("salad_4x8");
+    expect(chipId("Make me a salad garden for 4�8 ft")).toBe("salad_4x8");
     expect(chipId("What can I plant in my pots?")).toBeNull();
   });
 
