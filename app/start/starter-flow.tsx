@@ -13,6 +13,7 @@ import { useMemo, useState } from "react";
 import { ArrowLeft, ArrowRight, Building2, Check, ChevronDown, Home, Leaf, Loader2, MapPin, Plus, Sparkles, X } from "lucide-react";
 
 import { BalconyStep, DEFAULT_BALCONY, type BalconyValue } from "@/components/balcony/balcony-step";
+import { rememberGarden } from "@/components/site-chrome";
 import { ErrorState } from "@/components/states";
 import { PlantIcon } from "@/components/plant-icon";
 import { Button } from "@/components/ui/button";
@@ -175,6 +176,7 @@ export function StarterFlow({ themes, plants }: { themes: ThemeDef[]; plants: Pl
       const r = await fetch("/api/gardens", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
       const j = await r.json();
       if (!r.ok) throw new Error(j.error ?? "Could not create the garden");
+      rememberGarden(j.id);
       router.push(`/design?garden=${j.id}&tab=colors`);
     } catch (e) {
       setErr((e as Error).message);

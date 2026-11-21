@@ -8,7 +8,7 @@ import { SEVERITY_STYLE } from "@/lib/format";
 import type { AlertOut } from "@/lib/predict";
 
 const ICON = { frost: <Snowflake aria-hidden />, storm: <Wind aria-hidden />, water: <Droplets aria-hidden />, disease: <Bug aria-hidden /> };
-const SOURCE = { gemini: "Steps written by Gemini", fixture: "Steps by Gemini (saved demo response)", template: "Steps from a standard checklist" };
+const SOURCE = { gemini: "Steps from our rules, reworded by Gemini", fixture: "Steps from our rules (saved demo wording)", template: "Steps from our rules" };
 
 export function AlertCard({ alert }: { alert: AlertOut }) {
   const [done, setDone] = useState<Record<number, boolean>>({});
@@ -40,10 +40,10 @@ export function AlertCard({ alert }: { alert: AlertOut }) {
           ))}
         </ul>
       )}
-      <p className="text-xs text-muted-foreground flex items-start gap-1.5">
-        <Sparkles className="size-3.5 mt-0.5 shrink-0" aria-hidden />
-        <span><span className="font-medium">Why:</span> {alert.why} {SOURCE[alert.source]}.</span>
-      </p>
+      <details className="text-xs text-muted-foreground">
+        <summary className="cursor-pointer inline-flex items-center gap-1.5"><Sparkles className="size-3.5" aria-hidden /> Why am I seeing this?</summary>
+        <p className="mt-1">{alert.why} {SOURCE[alert.source]}.</p>
+      </details>
     </article>
   );
 }
