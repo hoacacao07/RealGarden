@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Figtree } from "next/font/google";
 
 import { AlertBanner } from "@/components/alerts/alert-banner";
+import { ChatLauncher } from "@/components/assistant/chat-launcher";
 import { InspectorPanel } from "@/components/inspector/inspector-panel";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import "./globals.css";
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main id="main" className="flex-1">{children}</main>
         <SiteFooter />
         <InspectorPanel />
+        <ChatLauncher />
       </body>
     </html>
   );
