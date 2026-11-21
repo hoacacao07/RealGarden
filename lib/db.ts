@@ -13,7 +13,9 @@ function make() {
   // DB_POOL_MAX overrides both.
   const local = /@(localhost|127\.0\.0\.1)(:|\/)/.test(connectionString);
   const max = Number(process.env.DB_POOL_MAX) || (local ? 1 : 5);
-  return new PrismaClient({ adapter: new PrismaPg({ connectionString, max }) });
+  // Give up on a connection after 10 s, so a wrong or unreachable host (e.g. Supabase's IPv6-only direct host from
+  // Vercel) fails with a clear error instead of hanging until the serverless function times out.
+  return new PrismaClient({ adapter: new PrismaPg({ connectionString, max, connectionTimeoutMillis: 10_000 }) });
 }
 
 /**
