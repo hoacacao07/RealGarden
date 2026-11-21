@@ -23,7 +23,7 @@ import { loadPrompt } from "./prompts";
 import { defaultStore, type AiStore } from "./store";
 
 export type AiTask =
-  | "diagnose" | "soil_photo" | "suggest_pick" | "plant_blurb" | "alert_rewrite" | "care_week" | "eco_explain" | "assistant";
+  | "diagnose" | "soil_photo" | "suggest_pick" | "plant_blurb" | "alert_rewrite" | "care_week" | "eco_explain" | "daily_plan" | "assistant";
 
 export type Part = { text: string } | { inlineData: { mimeType: string; data: string } };
 
@@ -165,15 +165,15 @@ const retryable = (e: unknown) => {
 };
 
 /** One live call with timeout and retry on 429/5xx (exponential backoff, max 2 retries). */
-async function withRetry<T>(fn: (signal: AbortSignal) => Promise<T>): Promise<T> {
+async function withRetry<T>(fn: (signal: AbortSignal) => Promise<T>, limitMs: number = timeoutMs()): Promise<T> {
   for (let attempt = 0; ; attempt++) {
     const ctrl = new AbortController();
     let timedOut = false;
-    const timer = setTimeout(() => { timedOut = true; ctrl.abort(); }, timeoutMs());
+    const timer = setTimeout(() => { timedOut = true; ctrl.abort(); }, limitMs);
     try {
       return await fn(ctrl.signal);
     } catch (e) {
-      if (timedOut) throw new AiError(`Gemini timed out after ${timeoutMs()} ms`, "timeout");
+      if (timedOut) throw new AiError(`Gemini timed out after ${limitMs} ms`, "timeout");
       if (attempt < MAX_RETRIES && retryable(e)) {
         await sleep(500 * 2 ** attempt);
         continue;
@@ -228,6 +228,9 @@ export interface JsonOpts<T> {
   /** Extra check after zod (e.g. "only ids from the input"). Throw to reject. */
   check?: (v: T) => void;
   cache?: boolean;
+  /** Per-task overrides (e.g. daily_plan returns 7 days × every plant group). */
+  maxOutputTokens?: number;
+  timeoutMs?: number;
   /** Filled with where the answer came from. */
   meta?: { source?: "live" | "fixture" | "cache" };
 }
@@ -270,7 +273,7 @@ export async function generateJSON<T>(opts: JsonOpts<T>): Promise<T> {
     const t0 = Date.now();
     let chunk: GenChunk;
     try {
-      chunk = await withRetry((signal) => transport.generate({ model: modelName, system: p.system, contents, responseJsonSchema: opts.responseSchema, maxOutputTokens: maxOut(), temperature: 0.2 }, signal));
+      chunk = await withRetry((signal) => transport.generate({ model: modelName, system: p.system, contents, responseJsonSchema: opts.responseSchema, maxOutputTokens: opts.maxOutputTokens ?? maxOut(), temperature: 0.2 }, signal), opts.timeoutMs);
     } catch (e) {
       await log({ task: opts.task, model: modelName, latency_ms: Date.now() - t0, cache_hit: false, error: (e as Error).message });
       throw e;
