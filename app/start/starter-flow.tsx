@@ -3,8 +3,8 @@
 /**
  * Garden Starter, simple by default (spec 2B, Phases 11.6 and 11.8). Only two questions are needed:
  *   1. Style: pick one or more themes by picture.
- *   2. Place: ZIP, yard or balcony, size, sun ("Not sure" is fine).
- *   3. Your garden: plants suggested for the ZIP's zone, sun and soil, each with "Why this plant" and a
+ *   2. Place: a pin on the map, yard or balcony, size, sun ("Not sure" is fine).
+ *   3. Your garden: plants suggested for the pin's hardiness zone, sun and soil, each with "Why this plant" and a
  *      "Plant now / Plant in March" badge; "Prefer native plants" re-ranks the list.
  * Soil comes from the USDA survey automatically (safe defaults when missing). Everything else is optional.
  */
@@ -83,7 +83,6 @@ export function StarterFlow({ themes, plants }: { themes: ThemeDef[]; plants: Pl
   const router = useRouter();
   const [step, setStep] = useState(1);
   const [picked, setPicked] = useState<string[]>(["butterfly"]);
-  const [zip, setZip] = useState("");
   const [zone, setZone] = useState<ZoneRes | null>(null);
   const [zoneErr, setZoneErr] = useState<string | null>(null);
   const [kind, setKind] = useState<Kind>("yard");
@@ -107,7 +106,6 @@ export function StarterFlow({ themes, plants }: { themes: ThemeDef[]; plants: Pl
     if (on && id === "balcony") setKind("balcony");
   };
 
-  const findZip = (z = zip) => lookupZone(`zip=${z}`);
   const dropPin = (lat: number, lon: number) => lookupZone(`lat=${lat.toFixed(5)}&lon=${lon.toFixed(5)}`);
 
   async function lookupZone(query: string) {
@@ -218,29 +216,20 @@ export function StarterFlow({ themes, plants }: { themes: ThemeDef[]; plants: Pl
 
       {step === 2 && (
         <section className="space-y-6">
-          <div className="rounded-2xl border bg-card p-5 grid gap-5 lg:grid-cols-[1fr_1.3fr]">
-          <div className="space-y-3">
-            <form className="space-y-2 max-w-sm" onSubmit={(e) => { e.preventDefault(); findZip(); }}>
-              <Label htmlFor="zip">ZIP code</Label>
-              <div className="flex gap-2">
-                <Input id="zip" inputMode="numeric" maxLength={5} placeholder="33620" className="h-11 text-lg" value={zip}
-                  onChange={(e) => { const v = e.target.value.replace(/\D/g, ""); setZip(v); if (v.length === 5) findZip(v); }} />
-                <Button type="submit" size="lg" disabled={zip.length !== 5 || busy === "zone"}>{busy === "zone" ? <Loader2 className="animate-spin" aria-hidden /> : <MapPin aria-hidden />} Find</Button>
-              </div>
-            </form>
+          <div className="rounded-2xl border bg-card p-5 space-y-3">
+            <p className="text-sm font-medium flex items-center gap-2"><MapPin className="size-4 text-primary" aria-hidden /> Click the map to drop a pin on your garden.</p>
+            <div className="rounded-xl overflow-hidden border min-h-72">
+              <LocationMap value={zone ? [zone.lat, zone.lon] : null} onPick={dropPin} />
+            </div>
+            {busy === "zone" && <p className="text-sm text-muted-foreground flex items-center gap-2" role="status"><Loader2 className="size-4 animate-spin" aria-hidden /> Looking up your area…</p>}
             {zoneErr && <p className="text-sm text-coral" role="alert">{zoneErr}</p>}
-            {zone && (
+            {zone && busy !== "zone" && (
               <p className="text-sm flex flex-wrap items-center gap-2" role="status">
-                <span className="font-medium">{zone.place ?? (zone.zip ? `ZIP ${zone.zip}` : "Pinned location")}</span>
+                <span className="font-medium">{zone.place ?? "Pinned location"}</span>
                 <span className="rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold">USDA {zone.label}</span>
                 <span className="text-muted-foreground">{zone.region} Florida{zone.source === "estimate" ? " · zone estimated from latitude" : ""}</span>
               </p>
             )}
-            <p className="text-sm text-muted-foreground">Or click the map to drop a pin on your yard.</p>
-          </div>
-          <div className="rounded-xl overflow-hidden border min-h-72">
-            <LocationMap value={zone ? [zone.lat, zone.lon] : null} onPick={dropPin} />
-          </div>
           </div>
 
           <fieldset className="space-y-2">
@@ -311,7 +300,7 @@ export function StarterFlow({ themes, plants }: { themes: ThemeDef[]; plants: Pl
           <div className="flex flex-wrap items-center justify-between gap-3">
             <p className="text-sm flex flex-wrap items-center gap-2">
               <span className="rounded-full bg-secondary px-2.5 py-0.5 text-xs font-semibold">USDA Zone {res.zone}</span>
-              Picked for {zone.place ?? zone.zip}, your sun and soil{res.source === "gemini" ? ", balanced by Garden AI" : ""}.
+              Picked for {zone.place ?? "your spot"}, your sun and soil{res.source === "gemini" ? ", balanced by Garden AI" : ""}.
             </p>
             <div className="flex items-center gap-2 text-sm" role="radiogroup" aria-label="Prefer native plants">
               <Leaf className="size-4 text-primary" aria-hidden /> Prefer native plants:
