@@ -137,7 +137,12 @@ export function SiteFooter() {
           <a className="underline" href="https://sfyl.ifas.ufl.edu/find-your-local-office/" target="_blank" rel="noreferrer">UF/IFAS Extension office</a>.
           {" "}Weather alerts from the National Weather Service. Follow official instructions in an emergency.
         </p>
-        <p>Hackathon demo. Plant data is unverified until checked against UF/IFAS; plant data partly from Permapeople.org (CC BY-SA 4.0).
+        <p>
+          Plant information from <a className="underline" href="https://permapeople.org" target="_blank" rel="noreferrer">Permapeople.org</a>,
+          licensed under <a className="underline" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a>.
+          We cleaned and converted some values, and size, maintenance and cost figures for some plants are estimates.
+        </p>
+        <p>Hackathon demo. Florida plant details are unverified until checked against UF/IFAS.
           Weather by Open-Meteo, map tiles © OpenStreetMap contributors.</p>
       </div>
     </footer>
