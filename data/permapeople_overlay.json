@@ -1,0 +1,5 @@
+{
+  "_note": "Empty until you run `npm run pp:import` then `npm run pp:merge`. Generic plant fields from Permapeople.org (CC BY-SA 4.0), applied on top of the catalog by lib/catalog-data.ts.",
+  "generated_at": null,
+  "plants": {}
+}
