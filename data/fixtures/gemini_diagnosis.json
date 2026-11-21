@@ -1,0 +1,54 @@
+{
+  "_note": "Saved Gemini diagnosis responses for the 3 demo photos, plus a default for other uploads in DEMO_MODE.",
+  "healthy_firebush": {
+    "overall_health": "healthy",
+    "phenology_stage": "flowering",
+    "candidates": [],
+    "actions": [
+      "Keep watering only when the top 2 inches of soil are dry",
+      "Deadhead nothing: the flowers turn into berries birds love",
+      "Check again in about two weeks"
+    ],
+    "see_expert": false
+  },
+  "spotted_firebush": {
+    "overall_health": "mild_stress",
+    "phenology_stage": "budding",
+    "candidates": [
+      { "issue_key": "leaf_spot", "label": "Fungal leaf spot", "confidence": 0.71, "evidence": "Round brown spots with yellow halos on several lower leaves, typical after warm, wet weeks." },
+      { "issue_key": "mites", "label": "Spider mites", "confidence": 0.14, "evidence": "A little stippling near the leaf edges, but no webbing is visible." },
+      { "issue_key": "cold_damage", "label": "Cold damage", "confidence": 0.08, "evidence": "Some leaf margins are darker, though the pattern is spotty rather than edge-wide." }
+    ],
+    "actions": [
+      "Pick off the spotted leaves and put them in the trash, not the compost",
+      "Water at the base in the morning so leaves dry quickly",
+      "Give the plant more air by trimming any stems touching its neighbors",
+      "Take another photo in one week to see if new leaves stay clean"
+    ],
+    "see_expert": false
+  },
+  "mexican_petunia": {
+    "overall_health": "healthy",
+    "phenology_stage": "flowering",
+    "candidates": [],
+    "actions": [
+      "This looks like Mexican petunia, which is invasive in Florida",
+      "Dig out the plant and its runners before it sets seed, and bag it",
+      "Replace it with native wild petunia for the same purple flowers"
+    ],
+    "see_expert": false
+  },
+  "default": {
+    "overall_health": "unclear",
+    "phenology_stage": "unclear",
+    "candidates": [
+      { "issue_key": "leaf_spot", "label": "Possible leaf spot", "confidence": 0.3, "evidence": "A few small dark spots, but the photo is too far away to be sure." }
+    ],
+    "actions": [
+      "Take a closer, well-lit photo of one affected leaf",
+      "Remove fallen leaves from under the plant",
+      "Avoid wetting the leaves when you water"
+    ],
+    "see_expert": true
+  }
+}

@@ -1,0 +1,160 @@
+// NativeScape FL demo schema. Filtered plant fields are columns; the rest live in `attrs`.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Plant {
+  id              String   @id // slug, e.g. hamelia_patens
+  common_name     String
+  scientific_name String
+  category        String
+  form            String
+  origin          String // native | non_native
+  invasive_status String // none | invasive
+  regions         String[]
+  light           String[]
+  salt_tolerance  String
+  water_need      String
+  attrs           Json // every other field from data/plants.json
+  verified        Boolean  @default(false)
+
+  placements Placement[]
+  checkins   Checkin[]
+  reports    Report[]
+
+  @@index([category])
+  @@index([origin])
+}
+
+model Site {
+  id                  String   @id @default(cuid())
+  name                String
+  lat                 Float
+  lon                 Float
+  zip                 String?
+  region              String // north | central | south
+  sun                 String // full_sun | partial_shade | full_shade
+  soil                String // sand | sandy_loam | loam | muck
+  drainage            String // poor | moderate | fast
+  coastal_distance_mi Float
+  area_sqft           Float
+  native_target_pct   Float?
+  // Phase 10: soil. survey = USDA Soil Data Access, user = edited by hand, lab = UF/IFAS soil test, unknown = no reliable data
+  soil_source         String   @default("unknown")
+  survey_name         String?
+  component           String?
+  drainage_class      String? // survey drainage class text, e.g. "Moderately well drained"
+  sand_pct            Float?
+  clay_pct            Float?
+  om_pct              Float?
+  ph                  Float?
+  awc                 Float? // available water capacity, cm/cm
+  is_fill             Boolean? // user answer: built on fill dirt (null = not answered)
+  // Phase 11.5: balcony mode (kind = balcony). Distances in ft; facing is the compass bearing the balcony looks toward.
+  kind                String   @default("yard") // yard | balcony
+  facing_deg          Float?
+  floor_level         Int? // 1 = ground; 2, 4, 10 stand for the 2-3, 4-9 and 10+ choices
+  balcony_l_ft        Float?
+  balcony_w_ft        Float?
+  railing_ft          Float?
+  overhang_depth_ft   Float?
+  overhang_height_ft  Float? // height of the overhang edge above the balcony floor
+  rules               Json? // { railing_pots, hanging_baskets, no_drip }: true | false | null (unknown)
+  gardens             Garden[]
+}
+
+model Garden {
+  id          String   @id // short random id, used in the URL
+  site_id     String
+  site        Site     @relation(fields: [site_id], references: [id], onDelete: Cascade)
+  name        String
+  theme       String?
+  planted_on  DateTime @db.Date
+  canvas_w_ft Float
+  canvas_h_ft Float
+  is_demo     Boolean  @default(false)
+  // Phase 11: Garden Starter answers
+  goals          String[]  @default([]) // flowers | food | butterflies | low_care
+  hours_week     String? // 1 | 2-4 | 5+
+  budget_usd     Float?
+  space          String? // yard | raised_bed | containers | balcony | patio
+  target_harvest DateTime? @db.Date
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+
+  zones      Zone[]
+  placements Placement[]
+  checkins   Checkin[]
+}
+
+model Zone {
+  id         String      @id @default(cuid())
+  garden_id  String
+  garden     Garden      @relation(fields: [garden_id], references: [id], onDelete: Cascade)
+  name       String
+  polygon    Json // [[x_ft, y_ft], ...] in canvas feet
+  irrigation String // none | drip | spray
+  kind       String      @default("landscape") // landscape | edible (Phase 11)
+  bed        String? // in_ground | raised | container
+  depth_in   Float? // raised bed fill depth
+  placements Placement[]
+}
+
+model Placement {
+  id         String    @id @default(cuid())
+  garden_id  String
+  garden     Garden    @relation(fields: [garden_id], references: [id], onDelete: Cascade)
+  plant_id   String
+  plant      Plant     @relation(fields: [plant_id], references: [id])
+  zone_id    String?
+  zone       Zone?     @relation(fields: [zone_id], references: [id], onDelete: SetNull)
+  x_ft       Float
+  y_ft       Float
+  group_id   String?
+  planted_on DateTime  @db.Date
+  container_gal Float? // Phase 11.5: pot size in balcony mode
+  mount         String? // floor | railing | hanging
+  checkins   Checkin[]
+
+  @@index([garden_id])
+}
+
+model Checkin {
+  id               String     @id @default(cuid())
+  garden_id        String
+  garden           Garden     @relation(fields: [garden_id], references: [id], onDelete: Cascade)
+  placement_id     String?
+  placement        Placement? @relation(fields: [placement_id], references: [id], onDelete: SetNull)
+  image_url        String
+  identify         Json
+  matched_plant_id String?
+  matched_plant    Plant?     @relation(fields: [matched_plant_id], references: [id])
+  diagnosis        Json
+  height_ft        Float?
+  created_at       DateTime   @default(now())
+  reports          Report[]
+
+  @@index([garden_id])
+}
+
+model Report {
+  id            String   @id @default(cuid())
+  issue_key     String
+  label         String
+  host_plant_id String?
+  host_plant    Plant?   @relation(fields: [host_plant_id], references: [id])
+  lat_rounded   Float
+  lon_rounded   Float
+  is_sample     Boolean  @default(false)
+  created_at    DateTime @default(now())
+  checkin_id    String?
+  checkin       Checkin? @relation(fields: [checkin_id], references: [id], onDelete: SetNull)
+
+  @@index([created_at])
+}

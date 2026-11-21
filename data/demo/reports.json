@@ -1,0 +1,19 @@
+{
+  "_note": "SAMPLE DATA. Invented reports near Tampa for the demo map. Coordinates already rounded to 2 decimals. days_ago is relative to seeding.",
+  "reports": [
+    { "issue_key": "leaf_spot", "label": "Leaf spot", "host_plant_id": "hamelia_patens", "lat": 27.94, "lon": -82.49, "days_ago": 2 },
+    { "issue_key": "leaf_spot", "label": "Leaf spot", "host_plant_id": "hamelia_patens", "lat": 27.92, "lon": -82.48, "days_ago": 4 },
+    { "issue_key": "leaf_spot", "label": "Leaf spot", "host_plant_id": "coreopsis_leavenworthii", "lat": 27.95, "lon": -82.51, "days_ago": 6 },
+    { "issue_key": "leaf_spot", "label": "Leaf spot", "host_plant_id": "hamelia_patens", "lat": 27.91, "lon": -82.5, "days_ago": 9 },
+    { "issue_key": "powdery_mildew", "label": "Powdery mildew", "host_plant_id": "coreopsis_leavenworthii", "lat": 27.77, "lon": -82.64, "days_ago": 3 },
+    { "issue_key": "powdery_mildew", "label": "Powdery mildew", "host_plant_id": "helianthus_debilis", "lat": 27.78, "lon": -82.66, "days_ago": 7 },
+    { "issue_key": "powdery_mildew", "label": "Powdery mildew", "host_plant_id": "lonicera_sempervirens", "lat": 27.76, "lon": -82.65, "days_ago": 11 },
+    { "issue_key": "mites", "label": "Spider mites", "host_plant_id": "hamelia_patens", "lat": 27.94, "lon": -82.29, "days_ago": 5 },
+    { "issue_key": "mites", "label": "Spider mites", "host_plant_id": "hamelia_patens", "lat": 27.93, "lon": -82.28, "days_ago": 12 },
+    { "issue_key": "oleander_aphids", "label": "Oleander aphids", "host_plant_id": "asclepias_tuberosa", "lat": 28.06, "lon": -82.41, "days_ago": 3 },
+    { "issue_key": "oleander_aphids", "label": "Oleander aphids", "host_plant_id": "asclepias_incarnata", "lat": 28.07, "lon": -82.43, "days_ago": 8 },
+    { "issue_key": "scale", "label": "Scale insects", "host_plant_id": "zamia_integrifolia", "lat": 27.98, "lon": -82.7, "days_ago": 10 },
+    { "issue_key": "cold_damage", "label": "Cold damage", "host_plant_id": "stachytarpheta_jamaicensis", "lat": 28.15, "lon": -82.5, "days_ago": 15 },
+    { "issue_key": "root_rot", "label": "Root rot", "host_plant_id": "gaillardia_pulchella", "lat": 27.85, "lon": -82.32, "days_ago": 6 }
+  ]
+}

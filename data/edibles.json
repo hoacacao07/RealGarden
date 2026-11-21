@@ -1,0 +1,1644 @@
+{
+  "_note": "Edible crops (origin 'edible'). Planting windows, days to harvest and Kc are PLACEHOLDERS (verified: false): the data person fills real values from the UF/IFAS Florida Vegetable Gardening Guide (VH021, Table 1). Kc values are FAO-56 style estimates to verify. Windows are [startMonth, endMonth] inclusive; [8, 3] wraps the new year.",
+  "plants": [
+    {
+      "id": "tomato",
+      "common_name": "Tomato",
+      "scientific_name": "Solanum lycopersicum",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "vegetable",
+      "form": "upright",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun"
+      ],
+      "salt_tolerance": "low",
+      "water_need": "high",
+      "kc": 1.15,
+      "root_depth_in": 18,
+      "cold_hardy_f": 33,
+      "wind_tolerance": "low",
+      "mature_height_ft": [
+        4,
+        6
+      ],
+      "mature_spread_ft": [
+        2,
+        3
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 2,
+      "flower_colors": [
+        {
+          "name": "yellow",
+          "hex": "#F2C230"
+        }
+      ],
+      "fruit_colors": [
+        {
+          "name": "red",
+          "hex": "#D2382B"
+        }
+      ],
+      "foliage_color": "#4E7D3A",
+      "bloom_months": [
+        3,
+        4,
+        5,
+        10,
+        11
+      ],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [
+        "bees"
+      ],
+      "host_plant_for": [],
+      "garden_themes": [],
+      "common_issues": [
+        "early_blight",
+        "late_blight",
+        "blossom_end_rot",
+        "hornworm"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "vegetable bed",
+      "ph_range": [
+        5.8,
+        6.8
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": false,
+      "min_container_gal": 10,
+      "dwarf_variety": null,
+      "trellis": true,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              2,
+              4
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "central": [
+            [
+              1,
+              3
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "south": [
+            [
+              8,
+              3
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          60,
+          85
+        ],
+        "harvest_weeks": 6,
+        "spacing_in": 24,
+        "kc_stages": {
+          "ini": 0.6,
+          "mid": 1.15,
+          "end": 0.8,
+          "stage_days": [
+            30,
+            40,
+            40,
+            25
+          ]
+        },
+        "heavy_rain_sensitive": true,
+        "needs_staking": true,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    },
+    {
+      "id": "cherry_tomato",
+      "common_name": "Cherry Tomato",
+      "scientific_name": "Solanum lycopersicum var. cerasiforme",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "vegetable",
+      "form": "upright",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun"
+      ],
+      "salt_tolerance": "low",
+      "water_need": "high",
+      "kc": 1.15,
+      "root_depth_in": 18,
+      "cold_hardy_f": 33,
+      "wind_tolerance": "low",
+      "mature_height_ft": [
+        3,
+        5
+      ],
+      "mature_spread_ft": [
+        2,
+        3
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 2,
+      "flower_colors": [
+        {
+          "name": "yellow",
+          "hex": "#F2C230"
+        }
+      ],
+      "fruit_colors": [
+        {
+          "name": "red",
+          "hex": "#E0402F"
+        }
+      ],
+      "foliage_color": "#4E7D3A",
+      "bloom_months": [
+        3,
+        4,
+        5,
+        10,
+        11
+      ],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [
+        "bees"
+      ],
+      "host_plant_for": [],
+      "garden_themes": [],
+      "common_issues": [
+        "early_blight",
+        "blossom_end_rot",
+        "hornworm",
+        "whiteflies"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "vegetable bed",
+      "ph_range": [
+        5.8,
+        6.8
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": true,
+      "min_container_gal": 5,
+      "dwarf_variety": "Compact or patio types (e.g. 'Tiny Tim', 'Patio') stay under 3 ft",
+      "trellis": true,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              2,
+              4
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "central": [
+            [
+              1,
+              3
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "south": [
+            [
+              8,
+              3
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          55,
+          70
+        ],
+        "harvest_weeks": 10,
+        "spacing_in": 24,
+        "kc_stages": {
+          "ini": 0.6,
+          "mid": 1.15,
+          "end": 0.8,
+          "stage_days": [
+            25,
+            35,
+            45,
+            25
+          ]
+        },
+        "heavy_rain_sensitive": true,
+        "needs_staking": true,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    },
+    {
+      "id": "bell_pepper",
+      "common_name": "Pepper",
+      "scientific_name": "Capsicum annuum",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "vegetable",
+      "form": "mounding",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun"
+      ],
+      "salt_tolerance": "low",
+      "water_need": "medium",
+      "kc": 1.05,
+      "root_depth_in": 18,
+      "cold_hardy_f": 35,
+      "wind_tolerance": "medium",
+      "mature_height_ft": [
+        1.5,
+        3
+      ],
+      "mature_spread_ft": [
+        1.5,
+        2
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 1.5,
+      "flower_colors": [
+        {
+          "name": "white",
+          "hex": "#F4F1E6"
+        }
+      ],
+      "fruit_colors": [
+        {
+          "name": "green",
+          "hex": "#3E8A3A"
+        },
+        {
+          "name": "red",
+          "hex": "#C8312A"
+        }
+      ],
+      "foliage_color": "#3F7A35",
+      "bloom_months": [
+        3,
+        4,
+        5,
+        10,
+        11
+      ],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [
+        "bees"
+      ],
+      "host_plant_for": [],
+      "garden_themes": [],
+      "common_issues": [
+        "aphids",
+        "pepper_weevil",
+        "bacterial_spot"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "vegetable bed",
+      "ph_range": [
+        5.8,
+        6.8
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": true,
+      "min_container_gal": 3,
+      "dwarf_variety": null,
+      "trellis": false,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              2,
+              4
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "central": [
+            [
+              1,
+              3
+            ],
+            [
+              8,
+              9
+            ]
+          ],
+          "south": [
+            [
+              8,
+              3
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          60,
+          90
+        ],
+        "harvest_weeks": 10,
+        "spacing_in": 18,
+        "kc_stages": {
+          "ini": 0.6,
+          "mid": 1.05,
+          "end": 0.9,
+          "stage_days": [
+            25,
+            35,
+            40,
+            20
+          ]
+        },
+        "heavy_rain_sensitive": true,
+        "needs_staking": true,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    },
+    {
+      "id": "eggplant",
+      "common_name": "Eggplant",
+      "scientific_name": "Solanum melongena",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "vegetable",
+      "form": "mounding",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun"
+      ],
+      "salt_tolerance": "low",
+      "water_need": "medium",
+      "kc": 1.05,
+      "root_depth_in": 18,
+      "cold_hardy_f": 35,
+      "wind_tolerance": "medium",
+      "mature_height_ft": [
+        2,
+        4
+      ],
+      "mature_spread_ft": [
+        2,
+        3
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 2,
+      "flower_colors": [
+        {
+          "name": "lavender",
+          "hex": "#B9A2D6"
+        }
+      ],
+      "fruit_colors": [
+        {
+          "name": "purple",
+          "hex": "#4B2A5C"
+        }
+      ],
+      "foliage_color": "#4A6E3C",
+      "bloom_months": [
+        4,
+        5,
+        6,
+        10
+      ],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [
+        "bees"
+      ],
+      "host_plant_for": [],
+      "garden_themes": [],
+      "common_issues": [
+        "flea_beetles",
+        "spider_mites"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "vegetable bed",
+      "ph_range": [
+        5.5,
+        6.8
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": true,
+      "min_container_gal": 5,
+      "dwarf_variety": "Small-fruited types (e.g. 'Fairy Tale') suit pots",
+      "trellis": false,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              2,
+              7
+            ]
+          ],
+          "central": [
+            [
+              1,
+              3
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          "south": [
+            [
+              8,
+              2
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          70,
+          90
+        ],
+        "harvest_weeks": 10,
+        "spacing_in": 24,
+        "kc_stages": {
+          "ini": 0.6,
+          "mid": 1.05,
+          "end": 0.9,
+          "stage_days": [
+            30,
+            40,
+            40,
+            20
+          ]
+        },
+        "heavy_rain_sensitive": false,
+        "needs_staking": true,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    },
+    {
+      "id": "okra",
+      "common_name": "Okra",
+      "scientific_name": "Abelmoschus esculentus",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "vegetable",
+      "form": "upright",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun"
+      ],
+      "salt_tolerance": "medium",
+      "water_need": "medium",
+      "kc": 1,
+      "root_depth_in": 18,
+      "cold_hardy_f": 40,
+      "wind_tolerance": "medium",
+      "mature_height_ft": [
+        3,
+        6
+      ],
+      "mature_spread_ft": [
+        2,
+        3
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 1.5,
+      "flower_colors": [
+        {
+          "name": "cream",
+          "hex": "#F3E7B5"
+        }
+      ],
+      "fruit_colors": [
+        {
+          "name": "green",
+          "hex": "#5C9A3D"
+        }
+      ],
+      "foliage_color": "#4F7A3A",
+      "bloom_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [
+        "bees"
+      ],
+      "host_plant_for": [],
+      "garden_themes": [],
+      "common_issues": [
+        "root_knot_nematodes",
+        "aphids"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "vegetable bed",
+      "ph_range": [
+        5.8,
+        7
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": false,
+      "min_container_gal": 5,
+      "dwarf_variety": null,
+      "trellis": false,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              3,
+              7
+            ]
+          ],
+          "central": [
+            [
+              3,
+              8
+            ]
+          ],
+          "south": [
+            [
+              2,
+              3
+            ],
+            [
+              8,
+              9
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          50,
+          75
+        ],
+        "harvest_weeks": 10,
+        "spacing_in": 18,
+        "kc_stages": {
+          "ini": 0.5,
+          "mid": 1,
+          "end": 0.8,
+          "stage_days": [
+            20,
+            30,
+            30,
+            20
+          ]
+        },
+        "heavy_rain_sensitive": false,
+        "needs_staking": false,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    },
+    {
+      "id": "lettuce",
+      "common_name": "Lettuce",
+      "scientific_name": "Lactuca sativa",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "vegetable",
+      "form": "mounding",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun",
+        "partial_shade"
+      ],
+      "salt_tolerance": "low",
+      "water_need": "medium",
+      "kc": 1,
+      "root_depth_in": 8,
+      "cold_hardy_f": 28,
+      "wind_tolerance": "medium",
+      "mature_height_ft": [
+        0.5,
+        1
+      ],
+      "mature_spread_ft": [
+        0.8,
+        1
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 0.8,
+      "flower_colors": [],
+      "fruit_colors": [],
+      "foliage_color": "#7DBA4E",
+      "bloom_months": [],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [],
+      "host_plant_for": [],
+      "garden_themes": [],
+      "common_issues": [
+        "aphids",
+        "downy_mildew",
+        "bolting_in_heat"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "vegetable bed",
+      "ph_range": [
+        6,
+        7
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": true,
+      "min_container_gal": 1,
+      "dwarf_variety": "Leaf lettuce, cut-and-come-again",
+      "trellis": false,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              2,
+              3
+            ],
+            [
+              9,
+              9
+            ]
+          ],
+          "central": [
+            [
+              9,
+              3
+            ]
+          ],
+          "south": [
+            [
+              9,
+              1
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          40,
+          60
+        ],
+        "harvest_weeks": 4,
+        "spacing_in": 10,
+        "kc_stages": {
+          "ini": 0.7,
+          "mid": 1,
+          "end": 0.95,
+          "stage_days": [
+            20,
+            30,
+            15,
+            10
+          ]
+        },
+        "heavy_rain_sensitive": true,
+        "needs_staking": false,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    },
+    {
+      "id": "kale",
+      "common_name": "Kale",
+      "scientific_name": "Brassica oleracea var. sabellica",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "vegetable",
+      "form": "upright",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun",
+        "partial_shade"
+      ],
+      "salt_tolerance": "medium",
+      "water_need": "medium",
+      "kc": 1.05,
+      "root_depth_in": 12,
+      "cold_hardy_f": 20,
+      "wind_tolerance": "medium",
+      "mature_height_ft": [
+        1.5,
+        2.5
+      ],
+      "mature_spread_ft": [
+        1.5,
+        2
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 1.5,
+      "flower_colors": [
+        {
+          "name": "yellow",
+          "hex": "#F2C230"
+        }
+      ],
+      "fruit_colors": [],
+      "foliage_color": "#3E6B4A",
+      "bloom_months": [
+        3,
+        4
+      ],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [
+        "bees"
+      ],
+      "host_plant_for": [
+        "cabbage white"
+      ],
+      "garden_themes": [],
+      "common_issues": [
+        "caterpillars",
+        "aphids"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "vegetable bed",
+      "ph_range": [
+        6,
+        7.5
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": true,
+      "min_container_gal": 3,
+      "dwarf_variety": null,
+      "trellis": false,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              2,
+              3
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          "central": [
+            [
+              9,
+              2
+            ]
+          ],
+          "south": [
+            [
+              9,
+              1
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          40,
+          60
+        ],
+        "harvest_weeks": 12,
+        "spacing_in": 18,
+        "kc_stages": {
+          "ini": 0.7,
+          "mid": 1.05,
+          "end": 0.95,
+          "stage_days": [
+            20,
+            30,
+            20,
+            10
+          ]
+        },
+        "heavy_rain_sensitive": false,
+        "needs_staking": false,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    },
+    {
+      "id": "basil",
+      "common_name": "Basil",
+      "scientific_name": "Ocimum basilicum",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "herb",
+      "form": "mounding",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun",
+        "partial_shade"
+      ],
+      "salt_tolerance": "low",
+      "water_need": "medium",
+      "kc": 1,
+      "root_depth_in": 10,
+      "cold_hardy_f": 38,
+      "wind_tolerance": "medium",
+      "mature_height_ft": [
+        1,
+        2
+      ],
+      "mature_spread_ft": [
+        1,
+        1.5
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 1,
+      "flower_colors": [
+        {
+          "name": "white",
+          "hex": "#F4F1E6"
+        }
+      ],
+      "fruit_colors": [],
+      "foliage_color": "#3F8A3A",
+      "bloom_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [
+        "bees",
+        "butterflies"
+      ],
+      "host_plant_for": [],
+      "garden_themes": [],
+      "common_issues": [
+        "downy_mildew",
+        "cold_damage"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "herb pot or bed",
+      "ph_range": [
+        6,
+        7.5
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": true,
+      "min_container_gal": 1,
+      "dwarf_variety": null,
+      "trellis": false,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              3,
+              7
+            ]
+          ],
+          "central": [
+            [
+              2,
+              5
+            ],
+            [
+              9,
+              10
+            ]
+          ],
+          "south": [
+            [
+              9,
+              4
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          30,
+          50
+        ],
+        "harvest_weeks": 16,
+        "spacing_in": 12,
+        "kc_stages": {
+          "ini": 0.6,
+          "mid": 1,
+          "end": 0.9,
+          "stage_days": [
+            15,
+            25,
+            30,
+            20
+          ]
+        },
+        "heavy_rain_sensitive": true,
+        "needs_staking": false,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    },
+    {
+      "id": "parsley",
+      "common_name": "Parsley",
+      "scientific_name": "Petroselinum crispum",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "herb",
+      "form": "mounding",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun",
+        "partial_shade"
+      ],
+      "salt_tolerance": "low",
+      "water_need": "medium",
+      "kc": 1,
+      "root_depth_in": 10,
+      "cold_hardy_f": 25,
+      "wind_tolerance": "medium",
+      "mature_height_ft": [
+        0.8,
+        1.2
+      ],
+      "mature_spread_ft": [
+        0.8,
+        1
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 0.8,
+      "flower_colors": [
+        {
+          "name": "yellow-green",
+          "hex": "#D8DD7A"
+        }
+      ],
+      "fruit_colors": [],
+      "foliage_color": "#2F7A35",
+      "bloom_months": [
+        4,
+        5
+      ],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [
+        "butterflies",
+        "bees"
+      ],
+      "host_plant_for": [
+        "black swallowtail"
+      ],
+      "garden_themes": [],
+      "common_issues": [
+        "caterpillars"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "herb pot or bed",
+      "ph_range": [
+        6,
+        7
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": true,
+      "min_container_gal": 1,
+      "dwarf_variety": null,
+      "trellis": false,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              2,
+              3
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "central": [
+            [
+              9,
+              3
+            ]
+          ],
+          "south": [
+            [
+              9,
+              2
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          60,
+          80
+        ],
+        "harvest_weeks": 16,
+        "spacing_in": 10,
+        "kc_stages": {
+          "ini": 0.6,
+          "mid": 1,
+          "end": 0.9,
+          "stage_days": [
+            20,
+            30,
+            40,
+            20
+          ]
+        },
+        "heavy_rain_sensitive": false,
+        "needs_staking": false,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    },
+    {
+      "id": "sweet_potato",
+      "common_name": "Sweet Potato",
+      "scientific_name": "Ipomoea batatas",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "vegetable",
+      "form": "spreading",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun"
+      ],
+      "salt_tolerance": "medium",
+      "water_need": "low",
+      "kc": 1.15,
+      "root_depth_in": 18,
+      "cold_hardy_f": 40,
+      "wind_tolerance": "high",
+      "mature_height_ft": [
+        1,
+        1.5
+      ],
+      "mature_spread_ft": [
+        3,
+        5
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 1.5,
+      "flower_colors": [
+        {
+          "name": "lavender",
+          "hex": "#B9A2D6"
+        }
+      ],
+      "fruit_colors": [],
+      "foliage_color": "#4F8A3A",
+      "bloom_months": [],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [],
+      "host_plant_for": [],
+      "garden_themes": [],
+      "common_issues": [
+        "sweet_potato_weevil",
+        "wireworms"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "vegetable bed",
+      "ph_range": [
+        5.5,
+        6.5
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": false,
+      "min_container_gal": 15,
+      "dwarf_variety": null,
+      "trellis": false,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              3,
+              6
+            ]
+          ],
+          "central": [
+            [
+              2,
+              6
+            ]
+          ],
+          "south": [
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          110,
+          150
+        ],
+        "harvest_weeks": 2,
+        "spacing_in": 18,
+        "kc_stages": {
+          "ini": 0.5,
+          "mid": 1.15,
+          "end": 0.65,
+          "stage_days": [
+            20,
+            30,
+            60,
+            40
+          ]
+        },
+        "heavy_rain_sensitive": false,
+        "needs_staking": false,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    },
+    {
+      "id": "strawberry",
+      "common_name": "Strawberry",
+      "scientific_name": "Fragaria × ananassa",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "vegetable",
+      "form": "spreading",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun"
+      ],
+      "salt_tolerance": "low",
+      "water_need": "medium",
+      "kc": 0.85,
+      "root_depth_in": 8,
+      "cold_hardy_f": 28,
+      "wind_tolerance": "high",
+      "mature_height_ft": [
+        0.5,
+        0.8
+      ],
+      "mature_spread_ft": [
+        1,
+        1.5
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 1,
+      "flower_colors": [
+        {
+          "name": "white",
+          "hex": "#F4F1E6"
+        }
+      ],
+      "fruit_colors": [
+        {
+          "name": "red",
+          "hex": "#D22F3A"
+        }
+      ],
+      "foliage_color": "#3F7A35",
+      "bloom_months": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [
+        "bees"
+      ],
+      "host_plant_for": [],
+      "garden_themes": [],
+      "common_issues": [
+        "botrytis_gray_mold",
+        "spider_mites",
+        "birds"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "vegetable bed",
+      "ph_range": [
+        5.5,
+        6.5
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": true,
+      "min_container_gal": 1,
+      "dwarf_variety": "Hanging baskets and railing planters work well",
+      "trellis": false,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              9,
+              10
+            ]
+          ],
+          "central": [
+            [
+              10,
+              11
+            ]
+          ],
+          "south": [
+            [
+              10,
+              11
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          80,
+          120
+        ],
+        "harvest_weeks": 12,
+        "spacing_in": 12,
+        "kc_stages": {
+          "ini": 0.4,
+          "mid": 0.85,
+          "end": 0.75,
+          "stage_days": [
+            20,
+            30,
+            40,
+            30
+          ]
+        },
+        "heavy_rain_sensitive": true,
+        "needs_staking": false,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    },
+    {
+      "id": "bush_beans",
+      "common_name": "Bush Beans",
+      "scientific_name": "Phaseolus vulgaris",
+      "origin": "edible",
+      "invasive_status": "none",
+      "native_alternatives": [],
+      "category": "vegetable",
+      "form": "mounding",
+      "regions": [
+        "north",
+        "central",
+        "south"
+      ],
+      "light": [
+        "full_sun"
+      ],
+      "salt_tolerance": "low",
+      "water_need": "medium",
+      "kc": 1.05,
+      "root_depth_in": 12,
+      "cold_hardy_f": 33,
+      "wind_tolerance": "medium",
+      "mature_height_ft": [
+        1.5,
+        2
+      ],
+      "mature_spread_ft": [
+        1,
+        1.5
+      ],
+      "planting_height_ft": 0.5,
+      "growth_rate": "fast",
+      "spacing_ft": 0.5,
+      "flower_colors": [
+        {
+          "name": "white",
+          "hex": "#F4F1E6"
+        }
+      ],
+      "fruit_colors": [
+        {
+          "name": "green",
+          "hex": "#5C9A3D"
+        }
+      ],
+      "foliage_color": "#4F8A3A",
+      "bloom_months": [
+        4,
+        5,
+        10,
+        11
+      ],
+      "fruit_months": [],
+      "bloom_trigger": "season",
+      "gdd_base_f": 50,
+      "bloom_gdd": null,
+      "years_to_first_bloom": 0,
+      "bud_to_bloom_days": [
+        7,
+        14
+      ],
+      "bloom_to_fruit_days": [
+        20,
+        40
+      ],
+      "dioecious": false,
+      "wildlife_value": [
+        "bees"
+      ],
+      "host_plant_for": [],
+      "garden_themes": [],
+      "common_issues": [
+        "bean_leaf_beetle",
+        "rust"
+      ],
+      "establishment_months": 1,
+      "habitat": null,
+      "landscape_use": "vegetable bed",
+      "ph_range": [
+        5.8,
+        6.8
+      ],
+      "verified": false,
+      "source_urls": [
+        "https://edis.ifas.ufl.edu/publication/VH021"
+      ],
+      "container_ok": true,
+      "min_container_gal": 3,
+      "dwarf_variety": null,
+      "trellis": false,
+      "edible": {
+        "planting_windows": {
+          "north": [
+            [
+              3,
+              4
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "central": [
+            [
+              2,
+              4
+            ],
+            [
+              9,
+              9
+            ]
+          ],
+          "south": [
+            [
+              9,
+              4
+            ]
+          ]
+        },
+        "days_to_harvest": [
+          50,
+          60
+        ],
+        "harvest_weeks": 3,
+        "spacing_in": 6,
+        "kc_stages": {
+          "ini": 0.5,
+          "mid": 1.05,
+          "end": 0.9,
+          "stage_days": [
+            20,
+            30,
+            30,
+            10
+          ]
+        },
+        "heavy_rain_sensitive": true,
+        "needs_staking": false,
+        "source_url": "https://edis.ifas.ufl.edu/publication/VH021"
+      }
+    }
+  ]
+}

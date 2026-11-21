@@ -1,0 +1,35 @@
+{
+  "_note": "Summer fertilizer restrictions (nitrogen and phosphorus) used by the task calendar. Bounding boxes are rough [south, west, north, east] and the most specific match (city before county) wins. verified: false until a teammate checks each ordinance page. The UI always says 'Check your local fertilizer ordinance'.",
+  "rules": [
+    {
+      "id": "tampa", "name": "City of Tampa", "level": "city", "bbox": [27.85, -82.65, 28.17, -82.39],
+      "restricted": [[6, 1], [9, 30]], "source_url": "https://www.tampa.gov",
+      "note": "No nitrogen or phosphorus fertilizer June 1 to September 30 (summer rainy season). Verify on the city's fertilizer ordinance page.", "verified": false
+    },
+    {
+      "id": "hillsborough", "name": "Hillsborough County", "level": "county", "bbox": [27.57, -82.65, 28.17, -82.05],
+      "restricted": [[6, 1], [9, 30]], "source_url": "https://hcfl.gov",
+      "note": "Seeded with the common June 1 to September 30 window. Verify whether unincorporated Hillsborough restricts summer fertilizer.", "verified": false
+    },
+    {
+      "id": "pinellas", "name": "Pinellas County", "level": "county", "bbox": [27.6, -82.86, 28.18, -82.63],
+      "restricted": [[6, 1], [9, 30]], "source_url": "https://pinellas.gov",
+      "note": "No nitrogen or phosphorus fertilizer June 1 to September 30. Verify on the county's fertilizer ordinance page.", "verified": false
+    },
+    {
+      "id": "manatee", "name": "Manatee County", "level": "county", "bbox": [27.2, -82.75, 27.65, -82.05],
+      "restricted": [[6, 1], [9, 30]], "source_url": "https://www.mymanatee.org",
+      "note": "No nitrogen or phosphorus fertilizer June 1 to September 30. Verify on the county's fertilizer ordinance page.", "verified": false
+    },
+    {
+      "id": "sarasota", "name": "Sarasota County", "level": "county", "bbox": [26.94, -82.6, 27.39, -82.05],
+      "restricted": [[6, 1], [9, 30]], "source_url": "https://www.scgov.net",
+      "note": "No nitrogen or phosphorus fertilizer June 1 to September 30. Verify on the county's fertilizer ordinance page.", "verified": false
+    }
+  ],
+  "default": {
+    "id": "default", "name": "Your area (no rule on file)", "level": "default", "bbox": null,
+    "restricted": [[6, 1], [9, 30]], "source_url": "https://ffl.ifas.ufl.edu",
+    "note": "No ordinance on file for this location. Many Florida cities and counties restrict summer fertilizer, so the calendar avoids June to September to be safe.", "verified": false
+  }
+}

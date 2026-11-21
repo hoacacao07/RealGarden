@@ -1,0 +1,40 @@
+{
+  "_note": "Saved Pl@ntNet /v2/identify responses (trimmed to the fields we use) for the 3 demo photos.",
+  "healthy_firebush": {
+    "bestMatch": "Hamelia patens Jacq.",
+    "results": [
+      { "score": 0.89, "species": { "scientificNameWithoutAuthor": "Hamelia patens", "commonNames": ["Firebush", "Scarlet bush"] } },
+      { "score": 0.04, "species": { "scientificNameWithoutAuthor": "Ixora coccinea", "commonNames": ["Jungle geranium"] } },
+      { "score": 0.02, "species": { "scientificNameWithoutAuthor": "Odontonema tubaeforme", "commonNames": ["Firespike"] } },
+      { "score": 0.01, "species": { "scientificNameWithoutAuthor": "Russelia equisetiformis", "commonNames": ["Firecracker plant"] } },
+      { "score": 0.01, "species": { "scientificNameWithoutAuthor": "Lantana camara", "commonNames": ["Lantana"] } }
+    ]
+  },
+  "spotted_firebush": {
+    "bestMatch": "Hamelia patens Jacq.",
+    "results": [
+      { "score": 0.76, "species": { "scientificNameWithoutAuthor": "Hamelia patens", "commonNames": ["Firebush", "Scarlet bush"] } },
+      { "score": 0.07, "species": { "scientificNameWithoutAuthor": "Psychotria nervosa", "commonNames": ["Wild coffee"] } },
+      { "score": 0.03, "species": { "scientificNameWithoutAuthor": "Ixora coccinea", "commonNames": ["Jungle geranium"] } },
+      { "score": 0.02, "species": { "scientificNameWithoutAuthor": "Odontonema tubaeforme", "commonNames": ["Firespike"] } },
+      { "score": 0.01, "species": { "scientificNameWithoutAuthor": "Cestrum nocturnum", "commonNames": ["Night jessamine"] } }
+    ]
+  },
+  "mexican_petunia": {
+    "bestMatch": "Ruellia simplex C.Wright",
+    "results": [
+      { "score": 0.84, "species": { "scientificNameWithoutAuthor": "Ruellia simplex", "commonNames": ["Mexican petunia", "Britton's wild petunia"] } },
+      { "score": 0.06, "species": { "scientificNameWithoutAuthor": "Ruellia caroliniana", "commonNames": ["Carolina wild petunia"] } },
+      { "score": 0.03, "species": { "scientificNameWithoutAuthor": "Ruellia tuberosa", "commonNames": ["Minnieroot"] } },
+      { "score": 0.01, "species": { "scientificNameWithoutAuthor": "Barleria cristata", "commonNames": ["Philippine violet"] } },
+      { "score": 0.01, "species": { "scientificNameWithoutAuthor": "Strobilanthes dyeriana", "commonNames": ["Persian shield"] } }
+    ]
+  },
+  "default": {
+    "bestMatch": null,
+    "results": [
+      { "score": 0.12, "species": { "scientificNameWithoutAuthor": "Hamelia patens", "commonNames": ["Firebush"] } },
+      { "score": 0.08, "species": { "scientificNameWithoutAuthor": "Ixora coccinea", "commonNames": ["Jungle geranium"] } }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "_note": "Saved USDA Soil Data Access responses (tabular/post.rest, JSON+COLUMNNAME), keyed by point rounded to 2 decimals. Pulled live 2026-11-21. Used when DEMO_MODE=true or the live call fails.",
+  "27.93,-82.50": {"Table":[["muname","compname","drainagecl","hydgrp","sandtotal_r","claytotal_r","om_r","ph1to1h2o_r","awc_r"],["Tavares fine sand-Urban land complex, 0 to 5 percent slopes","Tavares","Moderately well drained","A","97.9","1.5","1.5","5","0.08"]]},
+  "28.06,-82.41": {"Table":[["muname","compname","drainagecl","hydgrp","sandtotal_r","claytotal_r","om_r","ph1to1h2o_r","awc_r"],["Candler fine sand, 5 to 12 percent slopes","Candler","Excessively drained","A","97.9","1.5","1.25","5.3","0.06"]]}
+}

@@ -1,0 +1,3673 @@
+[
+  {
+    "id": "sabal_palmetto",
+    "common_name": "Sabal Palm",
+    "scientific_name": "Sabal palmetto",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "palm",
+    "form": "palm",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "high",
+    "water_need": "low",
+    "kc": 0.4,
+    "root_depth_in": 24,
+    "cold_hardy_f": 10,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      30,
+      50
+    ],
+    "mature_spread_ft": [
+      10,
+      15
+    ],
+    "planting_height_ft": 8,
+    "growth_rate": "slow",
+    "spacing_ft": 9,
+    "flower_colors": [
+      {
+        "name": "cream",
+        "hex": "#F1E9C8"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "black",
+        "hex": "#26231F"
+      }
+    ],
+    "foliage_color": "#4E6E46",
+    "bloom_months": [
+      6,
+      7
+    ],
+    "fruit_months": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 8,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "birds",
+      "bees"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "seaside",
+      "wildlife"
+    ],
+    "common_issues": [
+      "palmetto_weevil",
+      "ganoderma_butt_rot",
+      "lethal_bronzing"
+    ],
+    "establishment_months": 12,
+    "habitat": "hammocks, coastal uplands, flatwoods",
+    "landscape_use": "specimen palm, street tree",
+    "ph_range": [
+      5,
+      8.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "serenoa_repens",
+    "common_name": "Saw Palmetto",
+    "scientific_name": "Serenoa repens",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "palm",
+    "form": "palm",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade",
+      "full_shade"
+    ],
+    "salt_tolerance": "high",
+    "water_need": "low",
+    "kc": 0.4,
+    "root_depth_in": 18,
+    "cold_hardy_f": 10,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      4,
+      8
+    ],
+    "mature_spread_ft": [
+      4,
+      10
+    ],
+    "planting_height_ft": 1.5,
+    "growth_rate": "slow",
+    "spacing_ft": 5,
+    "flower_colors": [
+      {
+        "name": "cream",
+        "hex": "#EFE6C1"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "black",
+        "hex": "#2A2622"
+      }
+    ],
+    "foliage_color": "#6F8F6A",
+    "bloom_months": [
+      4,
+      5,
+      6
+    ],
+    "fruit_months": [
+      8,
+      9,
+      10
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 5,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "bees",
+      "birds",
+      "mammals"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "seaside",
+      "wildlife"
+    ],
+    "common_issues": [
+      "ganoderma_butt_rot",
+      "scale"
+    ],
+    "establishment_months": 12,
+    "habitat": "pine flatwoods, coastal scrub, dunes",
+    "landscape_use": "mass planting, screen, understory",
+    "ph_range": [
+      4.5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "zamia_integrifolia",
+    "common_name": "Coontie",
+    "scientific_name": "Zamia integrifolia",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "shrub",
+    "form": "fern",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade",
+      "full_shade"
+    ],
+    "salt_tolerance": "medium",
+    "water_need": "low",
+    "kc": 0.4,
+    "root_depth_in": 12,
+    "cold_hardy_f": 15,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      2,
+      3
+    ],
+    "mature_spread_ft": [
+      3,
+      5
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "slow",
+    "spacing_ft": 3,
+    "flower_colors": [],
+    "fruit_colors": [
+      {
+        "name": "orange",
+        "hex": "#E07A2E"
+      }
+    ],
+    "foliage_color": "#2F5A2C",
+    "bloom_months": [],
+    "fruit_months": [
+      10,
+      11,
+      12
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 6,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": true,
+    "wildlife_value": [
+      "butterflies"
+    ],
+    "host_plant_for": [
+      "atala hairstreak"
+    ],
+    "garden_themes": [
+      "wildlife",
+      "seaside"
+    ],
+    "common_issues": [
+      "scale",
+      "mealybugs"
+    ],
+    "establishment_months": 6,
+    "habitat": "hammocks, pinelands, sandy scrub",
+    "landscape_use": "groundcover, foundation, massing",
+    "ph_range": [
+      5.5,
+      8
+    ],
+    "verified": false,
+    "source_urls": [],
+    "container_ok": true,
+    "min_container_gal": 5,
+    "dwarf_variety": null,
+    "trellis": false
+  },
+  {
+    "id": "quercus_virginiana",
+    "common_name": "Live Oak",
+    "scientific_name": "Quercus virginiana",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "large_tree",
+    "form": "tree",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "medium",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 24,
+    "cold_hardy_f": 10,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      40,
+      80
+    ],
+    "mature_spread_ft": [
+      60,
+      100
+    ],
+    "planting_height_ft": 6,
+    "growth_rate": "medium",
+    "spacing_ft": 60,
+    "flower_colors": [],
+    "fruit_colors": [
+      {
+        "name": "brown",
+        "hex": "#6B4A2B"
+      }
+    ],
+    "foliage_color": "#3E5E34",
+    "bloom_months": [],
+    "fruit_months": [
+      9,
+      10,
+      11
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 15,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "birds",
+      "butterflies"
+    ],
+    "host_plant_for": [
+      "oak hairstreak"
+    ],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "oak_wilt",
+      "galls",
+      "scale"
+    ],
+    "establishment_months": 12,
+    "habitat": "hammocks, coastal uplands",
+    "landscape_use": "shade tree, specimen",
+    "ph_range": [
+      5,
+      8
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "taxodium_distichum",
+    "common_name": "Bald Cypress",
+    "scientific_name": "Taxodium distichum",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "large_tree",
+    "form": "tree",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "high",
+    "kc": 0.9,
+    "root_depth_in": 36,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      50,
+      80
+    ],
+    "mature_spread_ft": [
+      20,
+      30
+    ],
+    "planting_height_ft": 6,
+    "growth_rate": "medium",
+    "spacing_ft": 19,
+    "flower_colors": [],
+    "fruit_colors": [
+      {
+        "name": "brown",
+        "hex": "#7A5A3A"
+      }
+    ],
+    "foliage_color": "#6E8F3D",
+    "bloom_months": [],
+    "fruit_months": [
+      10,
+      11
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 15,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "birds"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "water"
+    ],
+    "common_issues": [
+      "bagworms",
+      "twig_blight"
+    ],
+    "establishment_months": 12,
+    "habitat": "swamps, river and lake margins",
+    "landscape_use": "wet-site shade tree, rain garden edge",
+    "ph_range": [
+      4.5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "myrcianthes_fragrans",
+    "common_name": "Simpson's Stopper",
+    "scientific_name": "Myrcianthes fragrans",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "small_tree",
+    "form": "tree",
+    "regions": [
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "high",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 18,
+    "cold_hardy_f": 25,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      10,
+      20
+    ],
+    "mature_spread_ft": [
+      8,
+      15
+    ],
+    "planting_height_ft": 3,
+    "growth_rate": "slow",
+    "spacing_ft": 9,
+    "flower_colors": [
+      {
+        "name": "white",
+        "hex": "#F6F4EC"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "red",
+        "hex": "#B3262E"
+      }
+    ],
+    "foliage_color": "#3F6438",
+    "bloom_months": [
+      4,
+      5,
+      6
+    ],
+    "fruit_months": [
+      8,
+      9,
+      10
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 4,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "birds",
+      "bees",
+      "butterflies"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "seaside",
+      "wildlife"
+    ],
+    "common_issues": [
+      "myrtle_rust",
+      "scale"
+    ],
+    "establishment_months": 9,
+    "habitat": "coastal hammocks",
+    "landscape_use": "hedge, small specimen tree",
+    "ph_range": [
+      6,
+      8.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "psychotria_nervosa",
+    "common_name": "Wild Coffee",
+    "scientific_name": "Psychotria nervosa",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "shrub",
+    "form": "mounding",
+    "regions": [
+      "central",
+      "south"
+    ],
+    "light": [
+      "partial_shade",
+      "full_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "medium",
+    "kc": 0.6,
+    "root_depth_in": 12,
+    "cold_hardy_f": 30,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      4,
+      8
+    ],
+    "mature_spread_ft": [
+      3,
+      6
+    ],
+    "planting_height_ft": 2,
+    "growth_rate": "medium",
+    "spacing_ft": 3,
+    "flower_colors": [
+      {
+        "name": "white",
+        "hex": "#F4F2EA"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "red",
+        "hex": "#C8222B"
+      }
+    ],
+    "foliage_color": "#2E5A2B",
+    "bloom_months": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "fruit_months": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 2,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "birds",
+      "bees",
+      "butterflies"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "scale",
+      "sooty_mold"
+    ],
+    "establishment_months": 6,
+    "habitat": "hammock understory",
+    "landscape_use": "shade hedge, understory",
+    "ph_range": [
+      5.5,
+      8
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "hamelia_patens",
+    "common_name": "Firebush",
+    "scientific_name": "Hamelia patens",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "shrub",
+    "form": "mounding",
+    "regions": [
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "medium",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 18,
+    "cold_hardy_f": 32,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      6,
+      12
+    ],
+    "mature_spread_ft": [
+      5,
+      8
+    ],
+    "planting_height_ft": 1.5,
+    "growth_rate": "fast",
+    "spacing_ft": 4,
+    "flower_colors": [
+      {
+        "name": "red-orange",
+        "hex": "#E2512B"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "black",
+        "hex": "#2B2B2B"
+      }
+    ],
+    "foliage_color": "#4F7A3A",
+    "bloom_months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "fruit_months": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "hummingbirds",
+      "birds"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "cold_damage",
+      "mites",
+      "leaf_spot"
+    ],
+    "establishment_months": 6,
+    "habitat": "hammock edges, disturbed sites",
+    "landscape_use": "butterfly garden shrub, hedge",
+    "ph_range": [
+      5.5,
+      8.5
+    ],
+    "verified": false,
+    "source_urls": [],
+    "container_ok": true,
+    "min_container_gal": 10,
+    "dwarf_variety": "Prune to 3 to 4 ft in a large pot. Plants sold as 'dwarf firebush' are often a non-native form, so check the label for Hamelia patens var. patens",
+    "trellis": false
+  },
+  {
+    "id": "callicarpa_americana",
+    "common_name": "American Beautyberry",
+    "scientific_name": "Callicarpa americana",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "shrub",
+    "form": "mounding",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 18,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      4,
+      8
+    ],
+    "mature_spread_ft": [
+      4,
+      8
+    ],
+    "planting_height_ft": 2,
+    "growth_rate": "fast",
+    "spacing_ft": 5,
+    "flower_colors": [
+      {
+        "name": "lavender",
+        "hex": "#C9A3D6"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "magenta-purple",
+        "hex": "#A0399E"
+      }
+    ],
+    "foliage_color": "#6C8F45",
+    "bloom_months": [
+      5,
+      6,
+      7
+    ],
+    "fruit_months": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "bloom_trigger": "gdd",
+    "gdd_base_f": 50,
+    "bloom_gdd": 6150,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "birds",
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "leaf_spot"
+    ],
+    "establishment_months": 6,
+    "habitat": "pinelands, hammock edges",
+    "landscape_use": "informal hedge, wildlife shrub",
+    "ph_range": [
+      5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "lonicera_sempervirens",
+    "common_name": "Coral Honeysuckle",
+    "scientific_name": "Lonicera sempervirens",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "vine",
+    "form": "vine",
+    "regions": [
+      "north",
+      "central"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 12,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      10,
+      20
+    ],
+    "mature_spread_ft": [
+      3,
+      6
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "medium",
+    "spacing_ft": 3,
+    "flower_colors": [
+      {
+        "name": "coral red",
+        "hex": "#D8433A"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "red",
+        "hex": "#C32E2B"
+      }
+    ],
+    "foliage_color": "#4D7448",
+    "bloom_months": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "fruit_months": [
+      6,
+      7,
+      8
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "hummingbirds",
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [
+      "spring azure"
+    ],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "powdery_mildew",
+      "aphids"
+    ],
+    "establishment_months": 6,
+    "habitat": "hammock edges, fencerows",
+    "landscape_use": "trellis, fence, arbor vine",
+    "ph_range": [
+      5.5,
+      8
+    ],
+    "verified": false,
+    "source_urls": [],
+    "container_ok": true,
+    "min_container_gal": 10,
+    "dwarf_variety": "Train it up a trellis against the wall",
+    "trellis": true
+  },
+  {
+    "id": "muhlenbergia_capillaris",
+    "common_name": "Muhly Grass",
+    "scientific_name": "Muhlenbergia capillaris",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "grass",
+    "form": "grass",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "high",
+    "water_need": "low",
+    "kc": 0.4,
+    "root_depth_in": 18,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      2,
+      3
+    ],
+    "mature_spread_ft": [
+      2,
+      3
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "medium",
+    "spacing_ft": 2,
+    "flower_colors": [
+      {
+        "name": "pink",
+        "hex": "#D88AB5"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#7C9A5C",
+    "bloom_months": [
+      9,
+      10,
+      11
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "birds"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "seaside",
+      "wildlife"
+    ],
+    "common_issues": [
+      "leaf_rust"
+    ],
+    "establishment_months": 4,
+    "habitat": "pine flatwoods, coastal dunes",
+    "landscape_use": "mass planting, border accent",
+    "ph_range": [
+      5,
+      8
+    ],
+    "verified": false,
+    "source_urls": [],
+    "container_ok": true,
+    "min_container_gal": 5,
+    "dwarf_variety": null,
+    "trellis": false
+  },
+  {
+    "id": "gaillardia_pulchella",
+    "common_name": "Blanket Flower",
+    "scientific_name": "Gaillardia pulchella",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "high",
+    "water_need": "low",
+    "kc": 0.4,
+    "root_depth_in": 8,
+    "cold_hardy_f": 20,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      1,
+      2
+    ],
+    "mature_spread_ft": [
+      1,
+      2
+    ],
+    "planting_height_ft": 0.5,
+    "growth_rate": "fast",
+    "spacing_ft": 1,
+    "flower_colors": [
+      {
+        "name": "red",
+        "hex": "#C93A2A"
+      },
+      {
+        "name": "yellow",
+        "hex": "#F2C230"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#6F8F4E",
+    "bloom_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "seaside",
+      "wildlife"
+    ],
+    "common_issues": [
+      "aster_yellows",
+      "root_rot"
+    ],
+    "establishment_months": 2,
+    "habitat": "coastal dunes, sandy roadsides",
+    "landscape_use": "wildflower bed, dune planting",
+    "ph_range": [
+      5.5,
+      8.5
+    ],
+    "verified": false,
+    "source_urls": [],
+    "container_ok": true,
+    "min_container_gal": 3,
+    "dwarf_variety": null,
+    "trellis": false
+  },
+  {
+    "id": "coreopsis_leavenworthii",
+    "common_name": "Leavenworth's Tickseed",
+    "scientific_name": "Coreopsis leavenworthii",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "medium",
+    "kc": 0.5,
+    "root_depth_in": 8,
+    "cold_hardy_f": 15,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      1,
+      3
+    ],
+    "mature_spread_ft": [
+      1,
+      2
+    ],
+    "planting_height_ft": 0.5,
+    "growth_rate": "fast",
+    "spacing_ft": 1,
+    "flower_colors": [
+      {
+        "name": "golden yellow",
+        "hex": "#F4C21D"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#5E8A3E",
+    "bloom_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees",
+      "birds"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "powdery_mildew",
+      "leaf_spot"
+    ],
+    "establishment_months": 2,
+    "habitat": "wet flatwoods, roadsides",
+    "landscape_use": "wildflower meadow, border",
+    "ph_range": [
+      5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": [],
+    "container_ok": true,
+    "min_container_gal": 3,
+    "dwarf_variety": null,
+    "trellis": false
+  },
+  {
+    "id": "helianthus_debilis",
+    "common_name": "Beach Sunflower",
+    "scientific_name": "Helianthus debilis",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "spreading",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "high",
+    "water_need": "low",
+    "kc": 0.4,
+    "root_depth_in": 10,
+    "cold_hardy_f": 25,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      1,
+      2
+    ],
+    "mature_spread_ft": [
+      3,
+      4
+    ],
+    "planting_height_ft": 0.5,
+    "growth_rate": "fast",
+    "spacing_ft": 3,
+    "flower_colors": [
+      {
+        "name": "yellow",
+        "hex": "#F6C915"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#5B7F3A",
+    "bloom_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees",
+      "birds"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "seaside",
+      "wildlife"
+    ],
+    "common_issues": [
+      "powdery_mildew"
+    ],
+    "establishment_months": 2,
+    "habitat": "coastal dunes, beaches",
+    "landscape_use": "groundcover, dune stabilization",
+    "ph_range": [
+      5.5,
+      8.5
+    ],
+    "verified": false,
+    "source_urls": [],
+    "container_ok": true,
+    "min_container_gal": 5,
+    "dwarf_variety": "Trails over the pot edge; give it a wide, shallow pot",
+    "trellis": false
+  },
+  {
+    "id": "solidago_sempervirens",
+    "common_name": "Seaside Goldenrod",
+    "scientific_name": "Solidago sempervirens",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "high",
+    "water_need": "medium",
+    "kc": 0.5,
+    "root_depth_in": 12,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      2,
+      6
+    ],
+    "mature_spread_ft": [
+      1,
+      3
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "fast",
+    "spacing_ft": 2,
+    "flower_colors": [
+      {
+        "name": "yellow",
+        "hex": "#EBC22C"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#5F8240",
+    "bloom_months": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "seaside",
+      "wildlife"
+    ],
+    "common_issues": [
+      "powdery_mildew",
+      "leaf_rust"
+    ],
+    "establishment_months": 3,
+    "habitat": "coastal dunes, salt marsh edges",
+    "landscape_use": "coastal wildflower, meadow",
+    "ph_range": [
+      5,
+      8
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "liatris_spicata",
+    "common_name": "Dense Blazing Star",
+    "scientific_name": "Liatris spicata",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "medium",
+    "kc": 0.5,
+    "root_depth_in": 12,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      2,
+      4
+    ],
+    "mature_spread_ft": [
+      1,
+      1
+    ],
+    "planting_height_ft": 0.5,
+    "growth_rate": "medium",
+    "spacing_ft": 1,
+    "flower_colors": [
+      {
+        "name": "purple",
+        "hex": "#8E4FB0"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#5A7E45",
+    "bloom_months": [
+      8,
+      9,
+      10
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "gdd",
+    "gdd_base_f": 50,
+    "bloom_gdd": 6450,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "root_rot"
+    ],
+    "establishment_months": 3,
+    "habitat": "wet flatwoods, savannas",
+    "landscape_use": "meadow accent",
+    "ph_range": [
+      5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "stachytarpheta_jamaicensis",
+    "common_name": "Blue Porterweed",
+    "scientific_name": "Stachytarpheta jamaicensis",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "spreading",
+    "regions": [
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "medium",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 12,
+    "cold_hardy_f": 33,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      2,
+      4
+    ],
+    "mature_spread_ft": [
+      3,
+      5
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "fast",
+    "spacing_ft": 3,
+    "flower_colors": [
+      {
+        "name": "blue-violet",
+        "hex": "#5A4FC4"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#4E7A3E",
+    "bloom_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees",
+      "hummingbirds"
+    ],
+    "host_plant_for": [
+      "tropical buckeye"
+    ],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "nematodes",
+      "scale"
+    ],
+    "establishment_months": 3,
+    "habitat": "pinelands, disturbed coastal sites",
+    "landscape_use": "butterfly garden filler",
+    "ph_range": [
+      5.5,
+      8
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "salvia_coccinea",
+    "common_name": "Scarlet Sage",
+    "scientific_name": "Salvia coccinea",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "medium",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 8,
+    "cold_hardy_f": 25,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      2,
+      3
+    ],
+    "mature_spread_ft": [
+      1,
+      2
+    ],
+    "planting_height_ft": 0.5,
+    "growth_rate": "fast",
+    "spacing_ft": 1,
+    "flower_colors": [
+      {
+        "name": "scarlet",
+        "hex": "#D7263D"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#5B8445",
+    "bloom_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "hummingbirds",
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "whiteflies"
+    ],
+    "establishment_months": 2,
+    "habitat": "hammock edges, disturbed sites",
+    "landscape_use": "wildflower bed, border",
+    "ph_range": [
+      5.5,
+      8
+    ],
+    "verified": false,
+    "source_urls": [],
+    "container_ok": true,
+    "min_container_gal": 3,
+    "dwarf_variety": null,
+    "trellis": false
+  },
+  {
+    "id": "asclepias_tuberosa",
+    "common_name": "Butterfly Milkweed",
+    "scientific_name": "Asclepias tuberosa",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "medium",
+    "water_need": "low",
+    "kc": 0.4,
+    "root_depth_in": 24,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      1,
+      2
+    ],
+    "mature_spread_ft": [
+      1,
+      2
+    ],
+    "planting_height_ft": 0.5,
+    "growth_rate": "medium",
+    "spacing_ft": 1,
+    "flower_colors": [
+      {
+        "name": "orange",
+        "hex": "#F07F1E"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "green",
+        "hex": "#7E9A55"
+      }
+    ],
+    "foliage_color": "#5F8540",
+    "bloom_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "fruit_months": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [
+      "monarch",
+      "queen"
+    ],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "oleander_aphids",
+      "root_rot"
+    ],
+    "establishment_months": 6,
+    "habitat": "sandhills, dry pinelands",
+    "landscape_use": "butterfly garden",
+    "ph_range": [
+      4.5,
+      7
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "asclepias_incarnata",
+    "common_name": "Swamp Milkweed",
+    "scientific_name": "Asclepias incarnata",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "high",
+    "kc": 0.8,
+    "root_depth_in": 12,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "low",
+    "mature_height_ft": [
+      3,
+      5
+    ],
+    "mature_spread_ft": [
+      1,
+      2
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "medium",
+    "spacing_ft": 1,
+    "flower_colors": [
+      {
+        "name": "pink",
+        "hex": "#D774A3"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "green",
+        "hex": "#7E9A55"
+      }
+    ],
+    "foliage_color": "#5A8040",
+    "bloom_months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "fruit_months": [
+      8,
+      9,
+      10
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [
+      "monarch",
+      "queen"
+    ],
+    "garden_themes": [
+      "water",
+      "wildlife"
+    ],
+    "common_issues": [
+      "oleander_aphids",
+      "milkweed_bugs"
+    ],
+    "establishment_months": 3,
+    "habitat": "marshes, wet ditches, pond edges",
+    "landscape_use": "butterfly garden, rain garden",
+    "ph_range": [
+      5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "passiflora_incarnata",
+    "common_name": "Maypop Passionflower",
+    "scientific_name": "Passiflora incarnata",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "vine",
+    "form": "vine",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 18,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      6,
+      20
+    ],
+    "mature_spread_ft": [
+      3,
+      6
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "fast",
+    "spacing_ft": 3,
+    "flower_colors": [
+      {
+        "name": "lavender purple",
+        "hex": "#9B78C8"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "yellow-green",
+        "hex": "#B5B84A"
+      }
+    ],
+    "foliage_color": "#4F7B3C",
+    "bloom_months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "fruit_months": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [
+      "gulf fritillary",
+      "zebra longwing",
+      "variegated fritillary"
+    ],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "leaf_spot"
+    ],
+    "establishment_months": 4,
+    "habitat": "fields, roadsides, open woods",
+    "landscape_use": "trellis vine, butterfly host",
+    "ph_range": [
+      5.5,
+      8
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "ipomoea_pes_caprae",
+    "common_name": "Railroad Vine",
+    "scientific_name": "Ipomoea pes-caprae",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "vine",
+    "form": "spreading",
+    "regions": [
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "high",
+    "water_need": "low",
+    "kc": 0.4,
+    "root_depth_in": 24,
+    "cold_hardy_f": 30,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      0.5,
+      1
+    ],
+    "mature_spread_ft": [
+      6,
+      20
+    ],
+    "planting_height_ft": 0.3,
+    "growth_rate": "fast",
+    "spacing_ft": 10,
+    "flower_colors": [
+      {
+        "name": "magenta pink",
+        "hex": "#C9449A"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "brown",
+        "hex": "#7A5A3A"
+      }
+    ],
+    "foliage_color": "#4C7A3A",
+    "bloom_months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "fruit_months": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "bees",
+      "butterflies"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "seaside"
+    ],
+    "common_issues": [
+      "tortoise_beetles"
+    ],
+    "establishment_months": 4,
+    "habitat": "beaches, foredunes",
+    "landscape_use": "beach groundcover",
+    "ph_range": [
+      6,
+      8.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "coccoloba_uvifera",
+    "common_name": "Sea Grape",
+    "scientific_name": "Coccoloba uvifera",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "small_tree",
+    "form": "tree",
+    "regions": [
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "high",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 24,
+    "cold_hardy_f": 28,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      15,
+      25
+    ],
+    "mature_spread_ft": [
+      15,
+      25
+    ],
+    "planting_height_ft": 3,
+    "growth_rate": "medium",
+    "spacing_ft": 15,
+    "flower_colors": [
+      {
+        "name": "white",
+        "hex": "#F3F0E2"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "purple",
+        "hex": "#5E2A6E"
+      }
+    ],
+    "foliage_color": "#4C7A3E",
+    "bloom_months": [
+      4,
+      5,
+      6
+    ],
+    "fruit_months": [
+      8,
+      9,
+      10
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 4,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": true,
+    "wildlife_value": [
+      "birds",
+      "bees"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "seaside"
+    ],
+    "common_issues": [
+      "sea_grape_borer",
+      "scale",
+      "sooty_mold"
+    ],
+    "establishment_months": 9,
+    "habitat": "coastal strand, dunes",
+    "landscape_use": "coastal hedge, specimen",
+    "ph_range": [
+      6,
+      8.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "pontederia_cordata",
+    "common_name": "Pickerelweed",
+    "scientific_name": "Pontederia cordata",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "aquatic",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "high",
+    "kc": 1,
+    "root_depth_in": 12,
+    "cold_hardy_f": 10,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      2,
+      4
+    ],
+    "mature_spread_ft": [
+      2,
+      3
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "fast",
+    "spacing_ft": 2,
+    "flower_colors": [
+      {
+        "name": "blue-violet",
+        "hex": "#6A5BD0"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#4D7A45",
+    "bloom_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "bees",
+      "butterflies"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "water"
+    ],
+    "common_issues": [
+      "aphids"
+    ],
+    "establishment_months": 3,
+    "habitat": "pond and lake margins, marshes",
+    "landscape_use": "pond edge, rain garden",
+    "ph_range": [
+      5.5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "iris_virginica",
+    "common_name": "Blue Flag Iris",
+    "scientific_name": "Iris virginica",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "aquatic",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "high",
+    "kc": 0.9,
+    "root_depth_in": 10,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      2,
+      3
+    ],
+    "mature_spread_ft": [
+      1,
+      2
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "medium",
+    "spacing_ft": 1,
+    "flower_colors": [
+      {
+        "name": "blue-violet",
+        "hex": "#6C60C9"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "green",
+        "hex": "#6E8E4A"
+      }
+    ],
+    "foliage_color": "#5C8A55",
+    "bloom_months": [
+      3,
+      4,
+      5
+    ],
+    "fruit_months": [
+      6,
+      7
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "bees",
+      "hummingbirds"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "water"
+    ],
+    "common_issues": [
+      "leaf_spot"
+    ],
+    "establishment_months": 3,
+    "habitat": "marshes, wet prairies, swamp edges",
+    "landscape_use": "rain garden, pond edge",
+    "ph_range": [
+      5,
+      7
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "osmunda_regalis",
+    "common_name": "Royal Fern",
+    "scientific_name": "Osmunda regalis",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "fern",
+    "form": "fern",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "partial_shade",
+      "full_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "high",
+    "kc": 0.9,
+    "root_depth_in": 12,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      2,
+      5
+    ],
+    "mature_spread_ft": [
+      2,
+      4
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "medium",
+    "spacing_ft": 2,
+    "flower_colors": [],
+    "fruit_colors": [],
+    "foliage_color": "#5E8E3E",
+    "bloom_months": [],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "birds"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "water"
+    ],
+    "common_issues": [],
+    "establishment_months": 6,
+    "habitat": "swamps, stream banks",
+    "landscape_use": "wet shade accent",
+    "ph_range": [
+      4,
+      6.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "ilex_vomitoria",
+    "common_name": "Yaupon Holly",
+    "scientific_name": "Ilex vomitoria",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "shrub",
+    "form": "mounding",
+    "regions": [
+      "north",
+      "central"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade",
+      "full_shade"
+    ],
+    "salt_tolerance": "high",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 18,
+    "cold_hardy_f": 5,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      10,
+      20
+    ],
+    "mature_spread_ft": [
+      8,
+      12
+    ],
+    "planting_height_ft": 3,
+    "growth_rate": "medium",
+    "spacing_ft": 8,
+    "flower_colors": [
+      {
+        "name": "white",
+        "hex": "#F3F1E8"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "red",
+        "hex": "#C8202C"
+      }
+    ],
+    "foliage_color": "#3D5F38",
+    "bloom_months": [
+      3,
+      4
+    ],
+    "fruit_months": [
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 3,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": true,
+    "wildlife_value": [
+      "birds",
+      "bees"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "seaside",
+      "wildlife"
+    ],
+    "common_issues": [
+      "scale",
+      "leaf_spot"
+    ],
+    "establishment_months": 9,
+    "habitat": "coastal hammocks, dunes, flatwoods",
+    "landscape_use": "hedge, screen, topiary",
+    "ph_range": [
+      5,
+      8
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "rudbeckia_hirta",
+    "common_name": "Black-eyed Susan",
+    "scientific_name": "Rudbeckia hirta",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "low",
+    "kc": 0.45,
+    "root_depth_in": 10,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      1,
+      3
+    ],
+    "mature_spread_ft": [
+      1,
+      2
+    ],
+    "planting_height_ft": 0.5,
+    "growth_rate": "fast",
+    "spacing_ft": 1.5,
+    "flower_colors": [
+      {
+        "name": "golden yellow",
+        "hex": "#F2B51D"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#5E7F3E",
+    "bloom_months": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees",
+      "birds"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "powdery_mildew",
+      "leaf_spot"
+    ],
+    "establishment_months": 12,
+    "habitat": "sandhills, flatwoods, roadsides",
+    "landscape_use": null,
+    "ph_range": [
+      5.5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "salvia_lyrata",
+    "common_name": "Lyreleaf Sage",
+    "scientific_name": "Salvia lyrata",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "medium",
+    "kc": 0.5,
+    "root_depth_in": 8,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      1,
+      2
+    ],
+    "mature_spread_ft": [
+      0.5,
+      1
+    ],
+    "planting_height_ft": 0.3,
+    "growth_rate": "medium",
+    "spacing_ft": 1,
+    "flower_colors": [
+      {
+        "name": "lavender",
+        "hex": "#A58AD0"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#5B6F3E",
+    "bloom_months": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "bees",
+      "hummingbirds",
+      "butterflies"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "root_rot"
+    ],
+    "establishment_months": 12,
+    "habitat": "open woods, lawns, roadsides",
+    "landscape_use": null,
+    "ph_range": [
+      5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "stokesia_laevis",
+    "common_name": "Stokes' Aster",
+    "scientific_name": "Stokesia laevis",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "medium",
+    "kc": 0.5,
+    "root_depth_in": 10,
+    "cold_hardy_f": 0,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      1,
+      2
+    ],
+    "mature_spread_ft": [
+      1,
+      2
+    ],
+    "planting_height_ft": 0.5,
+    "growth_rate": "medium",
+    "spacing_ft": 1.5,
+    "flower_colors": [
+      {
+        "name": "lavender blue",
+        "hex": "#8A86D8"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#55773F",
+    "bloom_months": [
+      5,
+      6,
+      7
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "leaf_spot",
+      "root_rot"
+    ],
+    "establishment_months": 12,
+    "habitat": "wet pine savannas (Panhandle)",
+    "landscape_use": null,
+    "ph_range": [
+      5,
+      6.8
+    ],
+    "verified": false,
+    "source_urls": [],
+    "container_ok": true,
+    "min_container_gal": 3,
+    "dwarf_variety": null,
+    "trellis": false
+  },
+  {
+    "id": "ruellia_caroliniana",
+    "common_name": "Wild Petunia",
+    "scientific_name": "Ruellia caroliniana",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade",
+      "full_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "low",
+    "kc": 0.45,
+    "root_depth_in": 8,
+    "cold_hardy_f": 10,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      1,
+      2
+    ],
+    "mature_spread_ft": [
+      1,
+      1.5
+    ],
+    "planting_height_ft": 0.4,
+    "growth_rate": "medium",
+    "spacing_ft": 1,
+    "flower_colors": [
+      {
+        "name": "purple",
+        "hex": "#8B5FC0"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#4E6E3C",
+    "bloom_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [
+      "common buckeye",
+      "white peacock"
+    ],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "leaf_spot"
+    ],
+    "establishment_months": 12,
+    "habitat": "flatwoods, hammock edges",
+    "landscape_use": null,
+    "ph_range": [
+      5.5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": [],
+    "container_ok": true,
+    "min_container_gal": 3,
+    "dwarf_variety": null,
+    "trellis": false
+  },
+  {
+    "id": "ruellia_simplex",
+    "common_name": "Mexican Petunia",
+    "scientific_name": "Ruellia simplex",
+    "origin": "non_native",
+    "invasive_status": "invasive",
+    "native_alternatives": [
+      "ruellia_caroliniana",
+      "stachytarpheta_jamaicensis"
+    ],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "medium",
+    "kc": 0.6,
+    "root_depth_in": 12,
+    "cold_hardy_f": 25,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      2,
+      4
+    ],
+    "mature_spread_ft": [
+      2,
+      3
+    ],
+    "planting_height_ft": 0.8,
+    "growth_rate": "fast",
+    "spacing_ft": 2,
+    "flower_colors": [
+      {
+        "name": "purple",
+        "hex": "#7D4FB8"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#3F5E36",
+    "bloom_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "bees"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [],
+    "common_issues": [],
+    "establishment_months": 12,
+    "habitat": "FISC Category I invasive. Spreads by seed and rhizomes into wetlands.",
+    "landscape_use": null,
+    "ph_range": [
+      5.5,
+      8
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "lantana_camara",
+    "common_name": "Lantana",
+    "scientific_name": "Lantana camara",
+    "origin": "non_native",
+    "invasive_status": "invasive",
+    "native_alternatives": [
+      "lantana_involucrata",
+      "hamelia_patens"
+    ],
+    "category": "shrub",
+    "form": "mounding",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "medium",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 14,
+    "cold_hardy_f": 28,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      3,
+      6
+    ],
+    "mature_spread_ft": [
+      3,
+      6
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "fast",
+    "spacing_ft": 3,
+    "flower_colors": [
+      {
+        "name": "orange",
+        "hex": "#F08A24"
+      },
+      {
+        "name": "pink",
+        "hex": "#E46AA0"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "black",
+        "hex": "#25222A"
+      }
+    ],
+    "foliage_color": "#4C6E3A",
+    "bloom_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "fruit_months": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [],
+    "common_issues": [
+      "mites"
+    ],
+    "establishment_months": 12,
+    "habitat": "FISC Category I invasive. Hybridizes with the rare native pineland lantana.",
+    "landscape_use": null,
+    "ph_range": [
+      5.5,
+      8
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "schinus_terebinthifolia",
+    "common_name": "Brazilian Pepper",
+    "scientific_name": "Schinus terebinthifolia",
+    "origin": "non_native",
+    "invasive_status": "invasive",
+    "native_alternatives": [
+      "ilex_vomitoria",
+      "myrcianthes_fragrans"
+    ],
+    "category": "small_tree",
+    "form": "tree",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "medium",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 24,
+    "cold_hardy_f": 25,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      15,
+      30
+    ],
+    "mature_spread_ft": [
+      15,
+      30
+    ],
+    "planting_height_ft": 3,
+    "growth_rate": "fast",
+    "spacing_ft": 15,
+    "flower_colors": [
+      {
+        "name": "white",
+        "hex": "#F4F1E4"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "red",
+        "hex": "#C62B2B"
+      }
+    ],
+    "foliage_color": "#365A32",
+    "bloom_months": [
+      9,
+      10,
+      11
+    ],
+    "fruit_months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 3,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": true,
+    "wildlife_value": [
+      "birds"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [],
+    "common_issues": [],
+    "establishment_months": 12,
+    "habitat": "FISC Category I invasive. Prohibited from sale in Florida.",
+    "landscape_use": null,
+    "ph_range": [
+      5,
+      8.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "nephrolepis_cordifolia",
+    "common_name": "Tuberous Sword Fern",
+    "scientific_name": "Nephrolepis cordifolia",
+    "origin": "non_native",
+    "invasive_status": "invasive",
+    "native_alternatives": [
+      "osmunda_regalis"
+    ],
+    "category": "fern",
+    "form": "fern",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "partial_shade",
+      "full_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "medium",
+    "kc": 0.7,
+    "root_depth_in": 8,
+    "cold_hardy_f": 28,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      1,
+      3
+    ],
+    "mature_spread_ft": [
+      2,
+      3
+    ],
+    "planting_height_ft": 0.5,
+    "growth_rate": "fast",
+    "spacing_ft": 2,
+    "flower_colors": [],
+    "fruit_colors": [],
+    "foliage_color": "#5E8E3E",
+    "bloom_months": [],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [],
+    "host_plant_for": [],
+    "garden_themes": [],
+    "common_issues": [],
+    "establishment_months": 12,
+    "habitat": "FISC Category I invasive. Often sold as 'Boston fern'.",
+    "landscape_use": null,
+    "ph_range": [
+      5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "hibiscus_rosa_sinensis",
+    "common_name": "Tropical Hibiscus",
+    "scientific_name": "Hibiscus rosa-sinensis",
+    "origin": "non_native",
+    "invasive_status": "none",
+    "native_alternatives": [
+      "hamelia_patens",
+      "salvia_coccinea"
+    ],
+    "category": "shrub",
+    "form": "mounding",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "medium",
+    "water_need": "medium",
+    "kc": 0.7,
+    "root_depth_in": 18,
+    "cold_hardy_f": 32,
+    "wind_tolerance": "low",
+    "mature_height_ft": [
+      5,
+      10
+    ],
+    "mature_spread_ft": [
+      4,
+      8
+    ],
+    "planting_height_ft": 2,
+    "growth_rate": "medium",
+    "spacing_ft": 4,
+    "flower_colors": [
+      {
+        "name": "red",
+        "hex": "#D52A3A"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#2F5A2E",
+    "bloom_months": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "hummingbirds"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [],
+    "common_issues": [
+      "aphids",
+      "whiteflies"
+    ],
+    "establishment_months": 12,
+    "habitat": null,
+    "landscape_use": null,
+    "ph_range": [
+      6,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "ixora_coccinea",
+    "common_name": "Ixora",
+    "scientific_name": "Ixora coccinea",
+    "origin": "non_native",
+    "invasive_status": "none",
+    "native_alternatives": [
+      "hamelia_patens",
+      "psychotria_nervosa"
+    ],
+    "category": "shrub",
+    "form": "mounding",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "low",
+    "water_need": "medium",
+    "kc": 0.7,
+    "root_depth_in": 14,
+    "cold_hardy_f": 32,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      3,
+      6
+    ],
+    "mature_spread_ft": [
+      3,
+      5
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "medium",
+    "spacing_ft": 3,
+    "flower_colors": [
+      {
+        "name": "red-orange",
+        "hex": "#E5452E"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#2F5530",
+    "bloom_months": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [],
+    "common_issues": [
+      "scale",
+      "sooty_mold"
+    ],
+    "establishment_months": 12,
+    "habitat": "Needs acidic soil; yellows in alkaline Florida soils.",
+    "landscape_use": null,
+    "ph_range": [
+      5,
+      6.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "bougainvillea_glabra",
+    "common_name": "Bougainvillea",
+    "scientific_name": "Bougainvillea glabra",
+    "origin": "non_native",
+    "invasive_status": "none",
+    "native_alternatives": [
+      "lonicera_sempervirens",
+      "passiflora_incarnata"
+    ],
+    "category": "vine",
+    "form": "vine",
+    "regions": [
+      "north",
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "medium",
+    "water_need": "low",
+    "kc": 0.5,
+    "root_depth_in": 18,
+    "cold_hardy_f": 30,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      10,
+      20
+    ],
+    "mature_spread_ft": [
+      5,
+      10
+    ],
+    "planting_height_ft": 2,
+    "growth_rate": "fast",
+    "spacing_ft": 6,
+    "flower_colors": [
+      {
+        "name": "magenta",
+        "hex": "#C22D8E"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#3E6634",
+    "bloom_months": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 1,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [],
+    "host_plant_for": [],
+    "garden_themes": [],
+    "common_issues": [
+      "caterpillars"
+    ],
+    "establishment_months": 12,
+    "habitat": null,
+    "landscape_use": null,
+    "ph_range": [
+      5.5,
+      7.5
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "bidens_alba",
+    "common_name": "Spanish Needles",
+    "scientific_name": "Bidens alba",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "wildflower",
+    "form": "upright",
+    "regions": [
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun",
+      "partial_shade"
+    ],
+    "salt_tolerance": "medium",
+    "water_need": "low",
+    "kc": 0.45,
+    "root_depth_in": 10,
+    "cold_hardy_f": 28,
+    "wind_tolerance": "medium",
+    "mature_height_ft": [
+      2,
+      4
+    ],
+    "mature_spread_ft": [
+      2,
+      3
+    ],
+    "planting_height_ft": 0.5,
+    "growth_rate": "fast",
+    "spacing_ft": 2,
+    "flower_colors": [
+      {
+        "name": "white",
+        "hex": "#F5F3EA"
+      }
+    ],
+    "fruit_colors": [],
+    "foliage_color": "#557A3C",
+    "bloom_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "fruit_months": [],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees"
+    ],
+    "host_plant_for": [
+      "dainty sulphur"
+    ],
+    "garden_themes": [
+      "wildlife"
+    ],
+    "common_issues": [
+      "leaf_spot"
+    ],
+    "establishment_months": 2,
+    "habitat": "disturbed sites, roadsides, coastal uplands",
+    "landscape_use": "nectar plant for wild areas (reseeds freely)",
+    "ph_range": [
+      5.5,
+      8
+    ],
+    "verified": false,
+    "source_urls": []
+  },
+  {
+    "id": "lantana_involucrata",
+    "common_name": "Wild Lantana",
+    "scientific_name": "Lantana involucrata",
+    "origin": "native",
+    "invasive_status": "none",
+    "native_alternatives": [],
+    "category": "shrub",
+    "form": "mounding",
+    "regions": [
+      "central",
+      "south"
+    ],
+    "light": [
+      "full_sun"
+    ],
+    "salt_tolerance": "high",
+    "water_need": "low",
+    "kc": 0.45,
+    "root_depth_in": 14,
+    "cold_hardy_f": 28,
+    "wind_tolerance": "high",
+    "mature_height_ft": [
+      2,
+      5
+    ],
+    "mature_spread_ft": [
+      2,
+      4
+    ],
+    "planting_height_ft": 1,
+    "growth_rate": "medium",
+    "spacing_ft": 3,
+    "flower_colors": [
+      {
+        "name": "white-lavender",
+        "hex": "#E4DCF0"
+      }
+    ],
+    "fruit_colors": [
+      {
+        "name": "purple",
+        "hex": "#5B3A78"
+      }
+    ],
+    "foliage_color": "#5C7A45",
+    "bloom_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "fruit_months": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bloom_trigger": "season",
+    "gdd_base_f": 50,
+    "bloom_gdd": null,
+    "years_to_first_bloom": 0,
+    "bud_to_bloom_days": [
+      7,
+      14
+    ],
+    "bloom_to_fruit_days": [
+      30,
+      60
+    ],
+    "dioecious": false,
+    "wildlife_value": [
+      "butterflies",
+      "bees",
+      "birds"
+    ],
+    "host_plant_for": [],
+    "garden_themes": [
+      "wildlife",
+      "seaside"
+    ],
+    "common_issues": [
+      "mites"
+    ],
+    "establishment_months": 2,
+    "habitat": "coastal hammocks and dunes",
+    "landscape_use": "compact flowering shrub",
+    "ph_range": [
+      6,
+      8.5
+    ],
+    "verified": false,
+    "source_urls": []
+  }
+]

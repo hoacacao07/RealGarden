@@ -1,0 +1,27 @@
+{
+  "_note": "Small built-in ZIP table for the demo (approximate centroids). Other ZIPs: drop a pin on the map.",
+  "zips": {
+    "33602": { "place": "Downtown Tampa", "lat": 27.951, "lon": -82.459, "coast_mi": 0.5 },
+    "33606": { "place": "Hyde Park, Tampa", "lat": 27.935, "lon": -82.469, "coast_mi": 0.6 },
+    "33609": { "place": "Westshore, Tampa", "lat": 27.942, "lon": -82.505, "coast_mi": 1.5 },
+    "33611": { "place": "South Tampa", "lat": 27.889, "lon": -82.505, "coast_mi": 1 },
+    "33612": { "place": "University area, Tampa", "lat": 28.050, "lon": -82.450, "coast_mi": 8 },
+    "33617": { "place": "Temple Terrace", "lat": 28.035, "lon": -82.390, "coast_mi": 9 },
+    "33620": { "place": "USF, Tampa", "lat": 28.059, "lon": -82.413, "coast_mi": 9 },
+    "33629": { "place": "Palma Ceia, South Tampa", "lat": 27.920, "lon": -82.508, "coast_mi": 2 },
+    "33701": { "place": "Downtown St. Petersburg", "lat": 27.772, "lon": -82.638, "coast_mi": 0.3 },
+    "33704": { "place": "Old Northeast, St. Petersburg", "lat": 27.795, "lon": -82.636, "coast_mi": 0.5 },
+    "33706": { "place": "St. Pete Beach", "lat": 27.739, "lon": -82.745, "coast_mi": 0.1 },
+    "33755": { "place": "Clearwater", "lat": 27.978, "lon": -82.781, "coast_mi": 0.8 },
+    "34236": { "place": "Sarasota", "lat": 27.333, "lon": -82.546, "coast_mi": 0.4 },
+    "33511": { "place": "Brandon", "lat": 27.906, "lon": -82.296, "coast_mi": 6 },
+    "33801": { "place": "Lakeland", "lat": 28.039, "lon": -81.946, "coast_mi": 35 },
+    "32801": { "place": "Downtown Orlando", "lat": 28.542, "lon": -81.379, "coast_mi": 40 },
+    "32601": { "place": "Gainesville", "lat": 29.651, "lon": -82.325, "coast_mi": 45 },
+    "32301": { "place": "Tallahassee", "lat": 30.438, "lon": -84.281, "coast_mi": 20 },
+    "33130": { "place": "Miami", "lat": 25.767, "lon": -80.200, "coast_mi": 0.8 },
+    "33301": { "place": "Fort Lauderdale", "lat": 26.121, "lon": -80.129, "coast_mi": 1 },
+    "33901": { "place": "Fort Myers", "lat": 26.621, "lon": -81.872, "coast_mi": 1.5 },
+    "32034": { "place": "Fernandina Beach", "lat": 30.669, "lon": -81.462, "coast_mi": 0.5 }
+  }
+}
