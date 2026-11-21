@@ -52,12 +52,16 @@ async function search(q: string): Promise<PpPlant[]> {
 
 const field = (p: PpPlant, ...keys: string[]) => p.data?.find((d) => keys.some((k) => d.key.toLowerCase() === k.toLowerCase()))?.value ?? null;
 
-/** "1-2", "0.5 - 1.5", "8" with a unit hint in the key ("Height (m)") → feet [min, max]. */
+/**
+ * "1-2", "0.5 - 1.5", "20.0" → feet [min, max]. Permapeople gives bare numbers in METERS (key "Height", value "20.0"
+ * for live oak), so a number with no unit is meters. Explicit "cm", "ft"/"feet" or "in" in the value or key wins.
+ */
 export function toFeet(raw: string | null, unitKey: string): [number, number] | null {
   if (!raw) return null;
   const nums = raw.match(/\d+(\.\d+)?/g)?.map(Number);
   if (!nums?.length) return null;
-  const k = /\(m\)|meter|metre/i.test(unitKey) || /\bm\b/.test(raw) ? 3.281 : /\bcm\b/i.test(raw) ? 0.03281 : 1;
+  const unit = `${raw} ${unitKey}`.toLowerCase();
+  const k = /\bcm\b/.test(unit) ? 0.03281 : /\bft\b|feet|foot/.test(unit) ? 1 : /\bin\b|inch/.test(unit) ? 1 / 12 : 3.281;
   const lo = nums[0] * k;
   const hi = (nums[1] ?? nums[0]) * k;
   return [Math.round(lo * 10) / 10, Math.round(hi * 10) / 10];
