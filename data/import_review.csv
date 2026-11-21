@@ -1,7 +1,10 @@
 plant_id,field,value,problem
+lonicera_sempervirens,height_ft,16.4-16.4,outside 0.2-15 ft for flower
+passiflora_incarnata,height_ft,19.7-19.7,outside 0.2-15 ft for flower
+ipomoea_pes_caprae,height_ft,16.4-16.4,outside 0.2-15 ft for flower
 nephrolepis_cordifolia,search,,no match
 ixora_coccinea,search,,no match
-bell_pepper,height_ft,60-90,outside 0.2-10 ft for vegetable
-strawberry,height_ft,0.3-0.3,outside 0.5-60 ft for fruit
-strawberry,width_ft,0.3-0.3,outside 0.5-50 ft for fruit
+bell_pepper,height_ft,196.9-295.3,outside 0.2-10 ft for vegetable
+muscadine_grape,height_ft,82-82,outside 0.5-60 ft for fruit
+mango,height_ft,82-82,outside 0.5-60 ft for fruit
 bromeliad,search,,no match

@@ -28,7 +28,14 @@ export interface ImportedPlant {
   edible_parts?: string | null;
 }
 
-export const OVERLAY_FIELDS = ["mature_height_ft", "mature_spread_ft", "light", "water_need", "ph_range", "life_cycle", "growth_rate"] as const;
+/**
+ * Life cycle is NOT here on purpose: Permapeople gives the botanical one (eggplant, sweet potato "perennial"; basil
+ * "Annual, Perennial"), but the app uses it for Florida frost and zone checks, where those crops are grown as annuals.
+ */
+export const OVERLAY_FIELDS = ["mature_height_ft", "mature_spread_ft", "light", "water_need", "ph_range", "growth_rate"] as const;
+
+/** A size more than this many times off the team's value is held for review, not applied (vine length, unit mix-ups). */
+export const MAX_SIZE_RATIO = 2;
 export type OverlayField = (typeof OVERLAY_FIELDS)[number];
 export type OverlayPatch = Partial<Pick<Plant, OverlayField>>;
 
@@ -51,13 +58,19 @@ export function mapLight(v: string | null | undefined): Light[] | null {
   return out.length ? out : null;
 }
 
-/** "Dry" → low, "Moist" → medium, "Wet" → high. A range ("Dry, moist") takes the driest: the plant tolerates it. */
+/**
+ * "Dry" or "Dry, Moist" → low (drought tolerant), "Moist" → medium, "Wet" or "Moist, Wet" → high.
+ * A plant listed from dry all the way to wet ("Dry, Moist, Wet", "Wet, Dry") tolerates anything → medium.
+ */
 export function mapWater(v: string | null | undefined): Level | null {
   if (!v) return null;
   const s = v.toLowerCase();
-  if (/dry|drought/.test(s)) return "low";
+  const dry = /dry|drought/.test(s);
+  const wet = /wet|aquatic|bog|water/.test(s);
+  if (dry && wet) return "medium";
+  if (dry) return "low";
+  if (wet) return "high";
   if (/moist|average|medium|moderate/.test(s)) return "medium";
-  if (/wet|aquatic|bog|water/.test(s)) return "high";
   return null;
 }
 
@@ -93,10 +106,24 @@ function size(v: [number, number] | null | undefined): [number, number] | null {
   return v[0] <= v[1] ? [v[0], v[1]] : [v[1], v[0]];
 }
 
-/** Same genus? A search hit for a different genus is a wrong match, not data. */
-export function sameGenus(a: string | null | undefined, b: string): boolean {
-  const g = (s: string) => s.trim().split(/\s+/)[0]?.toLowerCase() ?? "";
-  return !!a && g(a) === g(b);
+/** Genus + species words, lowercased, without a hybrid marker ("Citrus × meyeri" → ["citrus", "meyeri"]). */
+function binomial(s: string): string[] {
+  return s.trim().toLowerCase().split(/\s+/).filter((w) => w && w !== "×" && w !== "x").slice(0, 2);
+}
+
+/**
+ * Same species? A search hit for another species (swamp milkweed → butterfly weed) is a wrong match, not data.
+ * Varieties and cultivars of the same species match. When the catalog name has no species epithet (e.g. "Rosa 'Knock
+ * Out'"), the genus has to match.
+ */
+export function sameSpecies(hit: string | null | undefined, catalog: string): boolean {
+  if (!hit) return false;
+  const [hg, hs] = binomial(hit);
+  const [cg, cs] = binomial(catalog);
+  if (hg !== cg) return false;
+  const epithet = /^[a-z][a-z-]+$/;
+  if (!cs || !epithet.test(cs)) return true;
+  return hs === cs;
 }
 
 /** Generic fields for one plant. Fields the review CSV flagged are left out. */
@@ -108,7 +135,6 @@ export function patchFor(imp: ImportedPlant, blocked: Set<OverlayField> = new Se
   set("light", mapLight(imp.light));
   set("water_need", mapWater(imp.water));
   set("ph_range", mapPh(imp.ph));
-  set("life_cycle", mapLifeCycle(imp.life_cycle));
   set("growth_rate", mapGrowth(imp.growth));
   return p;
 }
@@ -125,24 +151,44 @@ export function parseReview(csv: string): Map<string, Set<OverlayField>> {
   return out;
 }
 
-export interface BuildResult { overlay: Overlay; skipped: { id: string; why: string }[] }
+export interface BuildResult {
+  overlay: Overlay;
+  /** Plants left out entirely. */
+  skipped: { id: string; why: string }[];
+  /** Single values left out because they disagree too much with the team's value (check by hand). */
+  held: { id: string; why: string }[];
+}
+
+type CatalogRow = Pick<Plant, "id" | "scientific_name"> & Partial<Pick<Plant, "mature_height_ft" | "mature_spread_ft">>;
 
 /**
- * Overlay from the import, the review file and the catalog. Skips plants that are no longer in the catalog, hits from a
- * different genus (wrong match) and plants with nothing usable.
+ * Overlay from the import, the review file and the catalog. Skips plants that are no longer in the catalog, hits for a
+ * different species (wrong match) and plants with nothing usable. Holds back sizes more than MAX_SIZE_RATIO× off the
+ * team's value.
  */
 export function buildOverlay(
-  imported: Record<string, ImportedPlant>, reviewCsv: string, catalog: Pick<Plant, "id" | "scientific_name">[], now = new Date().toISOString(),
+  imported: Record<string, ImportedPlant>, reviewCsv: string, catalog: CatalogRow[], now = new Date().toISOString(),
 ): BuildResult {
   const review = parseReview(reviewCsv);
   const byId = new Map(catalog.map((p) => [p.id, p]));
   const plants: Overlay["plants"] = {};
   const skipped: BuildResult["skipped"] = [];
+  const held: BuildResult["held"] = [];
   for (const [id, imp] of Object.entries(imported)) {
     const cat = byId.get(id);
     if (!cat) { skipped.push({ id, why: "not in the catalog any more" }); continue; }
-    if (!sameGenus(imp.matched, cat.scientific_name)) { skipped.push({ id, why: `matched ${imp.matched ?? "nothing"}, not ${cat.scientific_name}` }); continue; }
+    if (!sameSpecies(imp.matched, cat.scientific_name)) { skipped.push({ id, why: `matched ${imp.matched ?? "nothing"}, not ${cat.scientific_name}` }); continue; }
     const fields = patchFor(imp, review.get(id));
+    for (const k of ["mature_height_ft", "mature_spread_ft"] as const) {
+      const pp = fields[k];
+      const team = cat[k];
+      if (!pp || !team) continue;
+      const r = pp[1] / team[1];
+      if (r > MAX_SIZE_RATIO || r < 1 / MAX_SIZE_RATIO) {
+        held.push({ id, why: `${k} kept at ${team.join("-")} ft (Permapeople says ${pp.join("-")} ft)` });
+        delete fields[k];
+      }
+    }
     if (!Object.keys(fields).length) { skipped.push({ id, why: "no usable fields" }); continue; }
     plants[id] = { permapeople_id: imp.permapeople_id, matched: imp.matched ?? null, fields };
   }
@@ -151,7 +197,7 @@ export function buildOverlay(
       _note: "Generated by `npm run pp:merge` from data/import_permapeople.json. Review the diff before committing; edit or delete entries freely. Only generic fields are applied (lib/engine/permapeople.ts OVERLAY_FIELDS). Data from Permapeople.org, CC BY-SA 4.0.",
       generated_at: now, plants,
     },
-    skipped,
+    skipped, held,
   };
 }
 

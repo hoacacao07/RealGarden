@@ -7,8 +7,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      6,
-      6
+      19.7,
+      19.7
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -26,8 +26,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      3,
-      3
+      9.8,
+      9.8
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -45,8 +45,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -64,8 +64,8 @@
     "soil": "Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      20,
-      20
+      65.6,
+      65.6
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -83,8 +83,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      30,
-      30
+      98.4,
+      98.4
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -134,8 +134,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      10,
-      10
+      32.8,
+      32.8
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -153,8 +153,8 @@
     "soil": "Medium",
     "ph": null,
     "height_ft": [
-      1.8,
-      1.8
+      5.9,
+      5.9
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -172,8 +172,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      5,
-      5
+      16.4,
+      16.4
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -210,8 +210,8 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      0.3,
-      0.3
+      1,
+      1
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -229,8 +229,8 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      0.8,
-      0.8
+      2.6,
+      2.6
     ],
     "width_ft": null,
     "life_cycle": "Annual",
@@ -248,12 +248,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": "4.5-8.2",
     "height_ft": [
-      1.5,
-      3
+      4.9,
+      9.8
     ],
     "width_ft": [
-      1.7,
-      1.7
+      5.6,
+      5.6
     ],
     "life_cycle": "Perennial",
     "layer": "Roots",
@@ -270,8 +270,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1.8,
-      1.8
+      5.9,
+      5.9
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -289,12 +289,12 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      0.6,
-      0.6
+      2,
+      2
     ],
     "width_ft": [
-      0.5,
-      0.5
+      1.6,
+      1.6
     ],
     "life_cycle": "Perennial",
     "layer": "Herbs",
@@ -327,8 +327,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      0.6,
-      0.6
+      2,
+      2
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -346,8 +346,8 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      0.8,
-      0.8
+      2.6,
+      2.6
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -365,8 +365,8 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      1.2,
-      1.2
+      3.9,
+      3.9
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -384,8 +384,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      6,
-      6
+      19.7,
+      19.7
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -403,8 +403,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      5,
-      5
+      16.4,
+      16.4
     ],
     "width_ft": null,
     "life_cycle": "Annual",
@@ -438,8 +438,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      0.8,
-      0.8
+      2.6,
+      2.6
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -457,8 +457,8 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      0.6,
-      0.6
+      2,
+      2
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -476,8 +476,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      2,
-      2
+      6.6,
+      6.6
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -495,8 +495,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      6,
-      6
+      19.7,
+      19.7
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -514,8 +514,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": "6.8-7.7",
     "height_ft": [
-      4,
-      0.9
+      13.1,
+      3
     ],
     "width_ft": null,
     "life_cycle": "Biennial, Perennial",
@@ -533,8 +533,8 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      0.6,
-      0.6
+      2,
+      2
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -606,8 +606,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1.8,
-      1.8
+      5.9,
+      5.9
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -625,8 +625,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      8,
-      8
+      26.2,
+      26.2
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -644,8 +644,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      2.5,
-      2.5
+      8.2,
+      8.2
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -679,8 +679,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1.5,
-      1.5
+      4.9,
+      4.9
     ],
     "width_ft": null,
     "life_cycle": "Annual",
@@ -698,8 +698,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1.8,
-      1.8
+      5.9,
+      5.9
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -717,12 +717,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": "6.2-6.8",
     "height_ft": [
-      2,
-      2
+      6.6,
+      6.6
     ],
     "width_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "life_cycle": "Annual, Perennial",
     "layer": null,
@@ -739,12 +739,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": "6.2-6.8",
     "height_ft": [
-      2,
-      2
+      6.6,
+      6.6
     ],
     "width_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "life_cycle": "Annual, Perennial",
     "layer": null,
@@ -761,8 +761,8 @@
     "soil": "Light (sandy), Medium",
     "ph": "6.0-6.5",
     "height_ft": [
-      60,
-      90
+      196.9,
+      295.3
     ],
     "width_ft": null,
     "life_cycle": "Annual, Perennial",
@@ -780,12 +780,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "width_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "life_cycle": "Perennial",
     "layer": null,
@@ -802,12 +802,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "width_ft": [
-      1.7,
-      1.7
+      5.6,
+      5.6
     ],
     "life_cycle": "Annual, Perennial",
     "layer": "Herbs",
@@ -824,8 +824,8 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      0.9,
-      0.9
+      3,
+      3
     ],
     "width_ft": null,
     "life_cycle": "Annual, Biennial",
@@ -843,8 +843,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1.2,
-      1.2
+      3.9,
+      3.9
     ],
     "width_ft": null,
     "life_cycle": "Biennial, Perennial",
@@ -862,8 +862,8 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      0.5,
-      0.5
+      1.6,
+      1.6
     ],
     "width_ft": null,
     "life_cycle": "Annual, Perennial",
@@ -881,8 +881,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      0.6,
-      0.6
+      2,
+      2
     ],
     "width_ft": null,
     "life_cycle": "Biennial",
@@ -900,12 +900,12 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      3,
-      3
+      9.8,
+      9.8
     ],
     "width_ft": [
-      3,
-      3
+      9.8,
+      9.8
     ],
     "life_cycle": "Perennial",
     "layer": "Vines",
@@ -922,12 +922,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      0.3,
-      0.3
+      1,
+      1
     ],
     "width_ft": [
-      0.3,
-      0.3
+      1,
+      1
     ],
     "life_cycle": "Perennial",
     "layer": "Herbs",
@@ -944,12 +944,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": "6.0-6.8",
     "height_ft": [
-      2,
-      2
+      6.6,
+      6.6
     ],
     "width_ft": [
-      0.4,
-      0.4
+      1.3,
+      1.3
     ],
     "life_cycle": "Annual",
     "layer": "Vines",
@@ -966,12 +966,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      0.6,
-      0.6
+      2,
+      2
     ],
     "width_ft": [
-      0.3,
-      0.3
+      1,
+      1
     ],
     "life_cycle": "Annual",
     "layer": null,
@@ -988,12 +988,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      0.5,
-      0.5
+      1.6,
+      1.6
     ],
     "width_ft": [
-      0.3,
-      0.3
+      1,
+      1
     ],
     "life_cycle": "Annual",
     "layer": "Roots",
@@ -1010,12 +1010,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": "6.0-6.8",
     "height_ft": [
-      2,
-      2
+      6.6,
+      6.6
     ],
     "width_ft": [
-      0.9,
-      0.9
+      3,
+      3
     ],
     "life_cycle": "Annual",
     "layer": "Vines",
@@ -1032,12 +1032,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": "5.5-6.5",
     "height_ft": [
-      0.6,
-      0.6
+      2,
+      2
     ],
     "width_ft": [
-      0.3,
-      0.3
+      1,
+      1
     ],
     "life_cycle": "Annual",
     "layer": "Herbs",
@@ -1054,8 +1054,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1.2,
-      1.2
+      3.9,
+      3.9
     ],
     "width_ft": null,
     "life_cycle": "Biennial, Perennial",
@@ -1073,8 +1073,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      0.6,
-      0.6
+      2,
+      2
     ],
     "width_ft": null,
     "life_cycle": "Biennial",
@@ -1092,12 +1092,12 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      0.5,
-      0.5
+      1.6,
+      1.6
     ],
     "width_ft": [
-      0.7,
-      0.7
+      2.2,
+      2.2
     ],
     "life_cycle": "Annual",
     "layer": "Herbs",
@@ -1114,12 +1114,12 @@
     "soil": "Light (sandy), Medium",
     "ph": null,
     "height_ft": [
-      1.5,
-      1.5
+      4.9,
+      4.9
     ],
     "width_ft": [
-      1.2,
-      1.2
+      3.9,
+      3.9
     ],
     "life_cycle": "Perennial",
     "layer": "Herbs",
@@ -1136,12 +1136,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": "6.0-7.0",
     "height_ft": [
-      0.3,
-      0.3
+      1,
+      1
     ],
     "width_ft": [
-      0.5,
-      0.5
+      1.5,
+      1.5
     ],
     "life_cycle": "Perennial",
     "layer": "Herbs",
@@ -1158,8 +1158,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      0.6,
-      0.6
+      2,
+      2
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -1193,12 +1193,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1.5,
-      1.5
+      4.9,
+      4.9
     ],
     "width_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "life_cycle": "Perennial",
     "layer": null,
@@ -1215,12 +1215,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": "4.5–8.7",
     "height_ft": [
-      0.6,
-      0.6
+      2,
+      2
     ],
     "width_ft": [
-      0.6,
-      0.6
+      2,
+      2
     ],
     "life_cycle": "Perennial",
     "layer": "Herbs",
@@ -1237,12 +1237,12 @@
     "soil": "Light (sandy), Medium, Acidic",
     "ph": null,
     "height_ft": [
-      2,
-      2
+      6.6,
+      6.6
     ],
     "width_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "life_cycle": "Perennial",
     "layer": "Shrubs",
@@ -1259,8 +1259,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      6,
-      6
+      19.7,
+      19.7
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -1278,8 +1278,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      25,
-      25
+      82,
+      82
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -1297,8 +1297,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      3,
-      3
+      9.8,
+      9.8
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -1316,12 +1316,12 @@
     "soil": "Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      4.5,
-      4.5
+      14.8,
+      14.8
     ],
     "width_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "life_cycle": null,
     "layer": "Trees",
@@ -1338,8 +1338,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      25,
-      25
+      82,
+      82
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -1357,8 +1357,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      3,
-      3
+      9.8,
+      9.8
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -1376,8 +1376,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      8,
-      8
+      26.2,
+      26.2
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -1395,12 +1395,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      6,
-      6
+      19.7,
+      19.7
     ],
     "width_ft": [
-      3,
-      3
+      9.8,
+      9.8
     ],
     "life_cycle": "Perennial",
     "layer": "Trees",
@@ -1417,8 +1417,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      3,
-      3
+      9.8,
+      9.8
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -1436,8 +1436,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -1455,12 +1455,12 @@
     "soil": "Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      15,
-      15
+      49.2,
+      49.2
     ],
     "width_ft": [
-      10,
-      10
+      32.8,
+      32.8
     ],
     "life_cycle": null,
     "layer": "Tall trees",
@@ -1477,8 +1477,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      6,
-      6
+      19.7,
+      19.7
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -1497,8 +1497,8 @@
     "ph": null,
     "height_ft": null,
     "width_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "life_cycle": "Perennial",
     "layer": "Shrubs",
@@ -1516,8 +1516,8 @@
     "ph": null,
     "height_ft": null,
     "width_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "life_cycle": "Perennial",
     "layer": "Shrubs",
@@ -1534,8 +1534,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      1.5,
-      1.5
+      4.9,
+      4.9
     ],
     "width_ft": null,
     "life_cycle": null,
@@ -1553,12 +1553,12 @@
     "soil": null,
     "ph": null,
     "height_ft": [
-      0.2,
-      0.2
+      0.7,
+      0.7
     ],
     "width_ft": [
-      0.2,
-      0.2
+      0.7,
+      0.7
     ],
     "life_cycle": "Perennial",
     "layer": "Herbs",
@@ -1575,8 +1575,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      3,
-      3
+      9.8,
+      9.8
     ],
     "width_ft": null,
     "life_cycle": "Annual",
@@ -1610,8 +1610,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      0.3,
-      0.3
+      1,
+      1
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -1629,12 +1629,12 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      0.5,
-      0.5
+      1.6,
+      1.6
     ],
     "width_ft": [
-      0.5,
-      0.5
+      1.6,
+      1.6
     ],
     "life_cycle": "Annual",
     "layer": null,
@@ -1651,8 +1651,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      3,
-      3
+      9.8,
+      9.8
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -1670,8 +1670,8 @@
     "soil": "Light (sandy)",
     "ph": null,
     "height_ft": [
-      1,
-      1
+      3.3,
+      3.3
     ],
     "width_ft": null,
     "life_cycle": "Perennial",
@@ -1689,8 +1689,8 @@
     "soil": "Light (sandy), Medium, Heavy (clay)",
     "ph": null,
     "height_ft": [
-      3,
-      3
+      9.8,
+      9.8
     ],
     "width_ft": null,
     "life_cycle": null,

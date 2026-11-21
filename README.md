@@ -52,13 +52,24 @@ npm run pp:merge    # no keys → data/permapeople_overlay.json (generic fields 
 npm run db:seed     # catalog + overlay → Supabase Plant table
 ```
 
-- Only generic fields are applied: mature height and spread, light, water need, pH range, life cycle, growth rate
+- Only generic fields are applied: mature height and spread, light, water need, pH range, growth rate
   (`OVERLAY_FIELDS` in `lib/engine/permapeople.ts`). Florida fields (regions, zones, cold hardiness, salt and wind
-  tolerance, chill hours, Florida notes) always stay as the team wrote them.
-- `pp:merge` skips search hits from a different genus (wrong match) and any height or width flagged in
-  `data/import_review.csv`. Edit or delete overlay entries by hand before committing.
+  tolerance, chill hours, Florida notes) and the **life cycle** always stay as the team wrote them: Permapeople gives
+  the botanical life cycle (eggplant "perennial"), but the frost and zone checks need how it's grown in Florida.
+- Permapeople sizes are bare numbers in **meters**; the import converts them to feet.
+- `pp:merge` skips search hits for a different species (wrong match), any height or width flagged in
+  `data/import_review.csv`, and holds back sizes more than 2× off the team's value (it prints them as "held"; often a
+  vine's length or a pole variety). Edit or delete overlay entries by hand before committing.
+- Water: "Dry" or "Dry, Moist" → low, "Moist" → medium, "Wet" or "Moist, Wet" → high, dry-to-wet → medium.
 - `lib/catalog-data.ts` applies the overlay on top of `data/plants.json`, `edibles.json` and `catalog_extra.json`;
   the source files are never rewritten. Data is CC BY-SA 4.0 and credited on plant pages and in the footer.
+
+### Plants for a garden type and sun
+
+`GET /api/plants/match?types=vegetable,fruit&sun=full_sun&zip=33620` reads the `Plant` table and returns the plants
+that fit (`lib/engine/plantMatch.ts`): `types` = vegetable (with kitchen herbs), fruit, herb, flower; `sun` =
+full_sun, partial_shade, full_shade; `zip` (optional) adds the hardiness-zone filter. Plants that thrive come before
+plants that only tolerate the sun; invasives never appear.
 
 ## Data
 

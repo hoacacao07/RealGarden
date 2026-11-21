@@ -21,4 +21,4 @@ export const PLANTS_RAW: Raw[] = [
   ...(extraJson.plants as unknown as Raw[]),
 ];
 
-export const PLANTS: Plant[] = PLANTS_RAW.map((p) => normalizePlant(applyOverlay(p, overlayJson as Overlay)));
+export const PLANTS: Plant[] = PLANTS_RAW.map((p) => normalizePlant(applyOverlay(p, overlayJson as unknown as Overlay)));
