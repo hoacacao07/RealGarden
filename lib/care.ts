@@ -23,8 +23,11 @@ export async function careBundle(g: GardenDoc, plants: Plant[], scenario: string
     rule: fertRuleFor(g.site.lat, g.site.lon), hasLandscape: inputs.soil.some((s) => s.zone_kind === "landscape"),
     eco: { barrel: (eco?.eco.barrel_gal ?? 0) > 0, compost: !!eco?.eco.compost_bin },
   });
+  // First-season prep (build the bed, test the pH...) is done in a garden planted more than a month ago.
+  const established = g.planted_on < new Date(Date.parse(today) - 30 * 86400e3).toISOString().slice(0, 10);
+  const weekCalendar = established ? calendar.filter((t) => !t.id.startsWith("prep:")) : calendar;
   const week = careWeek({
-    today: d.today, alerts: d.alerts, stormPause: d.stormPause, calendar, alertTasks: opts.alertTasks,
+    today: d.today, alerts: d.alerts, stormPause: d.stormPause, calendar: weekCalendar, alertTasks: opts.alertTasks,
     zones: d.zones.map((z) => ({ name: z.name, irrigation: z.irrigation, days: z.days })),
     pots: d.pots.map((p) => ({ name: p.name, days: p.days })),
     harvestNow: d.comingUp.filter((c) => c.event === "harvest" && c.now).map((c) => c.name),

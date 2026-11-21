@@ -85,7 +85,7 @@ export function careWeek(x: CareInput, max = 10): CareItem[] {
     const kind: CareKind = t.kind === "plant" ? "plant" : t.kind === "fertilize" ? "fertilize" : t.kind === "harvest" ? "harvest" : "prep";
     add({ id: `cal:${t.id}`, date: t.due_at, kind, text: t.title, urgent: false, source: "calendar" });
   }
-  if (x.harvestNow.length) add({ id: "harvest:now", date: x.today, kind: "harvest", text: `Pick ripe ${list(x.harvestNow.map((n) => n.toLowerCase()))}`, urgent: false, source: "calendar" });
+  if (x.harvestNow.length && !x.stormPause) add({ id: "harvest:now", date: x.today, kind: "harvest", text: `Pick ripe ${list(x.harvestNow.map((n) => n.toLowerCase()))}`, urgent: false, source: "calendar" });
 
   return out
     .sort((a, b) => a.date.localeCompare(b.date) || Number(b.urgent) - Number(a.urgent) || KIND_ORDER.indexOf(a.kind) - KIND_ORDER.indexOf(b.kind))
