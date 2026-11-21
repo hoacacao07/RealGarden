@@ -6,6 +6,7 @@ import { aiStats } from "@/lib/ai/store";
 import { demoMode } from "@/lib/clients/base";
 
 import { ResetButton } from "./reset-button";
+import { SimulateAlert } from "./simulate-alert";
 
 export const dynamic = "force-dynamic";
 
@@ -74,6 +75,8 @@ export default function PresenterPage() {
         </div>
         <ResetButton />
       </header>
+
+      <SimulateAlert />
 
       <ol className="grid gap-3 sm:grid-cols-2">
         {STEPS.map((s) => (

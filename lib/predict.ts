@@ -17,6 +17,7 @@ import { canopyAreaAt, heightAt, spreadAt } from "./engine/growth";
 import { impact, type Impact } from "./engine/impact";
 import { predict, type Normals, type Prediction } from "./engine/phenology";
 import { rankStormPlants, STORM_CHECKLIST, stormAlerts } from "./engine/storm";
+import { pausesWater } from "./engine/alertTasks";
 import { balconyAlertTasks, SAFETY_LINE } from "./engine/balcony";
 import { POT_TOP_FT, potDistance, sunHours } from "./engine/balconySun";
 import { canopyM2, isHotWall, potForecast, potKc, potPlan, type PotDay } from "./engine/containerWater";
@@ -101,12 +102,15 @@ const realTodayIso = () => new Date().toLocaleDateString("en-CA", { timeZone: "A
 export async function buildDashboard(g: GardenDoc, plants: Plant[], scenario: string | null): Promise<Dashboard> {
   const realToday = realTodayIso();
   const byId = new Map(plants.map((p) => [p.id, p]));
-  const [wx, nws, reports, checkins] = await Promise.all([
+  const [wx, nws, reports, checkins, stored] = await Promise.all([
     getWeather(g.site.lat, g.site.lon, scenario),
     getAlerts(g.site.lat, g.site.lon, scenario),
     getReports(),
     prisma.checkin.findMany({ where: { garden_id: g.id }, orderBy: { created_at: "desc" }, take: 50 }),
+    // Phase 12 stored alerts (live NWS, heavy rain, simulated). Not during a scenario replay.
+    isScenario(scenario) ? Promise.resolve([] as { event: string }[]) : prisma.alert.findMany({ where: { garden_id: g.id, active: true }, select: { event: true } }).catch(() => []),
   ]);
+  const storedEvents = new Set(stored.map((a) => a.event));
 
   // Plants as they are today (ages use the real calendar even during a scenario replay).
   const placed: PlacedPlant[] = g.placements.filter((p) => byId.has(p.plant_id)).map((p) => {
@@ -118,8 +122,10 @@ export async function buildDashboard(g: GardenDoc, plants: Plant[], scenario: st
   const young = (pp: PlacedPlant) => pp.age_years < 1;
 
   // ---- storm (decides whether watering pauses)
-  const storms = stormAlerts(nws.alerts);
-  const stormPause = storms.length > 0;
+  // Stored alerts carry their own task list (Alerts page), so the matching NWS card is not repeated here.
+  const storms = stormAlerts(nws.alerts.filter((a) => !storedEvents.has(a.event)));
+  // Watering pauses while a rain, flood or tropical alert is active (spec 7.3).
+  const stormPause = storms.length > 0 || stored.some((a) => pausesWater(a.event));
 
   // ---- water balance per zone
   const zoneOf = (pp: PlacedPlant) => {

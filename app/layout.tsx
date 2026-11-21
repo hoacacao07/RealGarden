@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Figtree } from "next/font/google";
 
+import { AlertBanner } from "@/components/alerts/alert-banner";
 import { InspectorPanel } from "@/components/inspector/inspector-panel";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import "./globals.css";
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${figtree.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <SiteHeader />
+        <AlertBanner />
         <main id="main" className="flex-1">{children}</main>
         <SiteFooter />
         <InspectorPanel />

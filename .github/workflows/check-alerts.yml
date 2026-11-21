@@ -1,0 +1,16 @@
+# The one background job (spec 7.2): call the alert checker every 5 minutes. Vercel Hobby cron only runs daily.
+# Repo secrets: APP_URL (e.g. https://nativescape.vercel.app) and CRON_SECRET (same value as on Vercel).
+# GitHub may delay scheduled runs by a few minutes under load; cron-job.org is an alternative.
+name: check-alerts
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Call /api/cron/check-alerts
+        run: |
+          curl -fsS -m 60 -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" "${{ secrets.APP_URL }}/api/cron/check-alerts"

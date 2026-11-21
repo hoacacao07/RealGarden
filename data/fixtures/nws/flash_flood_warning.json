@@ -1,0 +1,7 @@
+{
+  "_note": "Sample NWS alert for the presenter's Simulate NWS alert. Times are re-based to now.",
+  "event": "Flash Flood Warning", "severity": "Severe", "urgency": "Immediate", "certainty": "Likely",
+  "headline": "Flash Flood Warning issued for Hillsborough County by NWS Tampa Bay Ruskin FL (sample)",
+  "instruction": "Turn around, don't drown when encountering flooded roads. Move to higher ground now.",
+  "onset_hours": 0, "ends_hours": 6
+}
