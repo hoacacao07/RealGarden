@@ -1,0 +1,7 @@
+{
+  "_note": "Sample NWS alert (shape of api.weather.gov /alerts properties) for the presenter's Simulate NWS alert. Times are re-based to now.",
+  "event": "Hurricane Warning", "severity": "Extreme", "urgency": "Expected", "certainty": "Likely",
+  "headline": "Hurricane Warning issued for Hillsborough County by NWS Tampa Bay Ruskin FL (sample)",
+  "instruction": "Follow evacuation orders from local officials. Finish preparations to protect life and property now.",
+  "onset_hours": 14, "ends_hours": 40
+}

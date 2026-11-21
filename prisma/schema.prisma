@@ -98,6 +98,10 @@ model Garden {
   zones      Zone[]
   placements Placement[]
   checkins   Checkin[]
+  alerts     Alert[]
+  tasks      Task[]
+  push_subscriptions PushSubscription[]
+  chat_messages      ChatMessage[]
 }
 
 model Zone {
@@ -197,4 +201,75 @@ model HardinessZone {
   lat               Float?
   lon               Float?
   fetched_at        DateTime @default(now())
+}
+
+// Phase 12: real-time weather alerts and the tasks they create.
+model Alert {
+  id          String    @id @default(cuid())
+  garden_id   String
+  garden      Garden    @relation(fields: [garden_id], references: [id], onDelete: Cascade)
+  source      String // nws | openmeteo | nhc | sample
+  external_id String
+  dedupe_key  String // external_id + sent: a re-sent NWS alert with a new sent time is an update
+  sent        DateTime?
+  event       String
+  severity    String?
+  urgency     String?
+  certainty   String?
+  headline    String
+  instruction String?
+  onset       DateTime?
+  ends        DateTime?
+  active      Boolean   @default(true)
+  is_sample   Boolean   @default(false)
+  raw         Json?
+  created_at  DateTime  @default(now())
+  tasks       Task[]
+
+  @@unique([garden_id, dedupe_key])
+  @@index([garden_id, active])
+}
+
+model Task {
+  id            String   @id @default(cuid())
+  garden_id     String
+  garden        Garden   @relation(fields: [garden_id], references: [id], onDelete: Cascade)
+  alert_id      String?
+  alert         Alert?   @relation(fields: [alert_id], references: [id], onDelete: SetNull)
+  kind          String
+  title         String
+  detail        String?
+  due_at        DateTime
+  priority      String // normal | urgent
+  source        String // alert | followup | chat
+  position      Int      @default(0)
+  done          Boolean  @default(false)
+  closed_reason String?
+  created_at    DateTime @default(now())
+
+  @@index([garden_id, done])
+}
+
+model PushSubscription {
+  id         String   @id @default(cuid())
+  garden_id  String
+  garden     Garden   @relation(fields: [garden_id], references: [id], onDelete: Cascade)
+  endpoint   String   @unique
+  p256dh     String
+  auth       String
+  created_at DateTime @default(now())
+}
+
+// Phase 13: Garden Assistant history (last 20 messages are sent to the model).
+model ChatMessage {
+  id         String   @id @default(cuid())
+  garden_id  String
+  garden     Garden   @relation(fields: [garden_id], references: [id], onDelete: Cascade)
+  role       String // user | model
+  content    String
+  tool_calls Json?
+  feedback   Int? // 1 thumbs up, -1 thumbs down
+  created_at DateTime @default(now())
+
+  @@index([garden_id, created_at])
 }

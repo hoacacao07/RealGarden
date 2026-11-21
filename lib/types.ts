@@ -249,6 +249,15 @@ export interface NwsAlert {
   description?: string;
   severity?: string;
   synthetic?: boolean;
+  // Phase 12: full NWS properties for the alert pipeline.
+  id?: string;
+  sent?: string | null;
+  onset?: string | null;
+  ends?: string | null;
+  urgency?: string | null;
+  certainty?: string | null;
+  instruction?: string | null;
+  url?: string | null;
 }
 
 export interface Diagnosis {
