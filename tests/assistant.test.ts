@@ -127,6 +127,30 @@ describe("write tools never run without confirmation (full loop with the real to
   });
 });
 
+describe("chat model fallback", () => {
+  afterEach(() => { __resetAi(); vi.unstubAllEnvs(); });
+  it("a main model that keeps failing before any text is retried on the lite model", async () => {
+    vi.stubEnv("DEMO_MODE", "false");
+    vi.stubEnv("GEMINI_API_KEY", "k");
+    vi.stubEnv("GEMINI_MODEL", "slow-main");
+    vi.stubEnv("GEMINI_MODEL_LITE", "fast-lite");
+    const used: string[] = [];
+    const t: Transport = {
+      generate: async () => { throw new Error("no"); },
+      async *stream(req) {
+        used.push(req.model);
+        if (req.model === "slow-main") throw Object.assign(new Error("overloaded"), { status: 503 });
+        yield { text: "Water in the morning.", calls: [], parts: [{ text: "Water in the morning." }] };
+      },
+    };
+    __setAi({ transport: t, store: memoryStore(), sleep: async () => undefined });
+    const ev: ChatEvent[] = [];
+    for await (const e of chatWithTools({ messages: [{ role: "user", text: "water?" }], tools })) ev.push(e);
+    expect(used).toEqual(["slow-main", "slow-main", "slow-main", "fast-lite"]); // 2 retries, then the fallback
+    expect(ev.at(-1)).toMatchObject({ type: "done", text: "Water in the morning." });
+  });
+});
+
 describe("starter chips, prompt rules, rate limit", () => {
   it("each starter chip has a demo fixture, matched when typed", () => {
     for (const c of STARTER_CHIPS) {

@@ -359,7 +359,9 @@ export async function* chatWithTools(opts: {
   if (!hasKey()) throw new AiError("No Gemini key", "unavailable");
 
   const p = loadPrompt("assistant");
-  const model = modelFor("main");
+  let model = modelFor("main");
+  // If the main model times out or errors before saying anything, the round is retried once on the lite model.
+  let fallback: string | null = modelFor("lite") !== model ? modelFor("lite") : null;
   const byName = new Map(opts.tools.map((t) => [t.name, t]));
   const decl = opts.tools.map((t) => ({ name: t.name, description: t.description, parametersJsonSchema: t.parameters }));
   const contents: Content[] = opts.messages.map((m) => ({
@@ -394,7 +396,16 @@ export async function* chatWithTools(opts: {
       }
     } catch (e) {
       await log({ task: "assistant", model, latency_ms: Date.now() - t0, cache_hit: false, error: (e as Error).message });
-      throw e instanceof AiError ? e : new AiError((e as Error).message, "api");
+      const err = e instanceof AiError ? e : new AiError((e as Error).message, "api");
+      const transient = err.kind === "timeout" || err.status === 429 || (err.status ?? 0) >= 500 || err.status === 404;
+      if (fallback && transient && !parts.length) {
+        console.warn(`[ai:assistant] ${model} failed (${err.kind}${err.status ? ` ${err.status}` : ""}), retrying on ${fallback}`);
+        model = fallback;
+        fallback = null;
+        round--;
+        continue;
+      }
+      throw err;
     }
     await log({ task: "assistant", model, latency_ms: Date.now() - t0, in_tokens: usage?.in, out_tokens: usage?.out, cache_hit: false, error: null });
     if (!calls.length) {
