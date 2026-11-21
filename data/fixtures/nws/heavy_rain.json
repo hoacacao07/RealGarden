@@ -1,0 +1,6 @@
+{
+  "_note": "Sample Open-Meteo heavy rain trigger (no NWS alert): about 2.4 in (60 mm) in the next 24 hours.",
+  "event": "Heavy rain", "severity": "Moderate", "source": "openmeteo",
+  "headline": "Heavy rain forecast: about 2.4 in in the next 24 hours (sample)",
+  "instruction": null, "onset_hours": 3, "ends_hours": 24
+}

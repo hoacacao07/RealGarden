@@ -1,0 +1,7 @@
+{
+  "_note": "Sample NWS alert for the presenter's Simulate NWS alert. Times are re-based to now.",
+  "event": "Freeze Warning", "severity": "Moderate", "urgency": "Expected", "certainty": "Likely",
+  "headline": "Freeze Warning issued for inland Hillsborough County by NWS Tampa Bay Ruskin FL (sample)",
+  "instruction": "Take steps now to protect tender plants from the cold. Bring pets inside.",
+  "onset_hours": 10, "ends_hours": 20
+}

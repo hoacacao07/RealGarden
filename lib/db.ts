@@ -8,7 +8,8 @@ const g = globalThis as unknown as { prisma?: PrismaClient; prismaCtor?: unknown
 function make() {
   const connectionString = process.env.DATABASE_URL;
   if (!connectionString) throw new Error("DATABASE_URL is not set. Copy .env.example to .env and add your Supabase connection.");
-  return new PrismaClient({ adapter: new PrismaPg({ connectionString, max: 5 }) });
+  // DB_POOL_MAX=1 for the local `prisma dev` server (PGlite handles one connection at a time); Supabase keeps 5.
+  return new PrismaClient({ adapter: new PrismaPg({ connectionString, max: Number(process.env.DB_POOL_MAX) || 5 }) });
 }
 
 function client(): PrismaClient {

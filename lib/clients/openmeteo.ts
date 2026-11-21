@@ -66,3 +66,26 @@ export async function getWeather(lat: number, lon: number, scenario?: string | n
     return { ...r.data, source_kind: r.source };
   });
 }
+
+export interface HourlyPoint { time: string; precip_mm: number; gust_mph: number }
+
+/** Next 48 h of hourly precipitation and gusts, for heavy rain and wind that may not have an NWS alert yet. */
+export async function getHourly(lat: number, lon: number): Promise<{ hours: HourlyPoint[]; source: "live" | "fixture" }> {
+  return cached(`wxh:${lat.toFixed(2)}:${lon.toFixed(2)}`, 30 * 60_000, async () => {
+    const r = await liveOrFixture("open-meteo-hourly", {
+      live: async (signal) => {
+        const url = new URL("https://api.open-meteo.com/v1/forecast");
+        Object.entries({ latitude: lat, longitude: lon, timezone: "UTC", forecast_hours: 48, hourly: "precipitation,wind_gusts_10m", wind_speed_unit: "mph" })
+          .forEach(([k, v]) => url.searchParams.set(k, String(v)));
+        const j = await fetchJson<{ hourly: { time: string[]; precipitation: (number | null)[]; wind_gusts_10m: (number | null)[] } }>(url.toString(), { signal });
+        return j.hourly.time.map((t, i) => ({ time: new Date(t + "Z").toISOString(), precip_mm: j.hourly.precipitation[i] ?? 0, gust_mph: j.hourly.wind_gusts_10m[i] ?? 0 }));
+      },
+      fallback: () => {
+        const fx = fixture<{ precip_mm: number[]; gust_mph: number[] }>("openmeteo_hourly.json");
+        const t0 = Math.floor(Date.now() / 3600e3) * 3600e3;
+        return fx.precip_mm.map((p, i) => ({ time: new Date(t0 + i * 3600e3).toISOString(), precip_mm: p, gust_mph: fx.gust_mph[i] ?? 0 }));
+      },
+    });
+    return { hours: r.data, source: r.source };
+  });
+}
